@@ -5,7 +5,7 @@ package top.atstudy.basic.designmode.factory.method;
  * @email huangdexin@kuaicto.com
  * @date 2019/3/8 21:41
  */
-public class TestFactory {
+public class Client {
     public static void main(String[] args) {
         CarFactory carFactory = new BenzCarFactory();
         Car car = carFactory.createCar();

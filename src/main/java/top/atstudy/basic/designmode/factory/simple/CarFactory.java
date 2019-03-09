@@ -7,7 +7,7 @@ package top.atstudy.basic.designmode.factory.simple;
  *
  * 工厂角色
  */
-public class SimpleCarFactory {
+public class CarFactory {
     public static final int TYPE_BENZ = 1;
     public static final int TYPE_BOWN = 2;
 
@@ -19,21 +19,4 @@ public class SimpleCarFactory {
         }
 
     }
-
-    /**
-     * 测试简单工厂
-     * @param args
-     */
-    public static void main(String[] args) {
-
-        Car car = SimpleCarFactory.createCar(SimpleCarFactory.TYPE_BENZ);
-        car.run();
-
-
-        Car car2 = SimpleCarFactory.createCar(SimpleCarFactory.TYPE_BOWN);
-        car2.run();
-
-    }
-
-
 }

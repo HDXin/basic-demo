@@ -5,7 +5,7 @@ package top.atstudy.basic.designmode.factory.abstracts;
  * @email huangdexin@kuaicto.com
  * @date 2019/3/9 10:24
  */
-public class TestAbstractFactory {
+public class Client {
 
     public static void main(String[] args) {
        Car car = new BenzFactory().createCar();
