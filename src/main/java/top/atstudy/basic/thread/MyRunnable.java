@@ -3,20 +3,21 @@ package top.atstudy.basic.thread;
 /**
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
- * @date 2019/2/28 23:16
+ * @date 2019/4/1 15:43
  */
-public class MyThread extends Thread {
+public class MyRunnable implements Runnable {
 
-    private static Integer ticket = 20;
+    private Integer ticket = 50;
 
     @Override
     public void run() {
-        while(ticket > 0){
+
+        while (ticket > 0){
             synchronized (Object.class){
                 if(ticket > 0){
                     System.out.println(Thread.currentThread().getName() + " ... " + ticket);
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(200);
                     }catch (Exception e){
                         e.printStackTrace();
                     }
@@ -24,15 +25,15 @@ public class MyThread extends Thread {
                 }
             }
         }
+
     }
 
     public static void main(String[] args) {
+        MyRunnable r = new MyRunnable();
+        for(int i=0; i<5; i++)
+            new Thread(r).start();
 
-        MyThread t1 = new MyThread();
-        t1.start();
 
-        MyThread t2 = new MyThread();
-        t2.start();
+
     }
-
 }
