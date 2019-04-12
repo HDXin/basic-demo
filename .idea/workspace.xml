@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/TaskPortion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/WaitingTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/Horse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/HorseRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/Pool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/BasicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Fat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,7 +40,7 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="gitignore" value="3" />
-          <entry key="java" value="118" />
+          <entry key="java" value="129" />
           <entry key="kt" value="2" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
@@ -47,7 +49,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="118" />
+          <entry key="JAVA" value="129" />
           <entry key="Kotlin" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="1" />
@@ -57,13 +59,13 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="gitignore" value="18" />
-          <entry key="java" value="12865" />
+          <entry key="java" value="16284" />
           <entry key="kt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12865" />
+          <entry key="JAVA" value="16284" />
           <entry key="Kotlin" value="12" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
@@ -73,43 +75,90 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            <state relative-caret-position="318">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1364#1365#0" expanded="true" />
-                <element signature="e#1413#1414#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/Pool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+            <state relative-caret-position="291">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+              <folding>
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="320">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding>
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Fat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,10 +167,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="398" column="30" selection-start-line="398" selection-start-column="30" selection-end-line="398" selection-end-column="30" />
+            <state relative-caret-position="271">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#638#649#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/BasicGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Generator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -141,7 +218,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>static final int MAXIMUM_CAPACITY = 1 &lt;&lt; 30;</find>
+      <find>Food</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Fat</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,17 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/TestFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Brand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BmwBrand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BenzBrand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Edition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/EditionFlagship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/EditionDeluxe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Gearbox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Gearbox6At.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Gearbox8At.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/CarFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BenzFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BmwFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Car.java" />
@@ -230,6 +300,17 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Generator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/BasicGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Food.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/Pool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Fat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java" />
       </list>
     </option>
   </component>
@@ -253,7 +334,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -375,19 +456,6 @@
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="newstructure" type="462c0819:PsiDirectoryNode" />
-              <item name="delayqueue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -439,7 +507,7 @@
     <property name="SearchEverywhereHistoryKey" value="AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555049578251" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555065591452" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -468,7 +536,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DelayQueueDemo">
+  <component name="RunManager" selected="Application.SemaphoreDemo">
     <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.countdownlatch.CountDownLatchDemo" />
       <module name="basic-demo" />
@@ -495,6 +563,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExchangerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.exchanger.ExchangerDemo" />
+      <module name="basic-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.atstudy.basic.thread.newstructure.exchanger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HorseRace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.cyclicbarrier.HorseRace" />
       <module name="basic-demo" />
@@ -508,25 +589,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Restaurant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.xiezuo.productconsumer.Restaurant" />
+    <configuration name="SemaphoreDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.Semaphore.SemaphoreDemo" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.xiezuo.productconsumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaxOMatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.xiezuo.dana.WaxOMatic" />
-      <module name="basic-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.xiezuo.dana.*" />
+          <option name="PATTERN" value="top.atstudy.basic.thread.newstructure.Semaphore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -535,19 +603,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WaxOMatic" />
-      <item itemvalue="Application.Restaurant" />
       <item itemvalue="Application.CountDownLatchDemo" />
       <item itemvalue="Application.HorseRace" />
       <item itemvalue="Application.DelayQueueDemo" />
+      <item itemvalue="Application.ExchangerDemo" />
+      <item itemvalue="Application.SemaphoreDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemaphoreDemo" />
+        <item itemvalue="Application.ExchangerDemo" />
         <item itemvalue="Application.DelayQueueDemo" />
         <item itemvalue="Application.HorseRace" />
         <item itemvalue="Application.CountDownLatchDemo" />
-        <item itemvalue="Application.Restaurant" />
-        <item itemvalue="Application.WaxOMatic" />
       </list>
     </recent_temporary>
   </component>
@@ -582,7 +650,7 @@
       <workItem from="1554890964043" duration="599000" />
       <workItem from="1554947630338" duration="3270000" />
       <workItem from="1554951931298" duration="8261000" />
-      <workItem from="1555034707508" duration="9144000" />
+      <workItem from="1555034707508" duration="19827000" />
     </task>
     <servers />
   </component>
@@ -619,14 +687,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105282000" />
+    <option name="totallyTimeSpent" value="115965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83849555" visible="true" weight="0.17643923" />
-      <window_info id="Structure" order="1" sideWeight="0.16150442" side_tool="true" visible="true" weight="0.17643923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86711407" visible="true" weight="0.20842217" />
+      <window_info id="Structure" order="1" sideWeight="0.1328859" side_tool="true" visible="true" weight="0.20842217" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -635,7 +703,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5092291" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.19109663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -816,83 +884,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Benz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" lean-forward="true" selection-start-line="2" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Bmw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14720">
-          <caret line="813" column="57" selection-start-line="813" selection-start-column="38" selection-end-line="813" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/util/locale/provider/LocaleProviderAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3480">
-          <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/util/locale/provider/JRELocaleProviderAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3020">
-          <caret line="181" column="25" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/text/spi/DateFormatProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/text/Format.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/util/locale/provider/DateFormatProviderImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="815" column="75" selection-start-line="815" selection-start-column="67" selection-end-line="815" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/mianshi/MathQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/oom/Oom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1177,10 +1168,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state relative-caret-position="55">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1026#1027#0" expanded="true" />
@@ -1197,7 +1198,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="181">
           <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
           <folding>
             <element signature="e#350#351#0" expanded="true" />
@@ -1206,12 +1207,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/BasicGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="500">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Fat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#638#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
           </folding>
         </state>
       </provider>
