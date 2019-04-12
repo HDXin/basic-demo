@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="" />
+    <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/CountDownLatchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/TaskPortion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/WaitingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/HorseRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,21 +24,22 @@
     <session id="-1862740816">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="10" />
+          <entry key="project.open.time.1" value="11" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
           <entry key="gitignore" value="3" />
-          <entry key="java" value="104" />
+          <entry key="java" value="118" />
+          <entry key="kt" value="2" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -36,7 +47,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="104" />
+          <entry key="JAVA" value="118" />
+          <entry key="Kotlin" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="1" />
         </counts>
@@ -45,24 +57,83 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="gitignore" value="18" />
-          <entry key="java" value="9572" />
+          <entry key="java" value="12865" />
+          <entry key="kt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9572" />
+          <entry key="JAVA" value="12865" />
+          <entry key="Kotlin" value="12" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#1364#1365#0" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+              <folding>
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="398" column="30" selection-start-line="398" selection-start-column="30" selection-end-line="398" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -108,16 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Audi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Bown.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Benz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Bmw.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Benz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Bmw.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/BenzCarFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/BmwCarFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/TestFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Brand.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BmwBrand.java" />
@@ -159,6 +220,16 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/xiezuo/productconsumer/Chef.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/xiezuo/productconsumer/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/xiezuo/productconsumer/WaitPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/new/structure/countdownlatch/TaskPortion.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/TaskPortion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/WaitingTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/TaskPortion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/CountDownLatchDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/Horse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/HorseRace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java" />
       </list>
     </option>
   </component>
@@ -222,6 +293,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +368,20 @@
               <item name="atstudy" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="xiezuo" type="462c0819:PsiDirectoryNode" />
+              <item name="newstructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="newstructure" type="462c0819:PsiDirectoryNode" />
+              <item name="delayqueue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -332,14 +418,6 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,54 +428,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="atomic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="sound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="sound" type="462c0819:PsiDirectoryNode" />
-              <item name="midi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="AtomicInteger&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet" />
+    <property name="SearchEverywhereHistoryKey" value="AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554975998786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555049578251" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -426,13 +468,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Restaurant">
-    <configuration name="AttemptLocking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.AttemptLocking" />
+  <component name="RunManager" selected="Application.DelayQueueDemo">
+    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.countdownlatch.CountDownLatchDemo" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.*" />
+          <option name="PATTERN" value="top.atstudy.basic.thread.newstructure.countdownlatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,12 +482,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyCallable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.MyCallable" />
+    <configuration name="DelayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.delayqueue.DelayQueueDemo" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.*" />
+          <option name="PATTERN" value="top.atstudy.basic.thread.newstructure.delayqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,12 +495,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.MyExecutor" />
+    <configuration name="HorseRace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.newstructure.cyclicbarrier.HorseRace" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.*" />
+          <option name="PATTERN" value="top.atstudy.basic.thread.newstructure.cyclicbarrier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -493,19 +535,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyExecutor" />
-      <item itemvalue="Application.MyCallable" />
-      <item itemvalue="Application.AttemptLocking" />
       <item itemvalue="Application.WaxOMatic" />
       <item itemvalue="Application.Restaurant" />
+      <item itemvalue="Application.CountDownLatchDemo" />
+      <item itemvalue="Application.HorseRace" />
+      <item itemvalue="Application.DelayQueueDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DelayQueueDemo" />
+        <item itemvalue="Application.HorseRace" />
+        <item itemvalue="Application.CountDownLatchDemo" />
         <item itemvalue="Application.Restaurant" />
         <item itemvalue="Application.WaxOMatic" />
-        <item itemvalue="Application.AttemptLocking" />
-        <item itemvalue="Application.MyCallable" />
-        <item itemvalue="Application.MyExecutor" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +581,8 @@
       <workItem from="1554888694096" duration="1226000" />
       <workItem from="1554890964043" duration="599000" />
       <workItem from="1554947630338" duration="3270000" />
-      <workItem from="1554951931298" duration="6088000" />
+      <workItem from="1554951931298" duration="8261000" />
+      <workItem from="1555034707508" duration="9144000" />
     </task>
     <servers />
   </component>
@@ -576,32 +619,32 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93965000" />
+    <option name="totallyTimeSpent" value="105282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8685714" visible="true" weight="0.20415778" />
-      <window_info id="Structure" order="1" sideWeight="0.13142857" side_tool="true" visible="true" weight="0.20415778" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83849555" visible="true" weight="0.17643923" />
+      <window_info id="Structure" order="1" sideWeight="0.16150442" side_tool="true" visible="true" weight="0.17643923" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" weight="0.5906623" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42996743" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5092291" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.57546145" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29207385" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.19109663" />
+      <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.5906623" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -773,83 +816,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BenzFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="77" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BmwBrand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/BmwFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/CarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/simple/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/abstracts/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/CarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/BenzCarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/BmwCarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="2" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/designmode/factory/method/Benz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1056,20 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/AttemptLocking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/xiezuo/dana/WaxOn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1088,9 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,10 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,11 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,6 +1082,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="148" column="39" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/new/structure/countdownlatch/TaskPortion.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/AttemptLocking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/CountDownLatchDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/WaitingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/TaskPortion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/Horse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/HorseRace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="398" column="30" selection-start-line="398" selection-start-column="30" selection-end-line="398" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
