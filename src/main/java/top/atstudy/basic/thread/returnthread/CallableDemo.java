@@ -1,6 +1,5 @@
-package top.atstudy.basic.thread;
+package top.atstudy.basic.thread.returnthread;
 
-import javax.security.auth.callback.Callback;
 import java.util.ArrayList;
 import java.util.concurrent.*;
 
@@ -8,26 +7,15 @@ import java.util.concurrent.*;
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
  * @date 2019/4/1 17:13
+ *
+ * 带有返回值的任务
  */
-public class MyCallable implements Callable<String> {
-
-    private int id;
-    public MyCallable(int id) {
-        this.id = id;
-    }
-
-    @Override
-    public String call() throws Exception {
-        return "result of myCallable " + id;
-    }
-
+public class CallableDemo {
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
-
         ArrayList<Future<String>> results = new ArrayList<>();
-
         for(int i=0; i<10; i++){
-            results.add(exec.submit(new MyCallable(i)));
+            results.add(exec.submit(new TaskWithResult(i)));
         }
 
         for(Future<String> fs:results){
