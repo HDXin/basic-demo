@@ -15,11 +15,12 @@ public class EvenChecker implements Runnable {
         while (!generator.isCanceled()){
             int val = generator.next();
             if(val % 2 != 0){
-                System.out.println(val + " not even!");
+                System.out.println(val + " ------>>> not even!");
                 generator.cancel();
-            }else{
-                System.out.println(val + " is even ... ");
             }
+//            else{
+//                System.out.println(val + " is even ... ");
+//            }
         }
     }
 
