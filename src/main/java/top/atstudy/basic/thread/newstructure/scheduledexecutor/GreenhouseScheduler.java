@@ -14,7 +14,7 @@ public class GreenhouseScheduler {
     }
 
     public synchronized void setThermostat(String value){
-        return
+        return ;
     }
 
 }
