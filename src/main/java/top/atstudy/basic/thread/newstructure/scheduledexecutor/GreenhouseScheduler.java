@@ -1,5 +1,9 @@
 package top.atstudy.basic.thread.newstructure.scheduledexecutor;
 
+import java.sql.SQLOutput;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
@@ -14,7 +18,33 @@ public class GreenhouseScheduler {
     }
 
     public synchronized void setThermostat(String value){
-        return ;
+        this.thermostat = value;
+    }
+
+    ScheduledThreadPoolExecutor scheduler = new ScheduledThreadPoolExecutor(10);
+
+    public void schedule(Runnable event, long delay){
+        scheduler.schedule(event, delay, TimeUnit.MILLISECONDS);
+    }
+
+    public void repeat(Runnable event, long initialDelay, long period){
+        scheduler.scheduleAtFixedRate(event, initialDelay, period, TimeUnit.MILLISECONDS);
+    }
+
+    class LightOn implements Runnable{
+        @Override
+        public void run() {
+            System.out.println("Turning on lights");
+            light = true;
+        }
+    }
+
+    class LightOff implements Runnable{
+        @Override
+        public void run() {
+            System.out.println("Turning off lights");
+            light = false;
+        }
     }
 
 }
