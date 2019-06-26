@@ -1,4 +1,4 @@
-package top.atstudy.basic.thread.xiezuo.dana;
+package top.atstudy.basic.thread.xiezuo.danasynchronized;
 
 /**
  * @author huangdexin @ harley
