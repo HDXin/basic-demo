@@ -1,7 +1,5 @@
 package top.atstudy.basic.collection.map;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
