@@ -1,5 +1,7 @@
 package top.atstudy.basic.function;
 
+import java.util.Comparator;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 /**
@@ -27,6 +29,14 @@ public class ConsumerTest {
         consuemr.andThen(andThen).accept(p2);
         System.out.println(" ==>> p2: " + p2.toString());
 
+        Person p3 = new Person();
+        Consumer<Integer> cc = p3::setAge;
+        cc.accept(35);
+        System.out.println(" ===>> p3： " + p3.toString());
+
+
+        BiConsumer<Integer, Integer> p5 = Person::compare;
+        p5.accept(5, 9);
 
     }
 
@@ -34,7 +44,7 @@ public class ConsumerTest {
 
 }
 
-class Person{
+class Person {
 
     private Integer age;
 
@@ -51,5 +61,9 @@ class Person{
         return "Person{" +
                 "age=" + age +
                 '}';
+    }
+
+    public static int compare(Integer o1, Integer o2) {
+        return o1.compareTo(o2);
     }
 }
