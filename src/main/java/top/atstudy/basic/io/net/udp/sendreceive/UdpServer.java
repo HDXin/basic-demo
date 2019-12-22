@@ -3,7 +3,6 @@ package top.atstudy.basic.io.net.udp.sendreceive;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.InetSocketAddress;
 
 /**
  * 接收端
