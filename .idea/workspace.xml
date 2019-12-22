@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/webserver/XmlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/person.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/sendreceive/UdpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/sendreceive/UdpServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,31 +85,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="17" />
-          <entry key="java" value="178" />
+          <entry key="java" value="191" />
           <entry key="jpeg" value="3" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="17" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="178" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="191" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="54" />
-          <entry key="java" value="15227" />
-          <entry key="xml" value="1" />
+          <entry key="dummy" value="66" />
+          <entry key="java" value="17260" />
+          <entry key="xml" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15227" />
-          <entry key="PLAIN_TEXT" value="54" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="17260" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="XML" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -130,10 +133,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FilterOutputStream.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/upload/UdpFileuploadServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1158">
-              <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+            <state relative-caret-position="250">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/webserver/XmlTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/exception/ExceptionDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/G1GCDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/ParallelScavengeGCDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -141,92 +231,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/DataInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/sendreceive/UdpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/sendreceive/UdpServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/Serializable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="168" selection-start-line="168" selection-end-line="169" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/StringReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1782">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/StringWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2725">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/RandomAccessFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2826">
-              <caret line="202" column="37" selection-start-line="202" selection-start-column="33" selection-end-line="202" selection-end-column="37" />
+            <state relative-caret-position="216">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -294,15 +300,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/ConsumerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/StreamTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/OptionalTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/SimpleDateFormatTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/LocalDateTimeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/nio/NioTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/nio/BlockClientTest.java" />
@@ -345,6 +342,15 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/sendreceive/UdpServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/webserver/XmlTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/person.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/ServerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/demo/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatServerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadServerTest.java" />
       </list>
     </option>
   </component>
@@ -480,8 +486,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -490,9 +495,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-              <item name="udp" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -501,10 +504,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-              <item name="udp" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -513,10 +514,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-              <item name="udp" type="462c0819:PsiDirectoryNode" />
-              <item name="sendreceive" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="gc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -561,6 +567,30 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="sun" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -589,7 +619,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="PrintWriter&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PrintWriter.java&#10;BufferedInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedInputStream.java&#10;InputStreamReader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStreamReader.java&#10;FileOutputStrea&#9;PSI&#9;JAVA://java.io.FileOutputStream&#10;FileInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;InputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;ChannelHandler&#9;FILE&#9;jar://E:/repository_maven/io/netty/netty-all/4.1.20.Final/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelHandlerContext.class&#10;CHannelFu&#9;PSI&#9;JAVA://io.netty.channel.ChannelFuture&#10;Selector&#9;PSI&#9;JAVA://java.nio.channels.Selector&#10;RandomAccessFile&#9;PSI&#9;JAVA://java.io.RandomAccessFile&#10;ByteBuffer&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/ByteBuffer.java&#10;Selection&#9;PSI&#9;JAVA://java.nio.channels.SelectionKey&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet" />
+    <property name="SearchEverywhereHistoryKey" value="SAXParse&#9;PSI&#9;JAVA://javax.xml.parsers.SAXParser&#10;PrintWriter&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PrintWriter.java&#10;BufferedInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedInputStream.java&#10;InputStreamReader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStreamReader.java&#10;FileOutputStrea&#9;PSI&#9;JAVA://java.io.FileOutputStream&#10;FileInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;InputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;ChannelHandler&#9;FILE&#9;jar://E:/repository_maven/io/netty/netty-all/4.1.20.Final/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelHandlerContext.class&#10;CHannelFu&#9;PSI&#9;JAVA://io.netty.channel.ChannelFuture&#10;Selector&#9;PSI&#9;JAVA://java.nio.channels.Selector&#10;RandomAccessFile&#9;PSI&#9;JAVA://java.io.RandomAccessFile&#10;ByteBuffer&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/ByteBuffer.java&#10;Selection&#9;PSI&#9;JAVA://java.nio.channels.SelectionKey&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -597,7 +627,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576999146532" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577004207971" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -631,13 +661,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UdpChatClient">
-    <configuration name="UdpChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.udp.chat.UdpChatClient" />
+  <component name="RunManager">
+    <configuration name="ChatClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.tcp.chat.ChatClientTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.io.net.udp.chat.*" />
+          <option name="PATTERN" value="top.atstudy.basic.io.net.tcp.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -645,12 +675,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UdpChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.udp.chat.UdpChatServer" />
+    <configuration name="ChatServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.tcp.chat.ChatServerTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.io.net.udp.chat.*" />
+          <option name="PATTERN" value="top.atstudy.basic.io.net.tcp.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -658,12 +688,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UdpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.udp.sendreceive.UdpClient" />
+    <configuration name="UploadClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.tcp.upload.UploadClientTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.io.net.udp.sendreceive.*" />
+          <option name="PATTERN" value="top.atstudy.basic.io.net.tcp.upload.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -671,12 +701,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UdpFileuploadClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.udp.upload.UdpFileuploadClient" />
+    <configuration name="UploadServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.tcp.upload.UploadServerTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.io.net.udp.upload.*" />
+          <option name="PATTERN" value="top.atstudy.basic.io.net.tcp.upload.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -684,12 +714,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UdpFileuploadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.net.udp.upload.UdpFileuploadServer" />
+    <configuration name="XmlTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.io.webserver.XmlTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.io.net.udp.upload.*" />
+          <option name="PATTERN" value="top.atstudy.basic.io.webserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -698,19 +728,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UdpClient" />
-      <item itemvalue="Application.UdpFileuploadServer" />
-      <item itemvalue="Application.UdpFileuploadClient" />
-      <item itemvalue="Application.UdpChatServer" />
-      <item itemvalue="Application.UdpChatClient" />
+      <item itemvalue="Application.XmlTest" />
+      <item itemvalue="Application.ChatServerTest" />
+      <item itemvalue="Application.ChatClientTest" />
+      <item itemvalue="Application.UploadServerTest" />
+      <item itemvalue="Application.UploadClientTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UdpChatClient" />
-        <item itemvalue="Application.UdpChatServer" />
-        <item itemvalue="Application.UdpFileuploadClient" />
-        <item itemvalue="Application.UdpFileuploadServer" />
-        <item itemvalue="Application.UdpClient" />
+        <item itemvalue="Application.ChatClientTest" />
+        <item itemvalue="Application.ChatServerTest" />
+        <item itemvalue="Application.UploadClientTest" />
+        <item itemvalue="Application.UploadServerTest" />
+        <item itemvalue="Application.XmlTest" />
       </list>
     </recent_temporary>
   </component>
@@ -757,7 +787,7 @@
       <workItem from="1576715215235" duration="2221000" />
       <workItem from="1576824464057" duration="4573000" />
       <workItem from="1576895388208" duration="23703000" />
-      <workItem from="1576997445685" duration="1698000" />
+      <workItem from="1576997445685" duration="7494000" />
     </task>
     <servers />
   </component>
@@ -794,29 +824,29 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206428000" />
+    <option name="totallyTimeSpent" value="212224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-156" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8348624" visible="true" weight="0.2457356" />
-      <window_info id="Structure" order="1" sideWeight="0.16513762" side_tool="true" visible="true" weight="0.2457356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8333333" visible="true" weight="0.20202559" />
+      <window_info id="Structure" order="1" sideWeight="0.16666667" side_tool="true" visible="true" weight="0.20202559" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.43865365" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30510315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46905538" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.57980454" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3615635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17155266" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49728554" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.19109663" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.5906623" />
@@ -1135,92 +1165,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/security/AccessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="651" column="8" selection-start-line="651" selection-start-column="8" selection-end-line="651" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/WinNTFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#21135#21136#0" expanded="true" />
-            <element signature="e#21162#21163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/files/FileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-          <folding>
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6689">
-          <caret line="177" column="24" lean-forward="true" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/ObjectInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PipedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/Closeable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/ObjectInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4202">
@@ -1337,20 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/upload/UdpFileuploadServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/upload/UdpFileuploadClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1487,16 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1524,6 +1444,122 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/upload/UdpFileuploadClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/xml/parsers/SAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/xml/parsers/SAXParserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="184" column="29" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/person.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/upload/UdpFileuploadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/webserver/XmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/udp/chat/UdpChatClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/upload/UploadServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/io/net/tcp/chat/ChatServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/exception/ExceptionDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/G1GCDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/ParallelScavengeGCDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
