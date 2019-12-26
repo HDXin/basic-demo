@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio;
+package top.atstudy.basic.netty.nio.selector;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
