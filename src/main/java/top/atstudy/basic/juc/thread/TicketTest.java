@@ -1,9 +1,9 @@
-package top.atstudy.basic.juc;
+package top.atstudy.basic.juc.thread;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Ticket {
+public class TicketTest {
 
     private int nums = 50;
 
@@ -21,40 +21,13 @@ public class Ticket {
         } finally {
             lock.unlock();
         }
+
     }
 
 
     public static void main(String[] args) {
 
-        Ticket ticket = new Ticket();
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i=0; i<50; i++){
-//                    ticket.sale();
-//                }
-//            }
-//        }, "A").start();
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i=0; i<50; i++) {
-//                    ticket.sale();
-//                }
-//            }
-//        }, "B").start();
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i=0; i<50; i++) {
-//                    ticket.sale();
-//                }
-//            }
-//        }, "C").start();
-
+        TicketTest ticket = new TicketTest();
 
         new Thread(() ->{ for (int i=0; i<50; i++) ticket.sale();}, "AA").start();
         new Thread(() ->{ for (int i=0; i<50; i++) ticket.sale();}, "BB").start();

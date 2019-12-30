@@ -3,6 +3,6 @@ package top.atstudy.basic.juc.function;
 @FunctionalInterface
 public interface Foo {
 
-    void sayHello();
+    void sayHello(Integer ... ar);
 
 }
