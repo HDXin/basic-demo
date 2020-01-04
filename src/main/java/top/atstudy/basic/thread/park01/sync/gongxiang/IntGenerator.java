@@ -1,4 +1,4 @@
-package top.atstudy.basic.thread.gongxiang;
+package top.atstudy.basic.thread.park01.sync.gongxiang;
 
 public abstract class IntGenerator {
     private volatile boolean canceled = false;

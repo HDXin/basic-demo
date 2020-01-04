@@ -1,7 +1,7 @@
 package top.atstudy.basic.thread.atomic;
 
-import top.atstudy.basic.thread.gongxiang.EvenChecker;
-import top.atstudy.basic.thread.gongxiang.IntGenerator;
+import top.atstudy.basic.thread.park01.sync.gongxiang.EvenChecker;
+import top.atstudy.basic.thread.park01.sync.gongxiang.IntGenerator;
 
 import java.util.Timer;
 import java.util.TimerTask;

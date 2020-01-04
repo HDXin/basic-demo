@@ -1,4 +1,4 @@
-package top.atstudy.basic.thread.gongxiang;
+package top.atstudy.basic.thread.park01.sync.gongxiang;
 
 public class EvenGenerator extends IntGenerator {
     private int currentEvenValue = 0;
