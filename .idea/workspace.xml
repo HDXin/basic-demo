@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/DynamicSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/ProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/DeadLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/MyMemoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/oom/Oom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java" afterDir="false" />
-    </list>
+    <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +79,7 @@
           <entry key="Driver" value="1" />
           <entry key="FutureTask" value="2" />
           <entry key="class" value="39" />
-          <entry key="java" value="401" />
+          <entry key="java" value="402" />
           <entry key="jpeg" value="3" />
           <entry key="xml" value="4" />
         </counts>
@@ -105,7 +88,7 @@
         <counts>
           <entry key="CLASS" value="39" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="401" />
+          <entry key="JAVA" value="402" />
           <entry key="SPI" value="1" />
           <entry key="UML" value="2" />
           <entry key="XML" value="4" />
@@ -115,14 +98,14 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="dummy" value="84" />
-          <entry key="java" value="34365" />
+          <entry key="java" value="34424" />
           <entry key="xml" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="34365" />
+          <entry key="JAVA" value="34424" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="XML" value="75" />
         </counts>
@@ -159,15 +142,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/SerialGCDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -185,11 +159,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="390">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest03.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -316,7 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/oom/Oom.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/swing/HelloWorldSwing.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/RuntimeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/threadmethod/DaemonThread01.java" />
@@ -367,6 +349,7 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest03.java" />
       </list>
     </option>
   </component>
@@ -525,7 +508,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578361498817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578365244821" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -562,20 +545,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyGCTest02">
-    <configuration name="DeadLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.memory.DeadLockTest" />
-      <module name="basic-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.memory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MyGCTest03">
     <configuration name="HeapOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.memory.HeapOOM" />
       <module name="basic-demo" />
@@ -618,6 +588,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyGCTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.gc.MyGCTest03" />
+      <module name="basic-demo" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.atstudy.basic.jvm.gc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SerialGCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.gc.SerialGCDemo" />
       <module name="basic-demo" />
@@ -634,18 +618,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.HeapOOM" />
-      <item itemvalue="Application.DeadLockTest" />
       <item itemvalue="Application.SerialGCDemo" />
       <item itemvalue="Application.MyGCTest" />
       <item itemvalue="Application.MyGCTest02" />
+      <item itemvalue="Application.MyGCTest03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyGCTest03" />
         <item itemvalue="Application.MyGCTest02" />
         <item itemvalue="Application.MyGCTest" />
         <item itemvalue="Application.SerialGCDemo" />
         <item itemvalue="Application.HeapOOM" />
-        <item itemvalue="Application.DeadLockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -707,7 +691,7 @@
       <workItem from="1578203189683" duration="175000" />
       <workItem from="1578203399705" duration="13808000" />
       <workItem from="1578281302309" duration="11363000" />
-      <workItem from="1578360512452" duration="1582000" />
+      <workItem from="1578360512452" duration="2508000" />
     </task>
     <servers />
   </component>
@@ -744,7 +728,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349284000" />
+    <option name="totallyTimeSpent" value="350210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-156" width="1936" height="1056" extended-state="6" />
@@ -760,7 +744,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30510315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46905538" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.8067318" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5960912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1140,18 +1124,6 @@ new String(b, 0, 2);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader05.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="100" column="44" lean-forward="true" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/MyClassLoader06.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1503,8 +1475,15 @@ new String(b, 0, 2);</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="390">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
