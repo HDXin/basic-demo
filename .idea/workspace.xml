@@ -2,30 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/ObjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/TransferValueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MySample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/DynamicSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/ProxyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/DeadLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/MyMemoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/atomic/AtomicEvenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/atomic/AtomicEvenGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/gongxiang/EvenChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/gongxiang/EvenChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/gongxiang/EvenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/gongxiang/EvenGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/gongxiang/IntGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/gongxiang/IntGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/oom/Oom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,17 +95,17 @@
         <counts>
           <entry key="Driver" value="1" />
           <entry key="FutureTask" value="2" />
-          <entry key="class" value="35" />
-          <entry key="java" value="380" />
+          <entry key="class" value="39" />
+          <entry key="java" value="401" />
           <entry key="jpeg" value="3" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="35" />
+          <entry key="CLASS" value="39" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="380" />
+          <entry key="JAVA" value="401" />
           <entry key="SPI" value="1" />
           <entry key="UML" value="2" />
           <entry key="XML" value="4" />
@@ -121,22 +113,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="77" />
-          <entry key="java" value="30148" />
+          <entry key="class" value="2" />
+          <entry key="dummy" value="84" />
+          <entry key="java" value="34365" />
           <entry key="xml" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="30148" />
-          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="34365" />
+          <entry key="PLAIN_TEXT" value="84" />
           <entry key="XML" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="1" />
@@ -149,8 +145,10 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -161,63 +159,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/ServiceLoader.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+            <state relative-caret-position="414">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader10.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/SerialGCDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader11.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-              <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="51">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5040">
-              <caret line="347" column="18" selection-start-line="347" selection-start-column="18" selection-end-line="347" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/DeadLockTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/Proxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10710">
+              <caret line="638" selection-start-line="638" selection-end-line="638" />
+              <folding>
+                <element signature="e#0#34481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/ProxyGenerator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/WeakCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3600">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Objects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2934">
+              <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -227,9 +256,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -243,6 +272,8 @@
       <find>getExtDirs(</find>
       <find>extcl</find>
       <find>AppClassLoader</find>
+      <find>com</find>
+      <find>java_pid14912</find>
     </findStrings>
     <replaceStrings>
       <replace>Fat</replace>
@@ -285,24 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/buffer/BufferTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/channel/NIOFileChannelTest03.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/selector/NIOServerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/selector/NIOClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/groupchat/GroupChatServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/netty/nio/groupchat/GroupChatClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/Ticket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/Ticket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/TicketTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/function/Foo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/function/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/collection/ArrayListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/Aircondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/AirconditionOld.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/AirconditionNew.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/ShareDataTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/ConditionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/CallableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/oom/Oom.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/swing/HelloWorldSwing.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/RuntimeTest.java" />
@@ -336,6 +349,24 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader10.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader11.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest03.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest04.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest05.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest06.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest07.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/RealSubject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/DynamicSubject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/ProxyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/MyMemoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/oom/Oom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/oom/JavaVmStackSOF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/DeadLockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java" />
       </list>
     </option>
   </component>
@@ -421,7 +452,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -432,58 +463,47 @@
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="jvm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="atstudy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="bytecode" type="462c0819:PsiDirectoryNode" />
+              <item name="gc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -493,11 +513,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java&#10;ServiceLoader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/ServiceLoader.class&#10;Thread&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Thread.class&#10;Launcher&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/Launcher.class&#10;ClassLoader&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;AppClassLo&#9;PSI&#9;JAVA://sun.misc.Launcher.AppClassLoader&#10;Object&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Object.class&#10;Runnable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Runnable.java&#10;Optional&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/Optional.class&#10;ThreadStatus&#9;PSI&#9;JAVA://java.lang.Thread#threadStatus&#10;Callable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/concurrent/Callable.class&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Lock&#9;PSI&#9;JAVA://java.util.concurrent.locks.Lock&#10;SAXParse&#9;PSI&#9;JAVA://javax.xml.parsers.SAXParser&#10;PrintWriter&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PrintWriter.java&#10;BufferedInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedInputStream.java&#10;InputStreamReader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStreamReader.java&#10;FileOutputStrea&#9;PSI&#9;JAVA://java.io.FileOutputStream&#10;FileInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;InputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;ChannelHandler&#9;FILE&#9;jar://E:/repository_maven/io/netty/netty-all/4.1.20.Final/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelHandlerContext.class&#10;CHannelFu&#9;PSI&#9;JAVA://io.netty.channel.ChannelFuture&#10;Selector&#9;PSI&#9;JAVA://java.nio.channels.Selector&#10;RandomAccessFile&#9;PSI&#9;JAVA://java.io.RandomAccessFile&#10;ByteBuffer&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/ByteBuffer.java&#10;Selection&#9;PSI&#9;JAVA://java.nio.channels.SelectionKey&#10;AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap" />
+    <property name="SearchEverywhereHistoryKey" value="ProxyGen&#9;PSI&#9;JAVA://sun.misc.ProxyGenerator&#10;Class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java&#10;ServiceLoader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/ServiceLoader.class&#10;Thread&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Thread.class&#10;Launcher&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/Launcher.class&#10;ClassLoader&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;AppClassLo&#9;PSI&#9;JAVA://sun.misc.Launcher.AppClassLoader&#10;Object&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Object.class&#10;Runnable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Runnable.java&#10;Optional&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/Optional.class&#10;ThreadStatus&#9;PSI&#9;JAVA://java.lang.Thread#threadStatus&#10;Callable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/concurrent/Callable.class&#10;HashSet&#9;PSI&#9;JAVA://java.util.HashSet&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Lock&#9;PSI&#9;JAVA://java.util.concurrent.locks.Lock&#10;SAXParse&#9;PSI&#9;JAVA://javax.xml.parsers.SAXParser&#10;PrintWriter&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PrintWriter.java&#10;BufferedInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/BufferedInputStream.java&#10;InputStreamReader&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStreamReader.java&#10;FileOutputStrea&#9;PSI&#9;JAVA://java.io.FileOutputStream&#10;FileInputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;InputStream&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java&#10;ChannelHandler&#9;FILE&#9;jar://E:/repository_maven/io/netty/netty-all/4.1.20.Final/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelHandlerContext.class&#10;CHannelFu&#9;PSI&#9;JAVA://io.netty.channel.ChannelFuture&#10;Selector&#9;PSI&#9;JAVA://java.nio.channels.Selector&#10;RandomAccessFile&#9;PSI&#9;JAVA://java.io.RandomAccessFile&#10;ByteBuffer&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/ByteBuffer.java&#10;Selection&#9;PSI&#9;JAVA://java.nio.channels.SelectionKey&#10;AtomicInteger&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java&#10;Sequence&#9;PSI&#9;JAVA://javax.sound.midi.Sequence&#10;DateFormat&#9;PSI&#9;JAVA://java.text.DateFormat&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -505,7 +525,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578139369310" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578361498817" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -518,11 +538,11 @@
       <recent name="top.atstudy.basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.atstudy.basic.jvm.gc" />
+      <recent name="top.atstudy.basic.jvm.bytecode" />
       <recent name="top.atstudy.basic.jvm.classloader" />
       <recent name="top.atstudy.basic.juc.thread" />
       <recent name="top.atstudy.basic.netty.bio" />
-      <recent name="top.atstudy.basic.nio" />
-      <recent name="top.atstudy.basic.suanfa" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\projects\atstudy\basic-demo\src\main\java\top\atstudy\basic\jvm\classloader" />
@@ -542,13 +562,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyClassLoader10">
-    <configuration name="MyClassLoader06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.classloader.MyClassLoader06" />
+  <component name="RunManager" selected="Application.MyGCTest02">
+    <configuration name="DeadLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.memory.DeadLockTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.classloader.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jvm.memory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -556,12 +576,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoader07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.classloader.MyClassLoader07" />
+    <configuration name="HeapOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.memory.HeapOOM" />
       <module name="basic-demo" />
+      <option name="VM_PARAMETERS" value="-Xms100m -Xmx100m -XX:+HeapDumpOnOutOfMemoryError" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.classloader.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jvm.memory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -569,12 +590,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoader08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.classloader.MyClassLoader08" />
+    <configuration name="MyGCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.gc.MyGCTest" />
       <module name="basic-demo" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:PretenureSizeThreshold=4194304" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.classloader.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jvm.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -582,12 +604,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoader09" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.classloader.MyClassLoader09" />
+    <configuration name="MyGCTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.gc.MyGCTest02" />
       <module name="basic-demo" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -Xms200m -Xmx200m -Xmn50m -XX:TargetSurvivorRatio=60 -XX:+PrintTenuringDistribution -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:MaxTenuringThreshold=3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.classloader.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jvm.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -595,12 +618,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClassLoader10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.classloader.MyClassLoader10" />
+    <configuration name="SerialGCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jvm.gc.SerialGCDemo" />
       <module name="basic-demo" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jvm.classloader.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jvm.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -609,19 +633,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyClassLoader06" />
-      <item itemvalue="Application.MyClassLoader07" />
-      <item itemvalue="Application.MyClassLoader08" />
-      <item itemvalue="Application.MyClassLoader09" />
-      <item itemvalue="Application.MyClassLoader10" />
+      <item itemvalue="Application.HeapOOM" />
+      <item itemvalue="Application.DeadLockTest" />
+      <item itemvalue="Application.SerialGCDemo" />
+      <item itemvalue="Application.MyGCTest" />
+      <item itemvalue="Application.MyGCTest02" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyClassLoader10" />
-        <item itemvalue="Application.MyClassLoader09" />
-        <item itemvalue="Application.MyClassLoader08" />
-        <item itemvalue="Application.MyClassLoader07" />
-        <item itemvalue="Application.MyClassLoader06" />
+        <item itemvalue="Application.MyGCTest02" />
+        <item itemvalue="Application.MyGCTest" />
+        <item itemvalue="Application.SerialGCDemo" />
+        <item itemvalue="Application.HeapOOM" />
+        <item itemvalue="Application.DeadLockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -678,7 +702,12 @@
       <workItem from="1578024397335" duration="22274000" />
       <workItem from="1578112367317" duration="4971000" />
       <workItem from="1578139438867" duration="359000" />
-      <workItem from="1578139877136" duration="730000" />
+      <workItem from="1578139877136" duration="1921000" />
+      <workItem from="1578198539897" duration="3380000" />
+      <workItem from="1578203189683" duration="175000" />
+      <workItem from="1578203399705" duration="13808000" />
+      <workItem from="1578281302309" duration="11363000" />
+      <workItem from="1578360512452" duration="1582000" />
     </task>
     <servers />
   </component>
@@ -715,12 +744,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317785000" />
+    <option name="totallyTimeSpent" value="349284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-156" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71769816" visible="true" weight="0.19829424" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71769816" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" sideWeight="0.28230184" side_tool="true" weight="0.19402985" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -730,14 +760,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30510315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46905538" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6460369" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.8067318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.60152006" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.40499458" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.31378937" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44408253" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.5906623" />
       <window_info anchor="bottom" id="REST Client" order="13" visible="true" weight="0.6319218" />
@@ -753,6 +783,7 @@
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.23933902" />
       <window_info anchor="right" id="Key Promoter X" order="10" weight="0.32995737" />
       <window_info anchor="right" id="UML design tool window" order="11" weight="0.32995737" />
+      <window_info anchor="right" id="jclasslib" order="12" visible="true" weight="0.24626866" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71769816" visible="true" weight="0.19402985" />
@@ -834,12 +865,6 @@
           <line>11</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/oom/Oom.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/Suanfa.java</url>
@@ -1039,6 +1064,12 @@
           <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/ProxyGenerator.class</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1109,149 +1140,6 @@ new String(b, 0, 2);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/threadexception/ExceptionThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/threadexception/CaptureUncaughtException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/threadexception/HandlerThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/threadexception/ExceptionThread2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/threadexception/MyUncaughtExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/atomic/AtomicIntegerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/MyThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/gongxiang/IntGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/gongxiang/EvenChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/SynchronizedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park01/sync/ReentrantLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/exception/ExceptionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/applet/AppletClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/TransferValueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/ObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/Student2.class" />
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/MyClassLoader03.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/MyClassLoader02.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/MyClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/classloader/Car.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader05.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1414,6 +1302,20 @@ new String(b, 0, 2);</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5040">
+          <caret line="347" column="18" selection-start-line="347" selection-start-column="18" selection-end-line="347" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/util/ServiceLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1425,16 +1327,13 @@ new String(b, 0, 2);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/classloader/MyClassLoader11.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="252">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1442,25 +1341,170 @@ new String(b, 0, 2);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/DynamicSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/proxy/ProxyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/sun/proxy/$Proxy0.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/MyMemoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/HeapOOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/SerialGCDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/DeadLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10710">
+          <caret line="638" selection-start-line="638" selection-end-line="638" />
           <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#0#34481#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/ProxyGenerator.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5040">
-          <caret line="347" column="18" selection-start-line="347" selection-start-column="18" selection-end-line="347" selection-end-column="18" />
+        <state relative-caret-position="1512">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/WeakCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="3600">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2934">
+          <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/gc/MyGCTest02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
