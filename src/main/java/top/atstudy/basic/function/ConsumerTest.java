@@ -1,7 +1,8 @@
 package top.atstudy.basic.function;
 
-import java.util.Comparator;
 import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 
 /**
@@ -37,6 +38,10 @@ public class ConsumerTest {
 
         BiConsumer<Integer, Integer> p5 = Person::compare;
         p5.accept(5, 9);
+
+
+        BiFunction<Integer, Integer, Integer> p6 = Person::compare;
+        p6.apply(3, 9);
 
     }
 
