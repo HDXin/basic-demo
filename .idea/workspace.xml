@@ -5,41 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/BinaryObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/LifeCycleListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/ObservableRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/OctalObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/ThreadLifeCycleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/ThreadLifeCycleObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/volatiles/VolatileTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/volatiles/VolatileTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/waitset/WaitSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/AtomicIntegerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/UnsafeFooTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/UnsafeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Selection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/CheckoutTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/Semaphore/CheckoutTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/Semaphore/Pool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/Semaphore/SemaphoreDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/Semaphore/SemaphoreDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/TaskPortion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/TaskPortion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/countdownlatch/WaitingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/WaitingTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/cyclicbarrier/HorseRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/HorseRace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/delayqueue/DelayQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/delayqueue/DelayedTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/delayqueue/DelayedTaskConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/delayqueue/DelayedTaskConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/BasicGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/BasicGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/ExchangerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/ExchangerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/ExchangerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/ExchangerProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Fat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/Fat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/exchanger/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/exchanger/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/newstructure/scheduledexecutor/GreenhouseScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/scheduledexecutor/GreenhouseScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo05.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,7 +91,7 @@
           <entry key="Driver" value="1" />
           <entry key="FutureTask" value="2" />
           <entry key="class" value="50" />
-          <entry key="java" value="517" />
+          <entry key="java" value="521" />
           <entry key="jpeg" value="3" />
           <entry key="xml" value="4" />
         </counts>
@@ -132,7 +100,7 @@
         <counts>
           <entry key="CLASS" value="50" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="517" />
+          <entry key="JAVA" value="521" />
           <entry key="SPI" value="1" />
           <entry key="UML" value="2" />
           <entry key="XML" value="4" />
@@ -142,14 +110,14 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="dummy" value="84" />
-          <entry key="java" value="45181" />
+          <entry key="java" value="46265" />
           <entry key="xml" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="45181" />
+          <entry key="JAVA" value="46265" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="XML" value="75" />
         </counts>
@@ -195,11 +163,51 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="23" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Example.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <folding>
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/Suanfa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -295,8 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest02.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest03.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest04.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/bytecode/MyByteCodeTest05.java" />
@@ -346,6 +352,8 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/UnsafeFooTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/TaskPortion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Example.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Selection.java" />
       </list>
     </option>
   </component>
@@ -472,7 +480,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -481,31 +489,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="park03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="park03" type="462c0819:PsiDirectoryNode" />
-              <item name="newstructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="park03" type="462c0819:PsiDirectoryNode" />
-              <item name="newstructure" type="462c0819:PsiDirectoryNode" />
-              <item name="countdownlatch" type="462c0819:PsiDirectoryNode" />
+              <item name="suanfa" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -581,7 +566,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578646998412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578652755333" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -621,20 +606,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CountDownLatchDemo">
-    <configuration name="AtomicIntegerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.AtomicIntegerTest" />
-      <module name="basic-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Selection">
     <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.newstructure.countdownlatch.CountDownLatchDemo" />
       <module name="basic-demo" />
@@ -648,12 +620,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadLifeCycleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park02.subject.ThreadLifeCycleClient" />
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.suanfa.sort.Example" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park02.subject.*" />
+          <option name="PATTERN" value="top.atstudy.basic.suanfa.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Selection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.suanfa.sort.Selection" />
+      <module name="basic-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.atstudy.basic.suanfa.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -688,19 +673,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadLifeCycleClient" />
-      <item itemvalue="Application.AtomicIntegerTest" />
       <item itemvalue="Application.UnsafeTest" />
       <item itemvalue="Application.UnsafeFooTest" />
       <item itemvalue="Application.CountDownLatchDemo" />
+      <item itemvalue="Application.Example" />
+      <item itemvalue="Application.Selection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Selection" />
+        <item itemvalue="Application.Example" />
         <item itemvalue="Application.CountDownLatchDemo" />
         <item itemvalue="Application.UnsafeFooTest" />
         <item itemvalue="Application.UnsafeTest" />
-        <item itemvalue="Application.AtomicIntegerTest" />
-        <item itemvalue="Application.ThreadLifeCycleClient" />
       </list>
     </recent_temporary>
   </component>
@@ -765,7 +750,7 @@
       <workItem from="1578360512452" duration="13659000" />
       <workItem from="1578448848588" duration="23891000" />
       <workItem from="1578542126808" duration="8564000" />
-      <workItem from="1578622549043" duration="11697000" />
+      <workItem from="1578622549043" duration="15709000" />
     </task>
     <servers />
   </component>
@@ -802,14 +787,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405513000" />
+    <option name="totallyTimeSpent" value="409525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-156" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81205165" visible="true" weight="0.16311301" />
-      <window_info id="Structure" order="1" sideWeight="0.18794835" side_tool="true" visible="true" weight="0.16311301" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8117155" visible="true" weight="0.16311301" />
+      <window_info id="Structure" order="1" sideWeight="0.18828452" side_tool="true" visible="true" weight="0.16311301" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -818,13 +803,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30510315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46905538" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.24321389" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.22149837" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.21498372" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.44842562" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.31378937" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44408253" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.5906623" />
@@ -1245,34 +1230,6 @@ new String(b, 0, 2);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="806" column="20" selection-start-line="806" selection-start-column="13" selection-end-line="806" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="612" column="6" selection-start-line="612" selection-start-column="6" selection-end-line="612" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2124">
-          <caret line="252" column="39" lean-forward="true" selection-start-line="252" selection-start-column="39" selection-end-line="252" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/ComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1683,6 +1640,38 @@ new String(b, 0, 2);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="23" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/Suanfa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/suanfa/sort/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
