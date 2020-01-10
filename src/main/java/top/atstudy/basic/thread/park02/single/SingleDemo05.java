@@ -5,11 +5,11 @@ package top.atstudy.basic.thread.park02.single;
  */
 public class SingleDemo05 {
 
-    private static volatile SingleDemo05 instance = null;
+    private static SingleDemo05 instance = null;
 
     private SingleDemo05(){}
 
-    private synchronized SingleDemo05 instance(){
+    private SingleDemo05 instance(){
         if(null == instance){
             synchronized (SingleDemo05.class){
                 if(null == instance){
