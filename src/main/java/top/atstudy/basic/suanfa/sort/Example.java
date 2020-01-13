@@ -5,6 +5,16 @@ public abstract class Example {
 
     protected abstract void sort(Comparable[] a);
 
+    /**
+     * 是否打印比较路径
+     */
+    private boolean show = false;
+
+    public Example() {}
+    public Example(boolean show) {
+        this.show = show;
+    }
+
     protected boolean less(Comparable v, Comparable w){
         return v.compareTo(w) < 0;
     }
@@ -15,10 +25,19 @@ public abstract class Example {
         a[j] = t;
     }
 
-    protected void show(Comparable[] a, Integer x, Integer y){
+    protected void show(Comparable[] a, Integer x, Integer y, boolean flag){
+        if(!show)
+            return ;
+
         for (int i = 0; i < a.length; i++) {
             if((x != null && i == x) || (y != null && i == y)){
-                System.out.print("[" + a[i] + "] ");
+                if(flag){
+                    //交换
+                    System.out.print("[" + a[i] + "] ");
+                } else {
+                    //比较
+                    System.out.print("<" + a[i] + "> ");
+                }
             } else{
                 System.out.print(" " + a[i] + "  ");
             }
@@ -43,10 +62,11 @@ public abstract class Example {
             }
         };
         String[] a = {"abc", "bed", "dd", "abc", "dd"};
-        example.show(a, null, null);
+        example.show(a, null, null, false);
         example.sort(a);
         example.isSorted(a);
-        example.show(a, null, null);
+        example.show(a, null, null, false);
     }
+
 
 }
