@@ -5,21 +5,28 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * HashMap tab[] 实现
+ * LinkedHashMap 继承 HashMap
+ *
+ * HashSet 用HashMap实现
+ * LinkedHashSet 继承至HashSet,用LinkedHashMap实现有序
+ */
 public class HashMapClient {
 
     public static void main(String[] args) {
 
         Map<Student, Student> map = new LinkedHashMap<>(64);
 
-        for (int i = 0; i < 100; i++) {
-            Student student = new Student("Jerry", "address-" + i);
-            map.put(student, student);
-        }
-
-        for(Map.Entry<Student, Student> entry: map.entrySet()){
-            Student key = entry.getKey();
-            System.out.println(key.getName() + " " + key.getAddress());
-        }
+//        for (int i = 0; i < 100; i++) {
+//            Student student = new Student("Jerry", "address-" + i);
+//            map.put(student, student);
+//        }
+//
+//        for(Map.Entry<Student, Student> entry: map.entrySet()){
+//            Student key = entry.getKey();
+//            System.out.println(key.getName() + " " + key.getAddress());
+//        }
 
         int size = tableSizeFor(65);
         System.out.println(size);
