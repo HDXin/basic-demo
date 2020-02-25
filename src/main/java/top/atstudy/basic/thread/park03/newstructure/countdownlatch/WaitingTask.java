@@ -27,6 +27,6 @@ public class WaitingTask implements Runnable {
 
     @Override
     public String toString(){
-        return String.format("WaitingTask ", id);
+        return String.format("WaitingTask %1$-3d", id);
     }
 }

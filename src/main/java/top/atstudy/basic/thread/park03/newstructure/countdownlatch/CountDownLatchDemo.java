@@ -9,10 +9,11 @@ import java.util.concurrent.Executors;
  * @email huangdexin@kuaicto.com
  * @date 2019/4/12 10:25
  *
+ * 注: 全部都执行完，才能结束
  *
  */
 public class CountDownLatchDemo {
-    private static final int SIZE = 10;
+    private static final int SIZE = 100;
 
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();

@@ -10,10 +10,25 @@ public class ArrayListTest {
 
     public static void main(String[] args) {
 
-        arrayList01();
+        //ArrayList
+//        arrayList01();
+
+        //Vector
+//        arrayList02();
+
+        //
+//        arrayList03();
+
+        //
+        arrayList04();
+
 
     }
 
+    /**
+     * 多线程操作 ArrayList
+     * 出现异常：java.util.ConcurrentModificationException
+     */
     public static void arrayList01(){
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
@@ -25,6 +40,9 @@ public class ArrayListTest {
         }
     }
 
+    /**
+     * Vector 是线程安全的
+     */
     public static void arrayList02(){
         List<String> list = new Vector<>();
         for (int i = 0; i < 30; i++) {

@@ -4,6 +4,12 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
+/**
+ * 第一种：实现 Runnable 接口
+ * 第二种：继承 Thread 类
+ * 第三种：获取线程的方式
+ * 第四种：
+ */
 public class CallableTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {

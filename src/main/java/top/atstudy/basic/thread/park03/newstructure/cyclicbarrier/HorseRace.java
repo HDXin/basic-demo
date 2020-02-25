@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
  * @date 2019/4/12 11:19
+ *
+ * 注：只要有一个线程执行完，就结束
  */
 public class HorseRace {
 
@@ -54,7 +56,7 @@ public class HorseRace {
     }
 
     public static void main(String[] args) {
-        int nHorses = 3;
+        int nHorses = 37;
         int pause = 200;
         if(args.length > 0){
             int n = new Integer(args[0]);
