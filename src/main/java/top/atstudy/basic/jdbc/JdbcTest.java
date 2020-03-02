@@ -37,8 +37,8 @@ public class JdbcTest {
             // 执行查询
             System.out.println(" 实例化Statement对象...");
             stmt = conn.createStatement();
-            String sql;
-            sql = "SELECT id, name, age, phone FROM user order by id limit 0,10";
+
+            String sql = "SELECT id, name, age, phone FROM user order by id limit 0,10";
             ResultSet rs = stmt.executeQuery(sql);
 
             // 展开结果集数据库
@@ -86,15 +86,4 @@ public class JdbcTest {
     }
 
 
-    public static Connection getConnection() throws IOException, SQLException {
-
-        InputStream is = JdbcTest.class.getClassLoader().getResourceAsStream("jdbc.properties");
-        Properties properties = new Properties();
-        properties.load(is);
-
-        Connection conn = DriverManager.getConnection((String) properties.get("url"), properties);
-        System.out.println(conn);
-
-        return conn;
-    }
 }

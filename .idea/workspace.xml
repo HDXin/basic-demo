@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f69bce07-6a09-4faa-bcd6-2319be844307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/Incrementable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/LockingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/SimpleMicroBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/SynchronizingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/DemoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcBatchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcPrepareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/BaseDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/c3p0/DemoToc3p0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/dbcp/DemoToDbcp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/druid/DemoToDruid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbcp.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/collection/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/collection/ArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/CallableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/CallableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/WaitingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/WaitingTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/HorseRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/HorseRace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -105,45 +108,45 @@
         <counts>
           <entry key="Driver" value="1" />
           <entry key="FutureTask" value="2" />
-          <entry key="class" value="62" />
-          <entry key="java" value="701" />
+          <entry key="class" value="63" />
+          <entry key="java" value="711" />
           <entry key="jpeg" value="3" />
-          <entry key="properties" value="2" />
-          <entry key="xml" value="5" />
+          <entry key="properties" value="5" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="62" />
+          <entry key="CLASS" value="63" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="701" />
-          <entry key="Properties" value="2" />
+          <entry key="JAVA" value="711" />
+          <entry key="Properties" value="5" />
           <entry key="SPI" value="1" />
           <entry key="UML" value="2" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="2" />
           <entry key="dummy" value="100" />
-          <entry key="java" value="55396" />
-          <entry key="properties" value="121" />
-          <entry key="xml" value="75" />
+          <entry key="java" value="59498" />
+          <entry key="properties" value="168" />
+          <entry key="xml" value="636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="55396" />
+          <entry key="JAVA" value="59498" />
           <entry key="PLAIN_TEXT" value="100" />
-          <entry key="Properties" value="121" />
-          <entry key="XML" value="75" />
+          <entry key="Properties" value="168" />
+          <entry key="XML" value="636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="36" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="3" />
@@ -151,8 +154,8 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="4" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="6" />
           <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.27" value="1" />
@@ -167,7 +170,7 @@
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
     </session>
@@ -178,10 +181,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/druid/DemoToDruid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="90">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,51 +193,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/repository_maven/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar!/com/mysql/jdbc/Driver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/sql/DriverManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="663" column="56" lean-forward="true" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/sql/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/repository_maven/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+            <state relative-caret-position="280">
+              <caret line="66" selection-start-line="61" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -305,17 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/function/LocalDateTimeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo03.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo02.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo04.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo01.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo06.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo07.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/waitset/WaitSetTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/volatiles/VolatileTest01.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/volatiles/VolatileTest02.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/single/SingleDemo05.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/Subject.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/BinaryObserver.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park02/subject/Observer.java" />
@@ -354,8 +305,19 @@
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/SynchronizingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/LockingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/SimpleMicroBenchmark.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/DemoEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcPrepareTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcBatchTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/c3p0/DemoToc3p0.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dbcp.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/dbcp/DemoToDbcp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/druid/DemoToDruid.java" />
       </list>
     </option>
   </component>
@@ -401,6 +363,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1694" />
+    <option name="y" value="3" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -439,8 +403,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -471,16 +435,21 @@
               <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="basic-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -497,7 +466,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582596898473" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583156537269" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -513,13 +482,14 @@
       <recent name="top.atstudy.basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.atstudy.basic.jdbc" />
       <recent name="top.atstudy.basic.thread.park02.volatiles" />
       <recent name="top.atstudy.basic.thread.park02.single" />
       <recent name="top.atstudy.basic.jvm.gc" />
       <recent name="top.atstudy.basic.jvm.bytecode" />
-      <recent name="top.atstudy.basic.jvm.classloader" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\projects\atstudy\basic-demo\src\main\resources" />
       <recent name="F:\projects\atstudy\basic-demo\src\main\java\top\atstudy\basic\jvm\classloader" />
       <recent name="F:\projects\atstudy\basic-demo\src\main\java\top\atstudy\basic\io\net\udp\chat" />
       <recent name="F:\projects\atstudy\basic-demo\src\main\java\top\atstudy\basic\io\net\udp\upload" />
@@ -537,13 +507,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JdbcTest">
-    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.newstructure.countdownlatch.CountDownLatchDemo" />
+  <component name="RunManager" selected="Application.DemoToDbcp">
+    <configuration name="DemoToDbcp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jdbc.dbcp.DemoToDbcp" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park03.newstructure.countdownlatch.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jdbc.dbcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -551,12 +521,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DelayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.newstructure.delayqueue.DelayQueueDemo" />
+    <configuration name="DemoToc3p0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jdbc.c3p0.DemoToc3p0" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park03.newstructure.delayqueue.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jdbc.c3p0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -564,12 +534,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HorseRace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.newstructure.cyclicbarrier.HorseRace" />
+    <configuration name="JdbcBatchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jdbc.JdbcBatchTest" />
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park03.newstructure.cyclicbarrier.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jdbc.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcPrepareTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.jdbc.JdbcPrepareTest" />
+      <module name="basic-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.atstudy.basic.jdbc.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -582,20 +565,7 @@
       <module name="basic-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleMicroBenchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.atstudy.basic.thread.park03.tiaoyou.SimpleMicroBenchmark" />
-      <module name="basic-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.atstudy.basic.thread.park03.tiaoyou.*" />
+          <option name="PATTERN" value="top.atstudy.basic.jdbc.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -604,19 +574,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CountDownLatchDemo" />
-      <item itemvalue="Application.HorseRace" />
-      <item itemvalue="Application.DelayQueueDemo" />
-      <item itemvalue="Application.SimpleMicroBenchmark" />
       <item itemvalue="Application.JdbcTest" />
+      <item itemvalue="Application.JdbcPrepareTest" />
+      <item itemvalue="Application.JdbcBatchTest" />
+      <item itemvalue="Application.DemoToc3p0" />
+      <item itemvalue="Application.DemoToDbcp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoToDbcp" />
+        <item itemvalue="Application.DemoToc3p0" />
+        <item itemvalue="Application.JdbcBatchTest" />
+        <item itemvalue="Application.JdbcPrepareTest" />
         <item itemvalue="Application.JdbcTest" />
-        <item itemvalue="Application.SimpleMicroBenchmark" />
-        <item itemvalue="Application.DelayQueueDemo" />
-        <item itemvalue="Application.HorseRace" />
-        <item itemvalue="Application.CountDownLatchDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -693,7 +663,9 @@
       <workItem from="1579411333053" duration="4347000" />
       <workItem from="1579425187140" duration="687000" />
       <workItem from="1582529544653" duration="2474000" />
-      <workItem from="1582595297761" duration="1559000" />
+      <workItem from="1582595297761" duration="8202000" />
+      <workItem from="1582684337080" duration="10793000" />
+      <workItem from="1583138126084" duration="6652000" />
     </task>
     <servers />
   </component>
@@ -730,14 +702,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536077000" />
+    <option name="totallyTimeSpent" value="560165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1928" y="-156" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51321584" visible="true" weight="0.22844176" />
-      <window_info id="Structure" order="1" sideWeight="0.48678413" side_tool="true" visible="true" weight="0.22844176" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67053366" visible="true" weight="0.2153518" />
+      <window_info id="Structure" order="1" sideWeight="0.32946634" side_tool="true" visible="true" weight="0.2153518" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -746,13 +718,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30510315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37024972" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2545156" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5320304" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.12689805" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.21346469" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.31378937" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44408253" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.5906623" />
@@ -766,7 +738,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Remote Host" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.23933902" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.117803834" />
       <window_info anchor="right" id="Key Promoter X" order="10" weight="0.32995737" />
       <window_info anchor="right" id="UML design tool window" order="11" sideWeight="0.49726775" weight="0.32995737" />
       <window_info active="true" anchor="right" id="jclasslib" order="12" sideWeight="0.49655172" visible="true" weight="0.5351812" />
@@ -826,30 +798,6 @@
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java</url>
-          <line>476</line>
-          <properties />
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java</url>
-          <line>478</line>
-          <properties />
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java</url>
-          <line>479</line>
-          <properties />
-          <option name="timeStamp" value="206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java</url>
-          <line>481</line>
-          <properties />
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/HashMap.java</url>
           <line>2220</line>
           <properties />
@@ -866,6 +814,24 @@
           <line>31</line>
           <properties />
           <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcPrepareTest.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcBatchTest.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcBatchTest.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="219" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -931,6 +897,11 @@ System.out.println(index);</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>resultSet.getObject(field.getName())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>for(Student stu:tab){}</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -970,110 +941,9 @@ System.out.println(index);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>len</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file.getPath()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jvm/memory/JavaVmStackSOF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/WeakHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/juc/thread/CallableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/CountDownLatchDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/WaitingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/countdownlatch/TaskPortion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/Horse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/cyclicbarrier/HorseRace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/newstructure/delayqueue/DelayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/Incrementable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/thread/park03/tiaoyou/SynchronizingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1281,21 +1151,7 @@ System.out.println(index);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="891" column="15" selection-start-line="891" selection-start-column="15" selection-end-line="891" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#60784#0" expanded="true" />
-            <element signature="e#32532#32533#0" expanded="true" />
-            <element signature="e#32566#32567#0" expanded="true" />
-            <element signature="e#33488#33489#0" expanded="true" />
-            <element signature="e#33522#33523#0" expanded="true" />
-            <element signature="e#33891#33892#0" expanded="true" />
-            <element signature="e#33919#33920#0" expanded="true" />
-          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
       </provider>
     </entry>
     <entry file="jar://E:/repository_maven/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar!/com/mysql/jdbc/Driver.class">
@@ -1304,9 +1160,6 @@ System.out.println(index);</expression-string>
           <caret line="16" column="40" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1329,17 +1182,158 @@ System.out.println(index);</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/DemoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/JdbcUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="68" lean-forward="true" selection-start-column="68" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcPrepareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/base/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcBatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repository_maven/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/cfg/C3P0Config.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/c3p0-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="478" selection-start-line="478" selection-end-line="478" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/c3p0/DemoToc3p0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbcp.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/JdbcTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/dbcp/DemoToDbcp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="130">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="66" selection-start-line="61" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/atstudy/basic/jdbc/druid/DemoToDruid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
