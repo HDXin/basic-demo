@@ -43,11 +43,23 @@ public class IDUtil {
 
     public static void main(String[] args) throws ParseException {
 
-        for (int i=0; i<33; i++){
-            Long id = IDUtil.instance().next();
-            System.out.println(" ===>> id: " + id);
-        }
+//        for (int i=0; i<33; i++){
+//            Long id = IDUtil.instance().next();
+//            System.out.println(" ===>> id: " + id);
+//        }
 
+        testSecond();
+
+    }
+
+
+    private static void testSecond(){
+
+
+        System.out.println(" ==>>" + System.currentTimeMillis());
+
+        long id = 1 << 64;
+        System.out.println(" ==>> " + id);
     }
 
 

@@ -16,7 +16,7 @@ public class HashMapClient {
 
     public static void main(String[] args) {
 
-        Map<Student, Student> map = new LinkedHashMap<>(64);
+//        Map<Student, Student> map = new LinkedHashMap<>(64);
 
 //        for (int i = 0; i < 100; i++) {
 //            Student student = new Student("Jerry", "address-" + i);
@@ -28,8 +28,8 @@ public class HashMapClient {
 //            System.out.println(key.getName() + " " + key.getAddress());
 //        }
 
-        int size = tableSizeFor(65);
-        System.out.println(size);
+//        int size = tableSizeFor(0);
+//        System.out.println(size);
 
         //按位与运算(&)
 //        test01();
@@ -46,6 +46,8 @@ public class HashMapClient {
         //无符号右移(>>>)
 //        test05();
 
+        hash("abcdefghijklmnopqrstuvwxyz");
+
     }
 
     static final int tableSizeFor(int var0) {
@@ -60,18 +62,19 @@ public class HashMapClient {
 
     private static void test05(){
         System.out.println("============== 无符号右移（>>>） ================");
-        int a = 15;
-        int b = a>>>2;
+        int a = 0;
+        int b = a>>>1;
         System.out.println("   " + Integer.toBinaryString(a));
         System.out.println(">>>" + Integer.toBinaryString(b));
-        System.out.println(b);
+        System.out.println("   " + b);
 
-        System.out.println(" ---------------");
-        int x = -15;
-        int y = x>>>2;
-        System.out.println("   " + Integer.toBinaryString(x));
-        System.out.println(">>>" + Integer.toBinaryString(y));
-        System.out.println(y);
+        System.out.println("---------------");
+        int x = -1;
+        int y = x>>>1;
+        System.out.println(" x " + Integer.toBinaryString(x));
+        System.out.println(">y>" + Integer.toBinaryString(y));
+        System.out.println("   " + y);
+        System.out.println(" 1<<31 " + ((1<<30)));
 
     }
 
@@ -115,7 +118,7 @@ public class HashMapClient {
 
     /**
      * 按位 | 运算
-     * 0|0=0, 1|1=1, 1|0=1, 0|1=0
+     * 0|0=0, 1|1=1, 1|0=1, 0|1=1
      * 如下 6|2=2
      *  110
      * |010
@@ -157,7 +160,10 @@ public class HashMapClient {
         System.out.println(c);
     }
 
-
+    static final int hash(Object key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+    }
 
     static class Student {
         //姓名
