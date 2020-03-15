@@ -1,5 +1,6 @@
 package top.atstudy.basic.juc.thread;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -18,6 +19,7 @@ public class AirconditionNew {
     private Integer nums = 0;
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
+    private Condition condition2 = lock.newCondition();
 
     public void increment() {
 
@@ -33,7 +35,7 @@ public class AirconditionNew {
             System.out.println(Thread.currentThread().getName() + "生成一个, 现有: " + nums);
 
             //3、通知
-            condition.signalAll();
+            condition2.signal();
         } catch (Exception e){
             e.printStackTrace();
         } finally {
@@ -47,7 +49,7 @@ public class AirconditionNew {
         try {
             //1、判断
             while (nums == 0){
-                condition.await();
+                condition2.await();
             }
 
             //2、干活
@@ -55,7 +57,7 @@ public class AirconditionNew {
             System.out.println(Thread.currentThread().getName() + "消费一个, 剩余: " + nums);
 
             //3、通知
-            condition.signalAll();
+            condition.signal();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -67,29 +69,21 @@ public class AirconditionNew {
 
         AirconditionNew aircondition = new AirconditionNew();
 
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                aircondition.increment();
-            }
-        }, "AA").start();
+        for (int i = 0; i < 3; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 10; j++) {
+                    aircondition.increment();
+                }
+            }, "+" + i).start();
+        }
 
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                aircondition.increment();
-            }
-        }, "AB").start();
-
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                aircondition.decrement();
-            }
-        }, "BA").start();
-
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                aircondition.decrement();
-            }
-        }, "BB").start();
+        for (int i = 0; i < 3; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 10; j++) {
+                    aircondition.decrement();
+                }
+            }, "-" + i).start();
+        }
     }
 
 }

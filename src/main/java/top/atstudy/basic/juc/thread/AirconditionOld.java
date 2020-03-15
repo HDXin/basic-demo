@@ -47,45 +47,29 @@ public class AirconditionOld {
 
         AirconditionOld condition = new AirconditionOld();
 
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    condition.increment();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        for (int i = 0; i < 5; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 10; j++) {
+                    try {
+                        condition.increment();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
-        }, "AA").start();
+            }, "+" + i).start();
+        }
 
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    condition.increment();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        for (int i = 0; i < 5; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 10; j++) {
+                    try {
+                        condition.decrement();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
-        }, "AB").start();
-
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    condition.decrement();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, "BA").start();
-
-        new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    condition.decrement();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, "BB").start();
+            }, "-" + i).start();
+        }
     }
 
 }

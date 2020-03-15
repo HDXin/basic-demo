@@ -1,10 +1,9 @@
 package top.atstudy.basic.juc.atomic;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -14,9 +13,9 @@ public class AtomicIntegerTest {
 
 //        demo();
 
-//        demo02();
+        demo02();
 
-        demo03();
+//        demo03();
 
     }
 
@@ -31,29 +30,30 @@ public class AtomicIntegerTest {
 
     private static void demo02() {
         AtomicInteger a = new AtomicInteger(100);
+        Map<String, List<Integer>> resultMap = new ConcurrentHashMap<>();
 
-        Map<String, List<Integer>> resultMap = new HashMap<>();
+        int size = 10;
+        CountDownLatch latch = new CountDownLatch(size);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < size; i++) {
             new Thread(() -> {
                 resultMap.put(Thread.currentThread().getName(), new CopyOnWriteArrayList<>());
-
-                for (int j = 0; j < 30; j++) {
-//                    int result = a.addAndGet(1);
+                for (int j = 0; j < 10; j++) {
                     int result = a.incrementAndGet();
-                    try { TimeUnit.MILLISECONDS.sleep(20); } catch (InterruptedException e) { }
+                    try { TimeUnit.MILLISECONDS.sleep(new Random().nextInt(20)); } catch (InterruptedException e) { }
 
                     resultMap.get(Thread.currentThread().getName()).add(result);
                 }
+
+                latch.countDown();
             }, "t-" + i).start();
         }
 
         try {
-            TimeUnit.SECONDS.sleep(10);
+            latch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         resultMap.forEach((key, value) -> {
             System.out.print(key + " ");
             value.forEach(item -> System.out.print(item + " "));
