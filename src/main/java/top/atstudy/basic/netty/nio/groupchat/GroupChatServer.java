@@ -123,6 +123,8 @@ public class GroupChatServer {
                 SocketChannel dest = (SocketChannel) targetChannel;
                 //将 msg 存储到 buffer
                 ByteBuffer buffer = ByteBuffer.wrap(msg.getBytes());
+
+
                 //将buffer的数据写入通道
                 dest.write(buffer);
             }

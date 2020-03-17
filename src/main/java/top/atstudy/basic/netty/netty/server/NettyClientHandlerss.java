@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.server;
+package top.atstudy.basic.netty.netty.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

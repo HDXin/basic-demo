@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.groupchat;
+package top.atstudy.basic.netty.netty.groupchat;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;

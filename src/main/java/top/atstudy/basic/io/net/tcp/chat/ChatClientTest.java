@@ -29,7 +29,11 @@ public class ChatClientTest {
             dos.writeUTF(data);
 
             DataInputStream dis = new DataInputStream(socket.getInputStream());
-            System.out.println(dis.readUTF());
+            String response = dis.readUTF();
+            System.out.println(response);
+            if(response != null && "exit".equals(response)){
+                break;
+            }
         }
 
         // 3、释放资源

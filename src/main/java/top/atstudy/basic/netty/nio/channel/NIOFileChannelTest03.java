@@ -13,20 +13,33 @@ public class NIOFileChannelTest03 {
 //        copy02();
 
         //内存中修改
-        readerWriter();
+//        readerWriter();
+
+
 
     }
 
+
+    private static void demo(){
+
+
+
+    }
+
+    /**
+     * 文件在内存中修改
+     * @throws IOException
+     */
     public static void readerWriter() throws IOException {
 
         RandomAccessFile raf = new RandomAccessFile("F://temp/test.txt", "rw");
 
         FileChannel fileChannel = raf.getChannel();
 
-        MappedByteBuffer buffer = fileChannel.map(FileChannel.MapMode.READ_WRITE, 0, 10);
-        buffer.put(0, (byte)'A');
+        MappedByteBuffer buffer = fileChannel.map(FileChannel.MapMode.READ_WRITE, 0, 20);
+        buffer.put(0, (byte)'T');
         buffer.put(2, (byte)'0');
-        buffer.put(10, (byte)'Z');
+        buffer.put(10, (byte)'Y');
         System.out.println("修改成功...");
 
         raf.close();
@@ -51,6 +64,10 @@ public class NIOFileChannelTest03 {
 
     }
 
+    /**
+     * channel buffer 拷贝
+     * @throws IOException
+     */
     public static void test01() throws IOException {
         //创建一个输入流 buffer
         FileInputStream fis = new FileInputStream("F://temp/11.jpeg");

@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.groupchat;
+package top.atstudy.basic.netty.netty.groupchat;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -7,7 +7,6 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
-import jdk.management.resource.internal.inst.SocketChannelImplRMHooks;
 
 public class GroupChatServer {
 

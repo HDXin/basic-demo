@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.server;
+package top.atstudy.basic.netty.netty.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

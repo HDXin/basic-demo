@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.groupchat;
+package top.atstudy.basic.netty.netty.groupchat;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
