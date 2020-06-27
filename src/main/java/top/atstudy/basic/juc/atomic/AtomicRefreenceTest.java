@@ -22,8 +22,8 @@ public class AtomicRefreenceTest {
 
     private static void demo05(){
 
-        Integer a = 127;
-        Integer b = 127;
+        Integer a = 128;
+        Integer b = 128;
         Integer c = 1000;
         Integer d = 1000;
         System.out.println(a == b);

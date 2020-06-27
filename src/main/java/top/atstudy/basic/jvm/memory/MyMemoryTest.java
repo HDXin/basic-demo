@@ -22,4 +22,18 @@ package top.atstudy.basic.jvm.memory;
  * 3、对齐填充：
  */
 public class MyMemoryTest {
+
+    public static void main(String[] args) {
+
+        String a = "abcdefghijklmnopqrstuvwxyz";
+
+        while (true){
+            a.intern();
+        }
+
+
+    }
+
+
+
 }

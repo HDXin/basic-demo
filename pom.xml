@@ -64,25 +64,36 @@
       <artifactId>druid</artifactId>
       <version>1.1.21</version>
     </dependency>
-
-
+    <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>3.2.0</version>
+    </dependency>
 
     <!-- logging -->
     <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <scope>runtime</scope>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.2</version>
+        <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
-      <scope>runtime</scope>
-    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>org.apache.logging.log4j</groupId>-->
+      <!--<artifactId>log4j-api</artifactId>-->
+      <!--<scope>runtime</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.logging.log4j</groupId>-->
+      <!--<artifactId>log4j-core</artifactId>-->
+      <!--<scope>runtime</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.logging.log4j</groupId>-->
+      <!--<artifactId>log4j-slf4j-impl</artifactId>-->
+      <!--<scope>runtime</scope>-->
+    <!--</dependency>-->
 
     <!-- testing -->
     <dependency>
