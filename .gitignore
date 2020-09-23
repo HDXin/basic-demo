@@ -1,5 +1,3 @@
 target/*
-.idea*
-.idea/workspace.xml
-basic-demo.iml
 .idea/*
+basic-demo.iml
