@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @Author: dexin.huang or harley
@@ -32,8 +34,12 @@ public class JsonConvertTest {
 
         Order order = getOrder();
         String str = new ObjectMapper().writeValueAsString(order);
-        Order temp = new ObjectMapper().readValue(str, Order.class);
-        System.out.println(" ===>> " + temp.toString());
+//        Order temp = new ObjectMapper().readValue(str, Order.class);
+        Map<String, Object> temp = new ObjectMapper().readValue(str, Map.class);
+        System.out.println(" ===>> source: " + temp.toString());
+
+        sortMap(temp);
+        System.out.println(" ===>> after: " + temp);
 
     }
 
@@ -52,4 +58,15 @@ public class JsonConvertTest {
 
         return order;
     }
+
+    public static Map<String, Object> sortMap(Map<String, Object> map) {
+        if (map == null || map.isEmpty()) {
+            return null;
+        }
+        Map<String, Object> sortMap = new TreeMap<String, Object>((k1, k2) -> k1.compareTo(k2));
+        sortMap.putAll(map);
+        return sortMap;
+    }
+
+
 }
