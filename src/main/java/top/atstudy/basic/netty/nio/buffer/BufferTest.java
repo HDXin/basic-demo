@@ -13,7 +13,7 @@ public class BufferTest {
 
     public static void main(String[] args) {
 
-        IntBuffer buf = IntBuffer.allocate(8);
+        IntBuffer buf = IntBuffer.allocate(5);
 
         System.out.println(" ====>> put2 ");
         for (int i = 0; i < buf.capacity() - 3; i++) {

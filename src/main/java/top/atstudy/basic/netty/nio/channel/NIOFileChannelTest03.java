@@ -9,11 +9,14 @@ public class NIOFileChannelTest03 {
 
     public static void main(String[] args) throws IOException {
 
-        //
+        // 拷贝
+//        copy01();
+
+        // 拷贝
 //        copy02();
 
         //内存中修改
-//        readerWriter();
+        readerWriter();
 
 
 
@@ -32,7 +35,7 @@ public class NIOFileChannelTest03 {
      */
     public static void readerWriter() throws IOException {
 
-        RandomAccessFile raf = new RandomAccessFile("F://temp/test.txt", "rw");
+        RandomAccessFile raf = new RandomAccessFile("D://temp/test01.txt", "rw");
 
         FileChannel fileChannel = raf.getChannel();
 
@@ -46,12 +49,16 @@ public class NIOFileChannelTest03 {
         fileChannel.close();
     }
 
+    /**
+     * 文件拷贝
+     * @throws IOException
+     */
     public static void copy02() throws IOException {
 
-        FileInputStream fis = new FileInputStream("F://temp/11.jpeg");
+        FileInputStream fis = new FileInputStream("D://temp/timg.jpg");
         FileChannel inChannel = fis.getChannel();
 
-        FileOutputStream fos = new FileOutputStream("F://temp/99.jpeg");
+        FileOutputStream fos = new FileOutputStream("D://temp/99.jpg");
         FileChannel outChannel = fos.getChannel();
 
 
@@ -68,13 +75,13 @@ public class NIOFileChannelTest03 {
      * channel buffer 拷贝
      * @throws IOException
      */
-    public static void test01() throws IOException {
+    public static void copy01() throws IOException {
         //创建一个输入流 buffer
-        FileInputStream fis = new FileInputStream("F://temp/11.jpeg");
+        FileInputStream fis = new FileInputStream("D://temp/timg.jpg");
         FileChannel inChannel = fis.getChannel();
 
         //创建一个输出流 buffer
-        FileOutputStream fos = new FileOutputStream("F://temp/55.jpeg");
+        FileOutputStream fos = new FileOutputStream("D://temp/55.jpg");
         FileChannel outChanell = fos.getChannel();
 
         //创建一个缓存区
