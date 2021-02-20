@@ -14,7 +14,7 @@ public class NettyServer {
     public static void main(String[] args) throws InterruptedException {
 
         /**
-         * 创建 boosGroup 和 workerGroup
+         * 创建 bossGroup 和 workerGroup
          * 说明
          * 1、创建两个线程组 boosGroup 和 workerGroup
          * 2、bossGroup 只是处理连接请求，真正的和客户端业务处理，会交给 workerGroup 完成
@@ -32,7 +32,7 @@ public class NettyServer {
                     .channel(NioServerSocketChannel.class) //使用 NioSocketChannel 作为服务器的通道实现
                     .option(ChannelOption.SO_BACKLOG, 128) //设置线程队列得到连接个数
                     .childOption(ChannelOption.SO_KEEPALIVE, true) //设置保持活动连接状态
-                    .childHandler(new ChannelInitializer<SocketChannel>() { //创建一个通道测试对象（匿名对象）
+                    .chil:xdHandler(new ChannelInitializer<SocketChannel>() { //创建一个通道测试对象（匿名对象）
                         //给 pipeline 设置处理器
                         @Override
                         protected void initChannel(SocketChannel channel) throws Exception {
@@ -49,7 +49,6 @@ public class NettyServer {
             cf.channel().closeFuture().sync();
 
         } finally {
-
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
 
