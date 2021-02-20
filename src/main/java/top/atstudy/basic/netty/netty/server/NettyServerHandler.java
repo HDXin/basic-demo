@@ -20,20 +20,21 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
      * 读取数据（这里我们可以读取客户端发送的消息）
      * 1、ChannelHandlerContext ctx: 上下文对象， 含有管道 pipeline, 通道：channel, 地址
      * 2、Object msg: 就是客户端发送的数据 默认：Object
+     *
      * @param ctx
      * @param msg
      * @throws Exception
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        System.out.println(" 服务器端线程： " + Thread.currentThread().getName());
+        System.out.println(" ctx: " + ctx);
 
-        System.out.println(" ====>> 线程：" + Thread.currentThread().getName());
-        System.out.println("server ctx = " + ctx);
         //将msg转成一个 ByteBuf
         //ByteBuf 是 netty 提供的，不是 NIO 的 ByteBuffer
         ByteBuf buf = (ByteBuf) msg;
-        System.out.println(" ===>> 客户端发送的消息是： " + buf.toString(CharsetUtil.UTF_8));
-        System.out.println(" ===>> 客户端地址： " + ctx.channel().remoteAddress());
+        System.out.println(" 客户端： " + buf.toString(CharsetUtil.UTF_8));
+        System.out.println(" 客户端地址： " + ctx.channel().remoteAddress());
 
         ctx.channel().eventLoop().execute(new Runnable() {
             @Override
@@ -42,7 +43,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
                     TimeUnit.SECONDS.sleep(10);
                     ctx.writeAndFlush(Unpooled.copiedBuffer("hello netty 客户端 111", CharsetUtil.UTF_8));
                 } catch (InterruptedException e) {
-                    System.out.println(" ===>> exception: " + e);
+                    System.out.println("ex: " + e);
                 }
             }
         });
@@ -51,8 +52,8 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
             try {
                 TimeUnit.SECONDS.sleep(20);
                 ctx.writeAndFlush(Unpooled.copiedBuffer("hello netty 客户端 555", CharsetUtil.UTF_8));
-            }catch (Exception e){
-                System.out.println(" ===>> exception: " + e);
+            } catch (Exception e) {
+                System.out.println("ex: " + e);
             }
         });
 
@@ -61,6 +62,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 数据读取完毕
+     *
      * @param ctx
      * @throws Exception
      */
@@ -77,6 +79,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 处理异常，一般是关闭通道
+     *
      * @param ctx
      * @param cause
      * @throws Exception
