@@ -1,12 +1,13 @@
-package top.atstudy.basic.netty.netty.server;
+package top.atstudy.basic.netty.netty.httpserver;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import top.atstudy.basic.netty.netty.server.NettyServerHandler;
 
-public class NettyServer {
+public class HttpServer {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -29,27 +30,22 @@ public class NettyServer {
                     .channel(NioServerSocketChannel.class) //使用 NioSocketChannel 作为服务器的通道实现
                     .option(ChannelOption.SO_BACKLOG, 128) //设置线程队列得到连接个数
                     .childOption(ChannelOption.SO_KEEPALIVE, true) //设置保持活动连接状态
-                    .childHandler(new ChannelInitializer<SocketChannel>() { //创建一个通道测试对象（匿名对象）
-                        //给 pipeline 设置处理器
-                        @Override
-                        protected void initChannel(SocketChannel channel) throws Exception {
-                            channel.pipeline().addLast(new NettyServerHandler());
-                        }
-                    }); // 给我们的 workerGroup 的 EventLoop 对应的管道设置处理器
+//                    .handler(null) // 给我们的 bossGroup 的 EventLoop 对应的管道设置处理器
+                    .childHandler(new HttpServerInitializer()); // 给我们的 workerGroup 的 EventLoop 对应的管道设置处理器
 
             System.out.println(" ... 服务器 is ready ... ");
 
             //绑定一个端口并且同步， 生成一个 ChannelFuture 对象
-            ChannelFuture cf = bootstrap.bind(8888).sync();
+            ChannelFuture cf = bootstrap.bind(7777).sync();
 
 
             cf.addListener(new ChannelFutureListener() {
                 @Override
                 public void operationComplete(ChannelFuture channelFuture) throws Exception {
                     if (cf.isSuccess()) {
-                        System.out.println("监听端口 8888 成功");
+                        System.out.println("监听端口 7777 成功");
                     } else {
-                        System.out.println("监听端口 8888 失败");
+                        System.out.println("监听端口 7777 失败");
                     }
                 }
             });

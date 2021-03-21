@@ -36,6 +36,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println(" 客户端： " + buf.toString(CharsetUtil.UTF_8));
         System.out.println(" 客户端地址： " + ctx.channel().remoteAddress());
 
+
         ctx.channel().eventLoop().execute(new Runnable() {
             @Override
             public void run() {

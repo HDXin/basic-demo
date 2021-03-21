@@ -66,6 +66,25 @@
       <version>3.2.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.3.10</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+    </dependency>
+
+      <dependency>
+          <groupId>org.jsoup</groupId>
+          <artifactId>jsoup</artifactId>
+          <version>1.12.1</version>
+      </dependency>
+
+
     <!-- logging -->
     <dependency>
         <groupId>commons-logging</groupId>
@@ -151,5 +170,22 @@
 
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <layout>default</layout>
+      <!-- 是否开启发布版构件下载 -->
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <!-- 是否开启快照版构件下载 -->
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
 </project>
