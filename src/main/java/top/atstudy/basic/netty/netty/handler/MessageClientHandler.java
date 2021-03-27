@@ -1,7 +1,9 @@
 package top.atstudy.basic.netty.netty.handler;
 
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.util.CharsetUtil;
 
 /**
  * 说明
@@ -17,6 +19,7 @@ public class MessageClientHandler extends SimpleChannelInboundHandler<Long> {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         System.out.println("MyClientHandler 发送数据");
-        ctx.writeAndFlush(123456L);
+//        ctx.writeAndFlush(123L);
+        ctx.writeAndFlush(Unpooled.copiedBuffer("abcdabcdabcdabcd", CharsetUtil.UTF_8));
     }
 }
