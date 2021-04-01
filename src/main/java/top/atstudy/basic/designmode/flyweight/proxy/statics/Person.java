@@ -1,7 +1,8 @@
 package top.atstudy.basic.designmode.flyweight.proxy.statics;
 
-import top.atstudy.basic.designmode.flyweight.proxy.statics.IPerson;
-
+/**
+ * 真实主题角色
+ */
 public class Person implements IPerson {
     @Override
     public void say() {

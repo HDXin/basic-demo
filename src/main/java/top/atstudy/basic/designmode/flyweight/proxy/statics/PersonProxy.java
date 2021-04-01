@@ -1,10 +1,12 @@
 package top.atstudy.basic.designmode.flyweight.proxy.statics;
 
-import top.atstudy.basic.designmode.flyweight.proxy.statics.IPerson;
-
+/**
+ * 代理主题角色
+ */
 public class PersonProxy implements IPerson {
 
     private IPerson person;
+
     public PersonProxy(IPerson person) {
         this.person = person;
     }
@@ -13,5 +15,6 @@ public class PersonProxy implements IPerson {
     public void say() {
         System.out.println(" ===>> before say ... ");
         person.say();
+        System.out.println(" ===>> end say ... ");
     }
 }
