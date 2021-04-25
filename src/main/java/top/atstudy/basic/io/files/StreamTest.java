@@ -1,6 +1,8 @@
 package top.atstudy.basic.io.files;
 
 import java.io.*;
+import java.math.BigDecimal;
+import java.util.concurrent.TimeUnit;
 
 public class StreamTest {
 
@@ -26,12 +28,15 @@ public class StreamTest {
 
 //        demo10();
 
-        demo11();
+//        demo11();
+
+//        demo12();
 
     }
 
     /**
      * 字节：输入流
+     *
      * @throws IOException
      */
     private static void demo01() throws IOException {
@@ -39,9 +44,9 @@ public class StreamTest {
         FileInputStream fis = new FileInputStream("F://temp/test.txt");
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
-        byte[] b = new byte[1024*3];
+        byte[] b = new byte[1024 * 3];
         int len = 0;
-        if((len = fis.read(b)) != -1){
+        if ((len = fis.read(b)) != -1) {
             bos.write(b, 0, len);
         }
 
@@ -52,6 +57,7 @@ public class StreamTest {
 
     /**
      * 字节：输出流
+     *
      * @throws IOException
      */
     private static void demo02() throws IOException {
@@ -62,7 +68,7 @@ public class StreamTest {
 
         int len = 0;
         byte[] b = new byte[11];
-        while ((len = fis.read(b)) != -1){
+        while ((len = fis.read(b)) != -1) {
             fos.write(b, 0, len);
         }
 
@@ -72,6 +78,7 @@ public class StreamTest {
 
     /**
      * 字节：缓冲流
+     *
      * @throws IOException
      */
     private static void demo03() throws IOException {
@@ -81,7 +88,7 @@ public class StreamTest {
 
         int len = 0;
         byte[] b = new byte[1024];
-        while ((len = bis.read(b)) != -1){
+        while ((len = bis.read(b)) != -1) {
             bos.write(b, 0, len);
         }
 
@@ -91,17 +98,18 @@ public class StreamTest {
 
     /**
      * 字符流
+     *
      * @throws IOException
      */
     private static void demo04() throws IOException {
 
-        FileReader fr  = new FileReader("F://temp/test.txt");
+        FileReader fr = new FileReader("F://temp/test.txt");
         FileWriter fw = new FileWriter("F://temp/demo.txt");
 
         int len = 0;
         char[] c = new char[5];
 
-        while ((len = fr.read(c)) != -1){
+        while ((len = fr.read(c)) != -1) {
             fw.write(c, 0, len);
         }
 
@@ -112,6 +120,7 @@ public class StreamTest {
 
     /**
      * 字符缓冲流
+     *
      * @throws IOException
      */
     private static void demo05() throws IOException {
@@ -121,7 +130,7 @@ public class StreamTest {
 
         int len = 0;
         char[] c = new char[11];
-        while ((len = br.read(c)) != -1){
+        while ((len = br.read(c)) != -1) {
             bw.write(c, 0, len);
         }
         br.close();
@@ -130,6 +139,7 @@ public class StreamTest {
 
     /**
      * 对象输输出流
+     *
      * @throws IOException
      */
     private static void demo06() throws IOException {
@@ -143,6 +153,7 @@ public class StreamTest {
 
     /**
      * 对象输入流
+     *
      * @throws IOException
      * @throws ClassNotFoundException
      */
@@ -155,15 +166,14 @@ public class StreamTest {
     }
 
 
-
     /**
      * PrintStream(OutputStream out) 的测试函数
-     *
+     * <p>
      * 函数的作用，就是将字母“abcde”写入到文件“file.txt”中
      */
     private static void demo08() {
         // 0x61对应ASCII码的字母'a'，0x62对应ASCII码的字母'b', ...
-        final byte[] arr={0x61, 0x62, 0x63, 0x64, 0x65 }; // abced
+        final byte[] arr = {0x61, 0x62, 0x63, 0x64, 0x65}; // abced
         try {
             // 创建文件“file.txt”的File对象
             File file = new File("file.txt");
@@ -181,11 +191,11 @@ public class StreamTest {
 
     /**
      * PrintStream(File file) 的测试函数
-     *
+     * <p>
      * 函数的作用，就是将字母“abcde”写入到文件“file.txt”中
      */
     private static void demo09() {
-        final byte[] arr={0x61, 0x62, 0x63, 0x64, 0x65 };
+        final byte[] arr = {0x61, 0x62, 0x63, 0x64, 0x65};
         try {
             File file = new File("file.txt");
             PrintStream out = new PrintStream(file);
@@ -198,11 +208,11 @@ public class StreamTest {
 
     /**
      * PrintStream(String fileName) 的测试函数
-     *
+     * <p>
      * 函数的作用，就是将字母“abcde”写入到文件“file.txt”中
      */
     private static void demo10() {
-        final byte[] arr={0x61, 0x62, 0x63, 0x64, 0x65 };
+        final byte[] arr = {0x61, 0x62, 0x63, 0x64, 0x65};
         try {
             PrintStream out = new PrintStream("file.txt");
             out.write(arr);
@@ -217,7 +227,7 @@ public class StreamTest {
      */
     private static void demo11() {
         // 0x61对应ASCII码的字母'a'，0x62对应ASCII码的字母'b', ...
-        final byte[] arr={0x61, 0x62, 0x63, 0x64, 0x65 }; // abced
+        final byte[] arr = {0x61, 0x62, 0x63, 0x64, 0x65}; // abced
         try {
             // 创建文件对应FileOutputStream
 //            PrintStream out = new PrintStream("other.txt");
@@ -247,6 +257,46 @@ public class StreamTest {
         }
     }
 
+    private static void demo12() throws IOException {
+
+        PipedOutputStream pos = new PipedOutputStream();
+        PipedInputStream pis = new PipedInputStream();
+
+        pis.connect(pos);
+
+        Thread t = new Thread(() -> {
+            try {
+                for (int i = 0; i < 10; i++) {
+                    TimeUnit.SECONDS.sleep(1);
+                    System.out.println(" ======>> input " + i);
+                    pos.write(("hello world " + i + " \n").getBytes());
+                }
+            } catch (IOException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+
+            int data = 0;
+            try {
+                data = pis.read();
+                while (data != -1) {
+                    System.out.print((char) data);
+                    data = pis.read();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+        t.start();
+        t2.start();
+
+//        pis.close();
+//        pos.close();
+
+    }
 
 
 }
