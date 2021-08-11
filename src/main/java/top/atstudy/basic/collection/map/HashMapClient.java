@@ -1,14 +1,11 @@
 package top.atstudy.basic.collection.map;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Objects;
 
 /**
  * HashMap tab[] 实现
  * LinkedHashMap 继承 HashMap
- *
+ * <p>
  * HashSet 用HashMap实现
  * LinkedHashSet 继承至HashSet,用LinkedHashMap实现有序
  */
@@ -60,21 +57,21 @@ public class HashMapClient {
         return var1 < 0 ? 1 : (var1 >= 1073741824 ? 1073741824 : var1 + 1);
     }
 
-    private static void test05(){
+    private static void test05() {
         System.out.println("============== 无符号右移（>>>） ================");
         int a = 0;
-        int b = a>>>1;
+        int b = a >>> 1;
         System.out.println("   " + Integer.toBinaryString(a));
         System.out.println(">>>" + Integer.toBinaryString(b));
         System.out.println("   " + b);
 
         System.out.println("---------------");
         int x = -1;
-        int y = x>>>1;
+        int y = x >>> 1;
         System.out.println(" x " + Integer.toBinaryString(x));
         System.out.println(">y>" + Integer.toBinaryString(y));
         System.out.println("   " + y);
-        System.out.println(" 1<<31 " + ((1<<30)));
+        System.out.println(" 1<<31 " + ((1 << 30)));
 
     }
 
@@ -82,7 +79,7 @@ public class HashMapClient {
      * 取反(~)运算
      * 如下示例 ~5=-6
      */
-    private static void test04(){
+    private static void test04() {
         System.out.println("============== 取反（~） ================");
         int a = 5;
         int b = ~a;
@@ -97,17 +94,17 @@ public class HashMapClient {
      * 异或(^)运算
      * 1^1=0, 0^0=0, 1^0=1, 0^1=1
      * 如下示例 5^9=12
-     *  0101
+     * 0101
      * ^1001
-     *  ----
-     *  1100
+     * ----
+     * 1100
      */
-    private static void test03(){
+    private static void test03() {
         System.out.println("============== 异或（^） ================");
 
         int a = 5;
         int b = 9;
-        int c = 5^9;
+        int c = 5 ^ 9;
         System.out.println("  " + Integer.toBinaryString(a));
         System.out.println("^" + Integer.toBinaryString(b));
         System.out.println(" ----");
@@ -120,12 +117,12 @@ public class HashMapClient {
      * 按位 | 运算
      * 0|0=0, 1|1=1, 1|0=1, 0|1=1
      * 如下 6|2=2
-     *  110
+     * 110
      * |010
      * ----
-     *  110
+     * 110
      */
-    private static void test02(){
+    private static void test02() {
         System.out.println("============== 按位或（|） ================");
         int a = 6;
         int b = 2;
@@ -142,12 +139,12 @@ public class HashMapClient {
      * 按位 & 运算
      * 1&1=1, 1&0=0, 0&1=0, 0&0=0
      * 如下：5&7=5
-     *  101
+     * 101
      * &111
      * ----
-     *  101
+     * 101
      */
-    private static void test01(){
+    private static void test01() {
         System.out.println("============== 按位与（&） ================");
         int a = 5;
         int b = 7;

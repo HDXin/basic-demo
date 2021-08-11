@@ -20,9 +20,8 @@ public class ListClient {
 
         insert(10000000, 10);
     }
-    
-    
-    
+
+
     private static void insert(int size, int count) throws InterruptedException {
         System.out.print("【");
         long mills = 0;
@@ -41,7 +40,7 @@ public class ListClient {
             mills = mills + (end - start);
         }
         System.out.print("】");
-        System.out.println(" avg:" + (mills/count));
+        System.out.println(" avg:" + (mills / count));
         mills = 0;
         System.out.println();
         System.out.print("【");
@@ -61,7 +60,7 @@ public class ListClient {
             mills = mills + (end - start);
         }
         System.out.print("】");
-        System.out.println(" avg:" + (mills/count));
+        System.out.println(" avg:" + (mills / count));
         System.out.println();
 
 

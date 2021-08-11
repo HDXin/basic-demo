@@ -10,13 +10,13 @@ public class AuthImpl implements Auth {
 
     @Override
     public int add(int a, int b) {
-        System.out.println(a + ", " + b);
+        System.out.println(a + " + " + b);
         return a + b;
     }
 
     @Override
     public int sub(int a, int b) {
-        System.out.println(a + ", " + b);
+        System.out.println(a + " - " + b);
         return Math.max(a, b) - Math.min(a, b);
     }
 

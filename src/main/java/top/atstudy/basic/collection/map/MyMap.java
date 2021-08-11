@@ -6,22 +6,23 @@ import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public interface MyMap<K,V> {
+public interface MyMap<K, V> {
 
     /**
      * 当map中包含超过 Integer.MAX_VALUE 个元素数时， 返回：Integer.MAX_VALUE
+     *
      * @return map 中 key-value 数
      */
     int size();
 
     /**
      * 当map中无 key-value 键值对时返回：true
+     *
      * @return 当map中无 key-value 键值对时，返回: true
      */
     boolean isEmpty();
 
     /**
-     * 
      * @param key
      * @return
      */
@@ -141,29 +142,29 @@ public interface MyMap<K,V> {
         return true;
     }
 
-    default boolean replace(K key, V oldValue, V newValue){
+    default boolean replace(K key, V oldValue, V newValue) {
         Object curValue = get(key);
-        if(!Objects.equals(curValue, oldValue) || (curValue == null && !containsKey(key)))
-                return false;
+        if (!Objects.equals(curValue, oldValue) || (curValue == null && !containsKey(key)))
+            return false;
 
         put(key, newValue);
         return true;
     }
 
-    default V replace(K key, V value){
+    default V replace(K key, V value) {
         V curValue;
-        if(((curValue = get(key)) != null) || containsKey(key)){
+        if (((curValue = get(key)) != null) || containsKey(key)) {
             curValue = put(key, value);
         }
         return curValue;
     }
 
-    default V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction){
+    default V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction) {
         Objects.requireNonNull(mappingFunction);
         V v;
-        if((v = get(key)) == null){
+        if ((v = get(key)) == null) {
             V newValue;
-            if((newValue = mappingFunction.apply(key)) != null){
+            if ((newValue = mappingFunction.apply(key)) != null) {
                 put(key, newValue);
                 return newValue;
             }
@@ -172,50 +173,50 @@ public interface MyMap<K,V> {
         return v;
     }
 
-    default V computeIfPresent(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction){
+    default V computeIfPresent(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         V oldValue;
-        if((oldValue = get(key)) != null){
+        if ((oldValue = get(key)) != null) {
             V newValue = remappingFunction.apply(key, oldValue);
-            if(newValue != null){
+            if (newValue != null) {
                 put(key, newValue);
                 return newValue;
-            }else{
+            } else {
                 remove(key);
                 return null;
             }
-        }else{
+        } else {
             return null;
         }
     }
 
-    default V compute(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction){
+    default V compute(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         V oldValue = get(key);
 
         V newValue = remappingFunction.apply(key, oldValue);
-        if(newValue == null){
-            if(oldValue != null || containsKey(key)){
+        if (newValue == null) {
+            if (oldValue != null || containsKey(key)) {
                 remove(key);
                 return null;
-            }else{
+            } else {
                 return null;
             }
-        }else{
+        } else {
             put(key, newValue);
             return newValue;
         }
     }
 
-    default V merge(K key, V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction){
+    default V merge(K key, V value, BiFunction<? super V, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         Objects.requireNonNull(value);
         V oldValue = get(key);
-        V newValue = (oldValue == null) ? value:remappingFunction.apply(oldValue, value);
+        V newValue = (oldValue == null) ? value : remappingFunction.apply(oldValue, value);
 
-        if(newValue == null){
+        if (newValue == null) {
             remove(key);
-        }else{
+        } else {
             put(key, newValue);
         }
 

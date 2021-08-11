@@ -1,10 +1,8 @@
 package top.atstudy.basic.collection.map;
 
-import sun.java2d.pipe.SpanShapeRenderer;
-
 import java.util.*;
 
-public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
+public abstract class MyAbstractMap<K, V> implements MyMap<K, V> {
 
     public MyAbstractMap() {
     }
@@ -21,17 +19,17 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
     @Override
     public boolean containsKey(Object key) {
-        Iterator<MyMap.Entry<K,V>> i = entrySet().iterator();
-        if(key == null){
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(e.getKey() == null)
+        Iterator<MyMap.Entry<K, V>> i = entrySet().iterator();
+        if (key == null) {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (e.getKey() == null)
                     return true;
             }
-        }else{
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(key.equals(e.getKey()))
+        } else {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (key.equals(e.getKey()))
                     return true;
             }
         }
@@ -40,17 +38,17 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
     @Override
     public boolean containsValue(Object value) {
-        Iterator<MyMap.Entry<K,V>> i = entrySet().iterator();
-        if(value == null){
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(e.getValue() == null)
+        Iterator<MyMap.Entry<K, V>> i = entrySet().iterator();
+        if (value == null) {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (e.getValue() == null)
                     return true;
             }
-        }else{
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(value.equals(e.getValue()))
+        } else {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (value.equals(e.getValue()))
                     return true;
             }
         }
@@ -59,17 +57,17 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
     @Override
     public V get(Object key) {
-        Iterator<Entry<K,V>> i = entrySet().iterator();
-        if(key == null){
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(e.getKey() == null)
+        Iterator<Entry<K, V>> i = entrySet().iterator();
+        if (key == null) {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (e.getKey() == null)
                     return e.getValue();
             }
-        }else{
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(key.equals(e.getKey()))
+        } else {
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (key.equals(e.getKey()))
                     return e.getValue();
             }
         }
@@ -83,24 +81,24 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
     @Override
     public V remove(Object key) {
-        Iterator<Entry<K,V>> i = entrySet().iterator();
-        Entry<K,V> correctEntry = null;
-        if(key == null){
-            while (correctEntry == null && i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(e.getKey() == null)
+        Iterator<Entry<K, V>> i = entrySet().iterator();
+        Entry<K, V> correctEntry = null;
+        if (key == null) {
+            while (correctEntry == null && i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (e.getKey() == null)
                     correctEntry = e;
             }
-        }else{
-            while (correctEntry == null && i.hasNext()){
-                Entry<K,V> e = i.next();
-                if(key.equals(e.getKey()))
+        } else {
+            while (correctEntry == null && i.hasNext()) {
+                Entry<K, V> e = i.next();
+                if (key.equals(e.getKey()))
                     correctEntry = e;
             }
         }
 
         V oldValue = null;
-        if(correctEntry != null){
+        if (correctEntry != null) {
             oldValue = correctEntry.getValue();
             i.remove();
         }
@@ -110,7 +108,7 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
     @Override
     public void putAll(MyMap<? extends K, ? extends V> m) {
-        for(MyMap.Entry<? extends K, ? extends V> e:m.entrySet()){
+        for (MyMap.Entry<? extends K, ? extends V> e : m.entrySet()) {
             put(e.getKey(), e.getValue());
         }
     }
@@ -126,16 +124,18 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
     @Override
     public Set<K> keySet() {
         Set<K> ks = keySet;
-        if(ks == null){
+        if (ks == null) {
             ks = new AbstractSet<K>() {
                 @Override
                 public Iterator<K> iterator() {
                     return new Iterator<K>() {
-                        private Iterator<Entry<K,V>> i = entrySet().iterator();
+                        private Iterator<Entry<K, V>> i = entrySet().iterator();
+
                         @Override
                         public boolean hasNext() {
                             return i.hasNext();
                         }
+
                         @Override
                         public K next() {
                             return i.next().getKey();
@@ -178,12 +178,13 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
     @Override
     public Collection<V> values() {
         Collection<V> vals = values;
-        if(vals == null){
+        if (vals == null) {
             vals = new AbstractCollection<V>() {
                 @Override
                 public Iterator<V> iterator() {
                     return new Iterator<V>() {
-                        private Iterator<Entry<K,V>> i = entrySet().iterator();
+                        private Iterator<Entry<K, V>> i = entrySet().iterator();
+
                         @Override
                         public boolean hasNext() {
                             return i.hasNext();
@@ -232,30 +233,30 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
     public boolean equals(Object o) {
         if (this == o) return true;
 
-        if(!(o instanceof MyMap))
+        if (!(o instanceof MyMap))
             return false;
 
-        MyMap<?,?> m = (MyMap<?,?>)o;
-        if(m.size() != size())
+        MyMap<?, ?> m = (MyMap<?, ?>) o;
+        if (m.size() != size())
             return false;
 
         try {
-            Iterator<Entry<K,V>> i = entrySet().iterator();
-            while (i.hasNext()){
-                Entry<K,V> e = i.next();
+            Iterator<Entry<K, V>> i = entrySet().iterator();
+            while (i.hasNext()) {
+                Entry<K, V> e = i.next();
                 K key = e.getKey();
                 V value = e.getValue();
-                if(value == null){
-                    if(!(m.get(key) == null && m.containsKey(key)))
+                if (value == null) {
+                    if (!(m.get(key) == null && m.containsKey(key)))
                         return false;
-                }else{
-                    if(!value.equals(m.get(key)))
+                } else {
+                    if (!value.equals(m.get(key)))
                         return false;
                 }
             }
-        }catch (ClassCastException unused){
+        } catch (ClassCastException unused) {
             return false;
-        }catch (NullPointerException unused){
+        } catch (NullPointerException unused) {
             return false;
         }
         return true;
@@ -264,27 +265,27 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
     @Override
     public int hashCode() {
         int h = 0;
-        Iterator<Entry<K,V>> i = entrySet().iterator();
+        Iterator<Entry<K, V>> i = entrySet().iterator();
         while (i.hasNext())
             h += i.next().hashCode();
         return h;
     }
 
-    public String toString(){
-        Iterator<Entry<K,V>> i = entrySet().iterator();
-        if(!i.hasNext())
+    public String toString() {
+        Iterator<Entry<K, V>> i = entrySet().iterator();
+        if (!i.hasNext())
             return "{}";
 
         StringBuilder sb = new StringBuilder();
         sb.append('{');
-        for(;;){
-            Entry<K,V> e = i.next();
+        for (; ; ) {
+            Entry<K, V> e = i.next();
             K key = e.getKey();
             V value = e.getValue();
             sb.append(key == this ? "(this MyMap)" : key);
             sb.append('=');
             sb.append(value == this ? "(this MyMap)" : value);
-            if(!i.hasNext())
+            if (!i.hasNext())
                 return sb.append('}').toString();
 
             sb.append(',').append(' ');
@@ -292,26 +293,27 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
     }
 
     protected Object clone() throws CloneNotSupportedException {
-        MyAbstractMap<?,?> result = (MyAbstractMap<?,?>)super.clone();
+        MyAbstractMap<?, ?> result = (MyAbstractMap<?, ?>) super.clone();
         result.keySet = null;
         result.values = null;
         return result;
     }
 
-    private static boolean eq(Object o1, Object o2){
-        return o1 == null ? o2 == null:o1.equals(o2);
+    private static boolean eq(Object o1, Object o2) {
+        return o1 == null ? o2 == null : o1.equals(o2);
     }
 
-    public static class SimpleEntry<K,V> implements Entry<K,V>, java.io.Serializable{
+    public static class SimpleEntry<K, V> implements Entry<K, V>, java.io.Serializable {
 
         private final K key;
         private V value;
+
         public SimpleEntry(K key, V value) {
             this.key = key;
             this.value = value;
         }
 
-        public SimpleEntry(Entry<? extends K, ? extends V> entry){
+        public SimpleEntry(Entry<? extends K, ? extends V> entry) {
             this.key = entry.getKey();
             this.value = entry.getValue();
         }
@@ -335,16 +337,16 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
         @Override
         public boolean equals(Object o) {
-            if(!(o instanceof MyMap.Entry))
+            if (!(o instanceof MyMap.Entry))
                 return false;
 
-            MyMap.Entry<?,?> e = (MyMap.Entry<?,?>)o;
+            MyMap.Entry<?, ?> e = (MyMap.Entry<?, ?>) o;
             return eq(key, e.getKey()) && eq(value, e.getValue());
         }
 
         @Override
         public int hashCode() {
-            return (key == null ? 0:key.hashCode()) ^ (value == null ? 0:value.hashCode());
+            return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0 : value.hashCode());
         }
 
         @Override
@@ -353,16 +355,17 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
         }
     }
 
-    public static class SimpleImmutableEntry<K,V> implements Entry<K,V>, java.io.Serializable{
+    public static class SimpleImmutableEntry<K, V> implements Entry<K, V>, java.io.Serializable {
 
         private final K key;
         private final V value;
+
         public SimpleImmutableEntry(K key, V value) {
             this.key = key;
             this.value = value;
         }
 
-        public SimpleImmutableEntry(Entry<? extends K, ? extends V> entry){
+        public SimpleImmutableEntry(Entry<? extends K, ? extends V> entry) {
             this.key = entry.getKey();
             this.value = entry.getValue();
         }
@@ -384,17 +387,17 @@ public abstract class MyAbstractMap<K,V> implements MyMap<K,V> {
 
         @Override
         public boolean equals(Object o) {
-            if(!(o instanceof MyMap.Entry))
+            if (!(o instanceof MyMap.Entry))
                 return false;
 
-            MyMap.Entry<?,?> e = (MyMap.Entry<?,?>)o;
+            MyMap.Entry<?, ?> e = (MyMap.Entry<?, ?>) o;
             return eq(key, e.getKey()) && eq(value, e.getValue());
 
         }
 
         @Override
         public int hashCode() {
-            return (key == null ? 0:key.hashCode()) ^ (value == null ? 0:value.hashCode());
+            return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0 : value.hashCode());
         }
 
         @Override
