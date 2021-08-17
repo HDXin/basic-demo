@@ -1,5 +1,9 @@
 package top.atstudy.basic.reference;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.IOException;
 import java.lang.ref.*;
 import java.util.ArrayList;
@@ -32,26 +36,29 @@ public class ThreadLocalTest {
     private static volatile ThreadLocal<MM> threadLocal = new ThreadLocal<>();
 
     private static void demo5(){
+        threadLocal.set(new MM(55));
+        System.out.println(threadLocal.get());
 
-        new Thread(() -> {
-            try {
-                TimeUnit.SECONDS.sleep(3);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println(threadLocal.get());
-        }).start();
+//        new Thread(() -> {
+//            try {
+//                TimeUnit.SECONDS.sleep(3);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println(threadLocal.get());
+//        }).start();
+//
+//
+//        new Thread(() -> {
+//            try {
+//                TimeUnit.SECONDS.sleep(1);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            threadLocal.set(new MM());
+//        }).start();
 
-
-        new Thread(() -> {
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            threadLocal.set(new MM());
-        }).start();
-
+        System.out.println(threadLocal.get());
     }
 
     /**
@@ -135,14 +142,17 @@ public class ThreadLocalTest {
         System.in.read();
     }
 
+    @ToString
+    @NoArgsConstructor
+    @AllArgsConstructor
     private static class MM{
-        private Long id;
+        private Integer id;
 
-        public Long getId() {
+        public Integer getId() {
             return id;
         }
 
-        public void setId(Long id) {
+        public void setId(Integer id) {
             this.id = id;
         }
     }
