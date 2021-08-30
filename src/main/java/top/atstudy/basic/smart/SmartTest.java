@@ -31,7 +31,12 @@ public class SmartTest {
 //        testIdCard();
 
         // 回执单处理
-        testRecord();
+//        testRecord();
+
+        Integer a = null;
+        Integer b = 1;
+        System.out.println(a == 1);
+
 
     }
 

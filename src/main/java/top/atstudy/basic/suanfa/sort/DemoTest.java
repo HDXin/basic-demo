@@ -9,17 +9,17 @@ public class DemoTest {
     public static void main(String[] args) {
 
         Integer[] a = getRandom(10000);
-        Integer nums = 1;
+        Integer nums = 100;
 
         /**
          * 选择排序
          */
-//        System.out.println("选择：" + selectionTest(a, nums));
+        System.out.println("选择：" + selectionTest(a, nums));
 
         /**
          * 插入排序
          */
-//        System.out.println("插入：" + insertionTest(a, nums));
+        System.out.println("插入：" + insertionTest(a, nums));
 
         /**
          * 希尔排序
