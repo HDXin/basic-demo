@@ -33,28 +33,28 @@ public class GroupChatClient {
     }
 
     //向服务器发送消息
-    public void sendInfo(String info){
+    public void sendInfo(String info) {
         info = username + " say: " + info;
         try {
             socketChannel.write(ByteBuffer.wrap(info.getBytes()));
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     //读取从服务器端回复的消息
-    public void readInfo(){
-        try{
+    public void readInfo() {
+        try {
             int readChannels = selector.select();
-            if(readChannels > 0){ //有可以用的通道
+            if (readChannels > 0) { //有可以用的通道
 
                 Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
-                while (iterator.hasNext()){
+                while (iterator.hasNext()) {
 
                     SelectionKey key = iterator.next();
-                    if(key.isReadable()){
+                    if (key.isReadable()) {
                         //得到相关的通道
-                        SocketChannel sc  = (SocketChannel) key.channel();
+                        SocketChannel sc = (SocketChannel) key.channel();
                         //得到一个 Buffer
                         ByteBuffer buffer = ByteBuffer.allocate(1024);
                         //读取
@@ -68,7 +68,7 @@ public class GroupChatClient {
             } else {
 //                System.out.println("没有可以用的通道...");
             }
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -77,23 +77,20 @@ public class GroupChatClient {
 
         GroupChatClient chatClient = new GroupChatClient();
 
-        new Thread(){
-            @Override
-            public void run() {
-                while (true){
-                    chatClient.readInfo();
-                    try {
-                        Thread.currentThread().sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+        new Thread(() -> {
+            while (true) {
+                chatClient.readInfo();
+                try {
+                    Thread.currentThread().sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
-        }.start();
+        }).start();
 
         //发送数据给服务器
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
             String s = scanner.nextLine();
             chatClient.sendInfo(s);
         }
