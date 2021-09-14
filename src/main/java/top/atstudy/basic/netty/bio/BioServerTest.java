@@ -6,6 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 思路：
@@ -13,6 +14,8 @@ import java.util.concurrent.Executors;
  * 2、如果有客户端连接，就创建一个线程，与之通讯（单独写一个方法）
  */
 public class BioServerTest {
+
+    private static AtomicInteger account = new AtomicInteger(0);
 
     public static void main(String[] args) throws IOException {
 
@@ -37,7 +40,7 @@ public class BioServerTest {
     public static void handler(Socket socket) {
 
         try {
-            System.out.println("线程信息 ID:" + Thread.currentThread().getId() + ", name:" + Thread.currentThread().getName());
+            System.out.println("account: " + account.addAndGet(1) + ", 线程信息 ID:" + Thread.currentThread().getId() + ", name:" + Thread.currentThread().getName());
             BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
             while (true) {
                 byte[] b = new byte[1024];
@@ -49,7 +52,7 @@ public class BioServerTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            System.out.println("关闭和Client连接");
+            System.out.println("account: " + account.addAndGet(-1) + ", 线程关闭了 ID: " + Thread.currentThread().getId());
             try {
                 socket.close();
             } catch (Exception e) {
