@@ -1,5 +1,6 @@
 package top.atstudy.basic.smart;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
@@ -15,6 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 
 /**
  * @Author: dexin.huang or harley
@@ -31,11 +33,9 @@ public class SmartTest {
 //        testIdCard();
 
         // 回执单处理
-//        testRecord();
+        testRecord();
 
-        Integer a = null;
-        Integer b = 1;
-        System.out.println(a == 1);
+        System.out.println("complate");
 
 
     }
@@ -47,26 +47,36 @@ public class SmartTest {
         List<AttachVO> list = new ArrayList<>(200000);
         String str = null;
         while ((str = br.readLine()) != null) {
-            list.add(new AttachVO(str));
-        }
-
-        for (AttachVO item : list) {
-            System.out.println(item);
-            System.out.println(item.getFileName());
-        }
-        System.out.println(list.size());
-
-
-        System.out.println(Runtime.getRuntime().availableProcessors());
-        ExecutorService taskExecutor = Executors.newScheduledThreadPool(200);
-
-        for (AttachVO item : list) {
-            if (StrUtil.isBlank(item.getMonth()) || StrUtil.isBlank(item.getRecordUrl())) {
-                System.out.println(item);
-                continue;
+            AttachVO vo = new AttachVO(str);
+            if (vo.isMonth("2020-11")) {
+                list.add(vo);
             }
-            taskExecutor.execute(() -> testRequest(item.getRecordUrl(), item.getFilePath()));
         }
+
+        System.out.println("size: " + list.size());
+        System.out.println("valid: " + list.stream().filter(e -> StrUtil.isNotBlank(e.getRecordUrl())).collect(Collectors.toList()).size());
+        System.out.println("invalid: " + list.stream().filter(e -> StrUtil.isBlank(e.getRecordUrl())).collect(Collectors.toList()).size());
+
+//        for (AttachVO item : list) {
+//            System.out.println(item);
+//            System.out.println(item.getFileName());
+//        }
+//        System.out.println(list.size());
+//
+//
+//        System.out.println(Runtime.getRuntime().availableProcessors());
+//        ExecutorService taskExecutor = Executors.newScheduledThreadPool(200);
+//
+//        for (AttachVO item : list) {
+//            if (StrUtil.isBlank(item.getMonth()) || StrUtil.isBlank(item.getRecordUrl())) {
+//                System.out.println(item);
+//                continue;
+//            }
+//            taskExecutor.execute(() -> testRequest(item.getRecordUrl(), item.getFilePath(), item));
+//        }
+//
+//
+
 
     }
 
@@ -91,16 +101,14 @@ public class SmartTest {
         ExecutorService taskExecutor = Executors.newScheduledThreadPool(20);
 
         for (SelfEmployed selfEmployed : list) {
-            taskExecutor.execute(() -> testRequest(selfEmployed.getCardUrl(), "E:\\temp\\images\\idcard\\" + selfEmployed.getFileName()));
+            taskExecutor.execute(() -> testRequest(selfEmployed.getCardUrl(), "E:\\temp\\images\\idcard\\" + selfEmployed.getFileName(), null));
         }
-
-
     }
 
     /**
      * @param url
      */
-    private static void testRequest(String url, String filePath) {
+    private static void testRequest(String url, String filePath, AttachVO item) {
         File file = new File(filePath);
         if (file.exists()) {
             return;
@@ -115,7 +123,7 @@ public class SmartTest {
             String newUrl = response.header("Location");
             System.out.println(newUrl);
 
-            testRequest(newUrl, filePath);
+            testRequest(newUrl, filePath, item);
         } else {
             byte[] b = response.bodyBytes();
             try {
@@ -123,6 +131,8 @@ public class SmartTest {
 
                 fos.write(b);
                 fos.close();
+
+                item.setExist(true);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -177,6 +187,8 @@ public class SmartTest {
 
         private String recordUrl;
 
+        private Boolean exist = false;
+
         public AttachVO(String str) {
             String[] split = StrUtil.split(str, StrUtil.COMMA);
             this.id = split[0];
@@ -198,6 +210,13 @@ public class SmartTest {
             if (!file.exists()) {
                 file.mkdir();
             }
+        }
+
+        private Boolean isMonth(String month) {
+            if (StrUtil.isBlank(month)) {
+                return StrUtil.isBlank(this.month);
+            }
+            return month.equals(this.month);
         }
 
         public String getFileName() {
@@ -222,6 +241,7 @@ public class SmartTest {
             }
             return this.getDir() + this.getFileName();
         }
+
     }
 
 }

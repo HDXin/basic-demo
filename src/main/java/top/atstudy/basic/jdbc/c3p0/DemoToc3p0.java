@@ -28,7 +28,7 @@ public class DemoToc3p0 {
 
         ComboPooledDataSource cpds = new ComboPooledDataSource();
         cpds.setDriverClass("com.mysql.jdbc.Driver");
-        cpds.setJdbcUrl("jdbc:mysql://47.93.33.48:3306/aibs");
+        cpds.setJdbcUrl("jdbc:mysql://121.5.50.50:3306/sdx_mall");
         cpds.setUser("root");
         cpds.setPassword("123456");
 

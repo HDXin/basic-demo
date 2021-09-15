@@ -34,6 +34,29 @@ public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
 
     }
 
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("channelActive：" + ctx);
+
+
+        super.channelActive(ctx);
+    }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+
+        System.out.println("channelInactive：" + ctx);
+
+        super.channelInactive(ctx);
+    }
+
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+
+        ctx.flush();
+
+    }
+
     /**
      * 当web客户端连接后，触发方法
      *
@@ -53,7 +76,7 @@ public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
 
     @Override
     public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
-        System.out.println("handlerRemoved 被调用" + ctx.channel().id().asLongText());
+        System.out.println("handlerRemoved 被调用：" + ctx.channel().id().asLongText());
     }
 
     @Override

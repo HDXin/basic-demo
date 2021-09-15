@@ -49,26 +49,26 @@ public class NioTest {
 
         System.out.println("================== init =================");
         System.out.println(" ==>> capacity: " + buffer.capacity());
-        System.out.println(" ==>> limit: " + buffer.limit());
+        System.out.println(" ==>> limit:    " + buffer.limit());
         System.out.println(" ==>> position: " + buffer.position());
-        System.out.println(" ==>> mark: " + buffer.mark());
+        System.out.println(" ==>> mark:     " + buffer.mark());
 
         //2、利用put存入数据到缓存区
         String str = "abc";
         buffer.put(str.getBytes());
         System.out.println("=================== put ================");
         System.out.println(" ==>> capacity: " + buffer.capacity());
-        System.out.println(" ==>> limit: " + buffer.limit());
+        System.out.println(" ==>> limit:    " + buffer.limit());
         System.out.println(" ==>> position: " + buffer.position());
-        System.out.println(" ==>> mark: " + buffer.mark());
+        System.out.println(" ==>> mark:     " + buffer.mark());
 
         //3、切换到读取数据的模式
         buffer.flip();
         System.out.println("================= after flip ==================");
         System.out.println(" ==>> capacity: " + buffer.capacity());
-        System.out.println(" ==>> limit: " + buffer.limit());
+        System.out.println(" ==>> limit:    " + buffer.limit());
         System.out.println(" ==>> position: " + buffer.position());
-        System.out.println(" ==>> mark: " + buffer.mark());
+        System.out.println(" ==>> mark:     " + buffer.mark());
 
         //4、读取缓冲区的数据
         byte[] b = new byte[buffer.limit()];
@@ -78,18 +78,18 @@ public class NioTest {
 
         System.out.println("================= after get ==================");
         System.out.println(" ==>> capacity: " + buffer.capacity());
-        System.out.println(" ==>> limit: " + buffer.limit());
+        System.out.println(" ==>> limit:    " + buffer.limit());
         System.out.println(" ==>> position: " + buffer.position());
-        System.out.println(" ==>> mark: " + buffer.mark());
+        System.out.println(" ==>> mark:     " + buffer.mark());
 
         //5、可重复读
         buffer.rewind();
 
         System.out.println("=============== after rewind ====================");
         System.out.println(" ==>> capacity: " + buffer.capacity());
-        System.out.println(" ==>> limit: " + buffer.limit());
+        System.out.println(" ==>> limit:    " + buffer.limit());
         System.out.println(" ==>> position: " + buffer.position());
-        System.out.println(" ==>> mark: " + buffer.mark());
+        System.out.println(" ==>> mark:     " + buffer.mark());
 
     }
 
