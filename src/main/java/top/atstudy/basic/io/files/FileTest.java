@@ -1,6 +1,8 @@
 package top.atstudy.basic.io.files;
 
 import cn.hutool.core.io.IoUtil;
+import cn.hutool.core.util.ReUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.ZipUtil;
 import cn.hutool.json.JSONObject;
 import lombok.Data;
@@ -23,8 +25,7 @@ public class FileTest {
 //        copay();
 
         // zip
-        zip();
-
+//        zip();
 
     }
 
