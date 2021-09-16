@@ -69,8 +69,6 @@ public class NIOServerTest {
                 //手动从集合中移除当前的 selectionkey, 防止重复操作
                 keyIterator.remove();
             }
-
-
         }
 
     }

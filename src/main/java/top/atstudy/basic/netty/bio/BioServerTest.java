@@ -1,7 +1,5 @@
 package top.atstudy.basic.netty.bio;
 
-import top.atstudy.basic.netty.nio.buffer.DirectBufferTest;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -18,9 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class BioServerTest {
 
-
-    private static AtomicInteger accounts = new AtomicInteger(0);
-
+    private static AtomicInteger account = new AtomicInteger(0);
 
     public static void main(String[] args) throws IOException {
 
@@ -46,7 +42,7 @@ public class BioServerTest {
     public static void handler(Socket socket) {
 
         try {
-            System.out.println("accounts: " + accounts.addAndGet(1) + ", 线程信息 ID:" + Thread.currentThread().getId() + ", name:" + Thread.currentThread().getName());
+            System.out.println("account: " + account.addAndGet(1) + ", 线程信息 ID:" + Thread.currentThread().getId() + ", name:" + Thread.currentThread().getName());
             BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
             while (true) {
                 ByteBuffer bs = ByteBuffer.allocateDirect(1024 * 1024);
@@ -60,7 +56,7 @@ public class BioServerTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            System.out.println("accounts: " + accounts.addAndGet(-1) + ", 线程信息 ID:" + Thread.currentThread().getId() + ", name:" + Thread.currentThread().getName());
+            System.out.println("account: " + account.addAndGet(-1) + ", 线程关闭了 ID: " + Thread.currentThread().getId());
             try {
                 socket.close();
             } catch (Exception e) {

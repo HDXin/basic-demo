@@ -20,57 +20,62 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Slf4j
 public class BioClientTest {
 
-    private static ExecutorService taskExecutor = Executors.newCachedThreadPool();
+    private static AtomicInteger account = new AtomicInteger(0);
 
-    private static AtomicInteger accounts = new AtomicInteger(0);
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("客户端启动了 ... ");
+
+        ExecutorService newCachedThreadPool = Executors.newCachedThreadPool();
 
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             String data = scanner.nextLine();
-            if(StrUtil.isNotBlank(data) && StrUtil.startWith(data, "x:")){
+            if (StrUtil.isNotBlank(data) && data.startsWith("x:")) {
                 String num = StrUtil.sub(data, 2, data.length()).trim();
-                createConnection(Integer.parseInt(num));
+
+                creatConnection(newCachedThreadPool, Integer.parseInt(num));
             }
 
         }
 
     }
 
-    public static void createConnection(Integer num) {
-        System.out.println("account: " + accounts.addAndGet(num));
 
-        if (num == null) {
-            return;
-        }
+    public static void creatConnection(ExecutorService newCachedThreadPool, Integer num) {
+        System.out.println("account: " + account.addAndGet(num));
 
-        int index = 0;
-        while (index < num) {
-            index++;
-            taskExecutor.execute(() -> {
+        int account = 0;
+        while (account < num) {
+            account++;
+
+            newCachedThreadPool.execute(() -> {
                 try {
                     // 1、建立连接：使用Socket创建客户端 + 服务的地址和端口
                     Socket socket = new Socket("localhost", 6666);
 
                     //2、操作：输入输出流
                     DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
-                    dos.write("hello, tcp".getBytes());
 
-                    TimeUnit.SECONDS.sleep(1000);
+//                    Scanner scanner = new Scanner(System.in);
+//                    while (scanner.hasNext()) {
+//                        String data = scanner.nextLine();
+//                        dos.writeUTF(data);
+//                    }
+
+                    try {
+                        TimeUnit.SECONDS.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     // 3、释放资源
                     dos.close();
                     socket.close();
-                } catch (Exception e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             });
         }
-
-
     }
 
 }
