@@ -11,16 +11,16 @@ public class NoneBlockClientTest {
 
     public static void main(String[] args) throws IOException {
 
-        //1、获取通道
+        // 1、获取通道
         SocketChannel sChannel = SocketChannel.open(new InetSocketAddress("127.0.0.1", 9898));
 
-        //2、切换非阻塞模式
+        // 2、切换非阻塞模式
         sChannel.configureBlocking(false);
 
-        //3、分配指定大小的缓冲区
+        // 3、分配指定大小的缓冲区
         ByteBuffer buf = ByteBuffer.allocate(1024);
 
-        //4、发送数据给服务端
+        // 4、发送数据给服务端
         Scanner scan = new Scanner(System.in);
 
         while (scan.hasNext()){

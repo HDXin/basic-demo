@@ -1,5 +1,15 @@
 package top.atstudy.basic.thread;
 
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.crypto.SecureUtil;
+import cn.hutool.json.JSONObject;
+import com.alibaba.druid.sql.visitor.functions.Char;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
@@ -26,13 +36,14 @@ public class MyThread extends Thread {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        MyThread t1 = new MyThread();
-        t1.start();
+//        MyThread t1 = new MyThread();
+//        t1.start();
+//
+//        MyThread t2 = new MyThread();
+//        t2.start();
 
-        MyThread t2 = new MyThread();
-        t2.start();
     }
 
 }
