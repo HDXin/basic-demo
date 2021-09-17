@@ -1,5 +1,9 @@
 package top.atstudy.basic.nio;
 
+import cn.hutool.core.date.DatePattern;
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -16,7 +20,7 @@ public class BlockClientTest2 {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()){
             String str = scanner.next();
-            buf.put((new Date().toString() + "\t" + str).getBytes());
+            buf.put((DateUtil.format(new Date(), DatePattern.NORM_DATETIME_PATTERN) + "\t" + str).getBytes());
             buf.flip();
             sChannel.write(buf);
             buf.clear();
