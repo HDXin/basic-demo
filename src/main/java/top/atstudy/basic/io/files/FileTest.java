@@ -44,7 +44,7 @@ public class FileTest {
         }
     }
 
-    private static void copay(){
+    private static void copayTask(){
 
         ExecutorService taskExecutor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 5);
 
