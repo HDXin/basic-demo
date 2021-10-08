@@ -1,7 +1,6 @@
 package top.atstudy.basic.io.net.tcp.chat;
 
 import java.io.DataInputStream;
-import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
@@ -24,14 +23,14 @@ public class ChatClientTest {
         DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
 
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             String data = scanner.nextLine();
             dos.writeUTF(data);
 
             DataInputStream dis = new DataInputStream(socket.getInputStream());
             String response = dis.readUTF();
             System.out.println(response);
-            if(response != null && "exit".equals(response)){
+            if (response != null && "exit".equals(response)) {
                 break;
             }
         }
