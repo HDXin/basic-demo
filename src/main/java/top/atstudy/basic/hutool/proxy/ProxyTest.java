@@ -37,5 +37,6 @@ public class ProxyTest {
         System.out.println(a.add(1, 2));
 
     }
+    // 100_000
 
 }
