@@ -1,6 +1,8 @@
 package top.atstudy.basic.hutool.proxy;
 
 import cn.hutool.aop.ProxyUtil;
+import cn.hutool.aop.aspects.SimpleAspect;
+import sun.rmi.runtime.Log;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -17,9 +19,22 @@ public class ProxyTest {
     public static void main(String[] args) {
 
         // 测试 jdk proxy
-        testJDKProxy();
+//        testJDKProxy();
+
+        // 测试 proxy
+        testProxy();
 
     }
+
+    private static void testProxy(){
+
+        LogService proxy = ProxyUtil.proxy(new LogService(), new LogAspect());
+
+        System.out.println(proxy.log("你好！"));
+
+    }
+
+
 
     private static void testJDKProxy(){
 
@@ -37,6 +52,7 @@ public class ProxyTest {
         System.out.println(a.add(1, 2));
 
     }
-    // 100_000
+
+
 
 }
