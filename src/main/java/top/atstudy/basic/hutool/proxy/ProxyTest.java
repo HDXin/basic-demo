@@ -19,10 +19,10 @@ public class ProxyTest {
     public static void main(String[] args) {
 
         // 测试 jdk proxy
-//        testJDKProxy();
+        testJDKProxy();
 
         // 测试 proxy
-        testProxy();
+//        testProxy();
 
     }
 
