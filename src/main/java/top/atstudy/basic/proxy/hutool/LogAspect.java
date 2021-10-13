@@ -1,4 +1,4 @@
-package top.atstudy.basic.hutool.proxy;
+package top.atstudy.basic.proxy.hutool;
 
 import cn.hutool.aop.aspects.Aspect;
 

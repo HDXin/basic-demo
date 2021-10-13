@@ -1,4 +1,4 @@
-package top.atstudy.basic.hutool.proxy;
+package top.atstudy.basic.proxy.hutool;
 
 import lombok.extern.slf4j.Slf4j;
 

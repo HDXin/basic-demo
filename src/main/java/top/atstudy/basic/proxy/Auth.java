@@ -1,4 +1,4 @@
-package top.atstudy.basic.hutool.proxy;
+package top.atstudy.basic.proxy;
 
 /**
  * @Author: dexin.huang or harley
