@@ -27,10 +27,10 @@ public class SmartExportTest {
     public static void main(String[] args) throws IOException {
 
         // 回执单处理
-//        testRecord();
+        testRecord();
 
         // 承揽协议
-        testProtocol();
+//        testProtocol();
 
         System.out.println("complate");
 
@@ -39,7 +39,7 @@ public class SmartExportTest {
 
     private static void testRecord() throws IOException {
 
-        BufferedReader br = new BufferedReader(new FileReader("E:\\temp\\2020.9-2021.8邦特\\2021.09数据导出\\电子回单.csv"));
+        BufferedReader br = new BufferedReader(new FileReader("E:\\拉取数据\\电子回单-2021-10\\电子回单.csv"));
 
         List<AttachVO> list = new ArrayList<>(200000);
         String str = null;
@@ -199,7 +199,7 @@ public class SmartExportTest {
             this.name = split[4];
 
             if (StrUtil.isBlank(this.month)) {
-                File file = new File("E:\\temp\\2020.9-2021.8邦特\\2021.09数据导出\\tt\\");
+                File file = new File("E:\\拉取数据\\电子回单-2021-10\\tt\\");
                 if (!file.exists()) {
                     file.mkdir();
                 }
@@ -207,7 +207,7 @@ public class SmartExportTest {
             }
 
             // 创建目录
-            File file = new File("E:\\temp\\2020.9-2021.8邦特\\2021.09数据导出\\电子回单\\" + this.month);
+            File file = new File("E:\\拉取数据\\电子回单-2021-10\\" + this.month);
             if (!file.exists()) {
                 file.mkdir();
             }
@@ -231,9 +231,9 @@ public class SmartExportTest {
 
         public String getDir() {
             if (StrUtil.isBlank(this.month)) {
-                return "E:\\temp\\2020.9-2021.8邦特\\2021.09数据导出\\tt\\";
+                return "E:\\拉取数据\\电子回单-2021-10\\tt\\";
             }
-            return "E:\\temp\\2020.9-2021.8邦特\\2021.09数据导出\\电子回单\\" + this.month + "\\";
+            return "E:\\拉取数据\\电子回单-2021-10\\" + this.month + "\\";
         }
 
         public String getFilePath() {
