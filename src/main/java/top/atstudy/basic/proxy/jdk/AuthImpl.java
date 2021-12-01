@@ -1,4 +1,4 @@
-package top.atstudy.basic.proxy;
+package top.atstudy.basic.proxy.jdk;
 
 /**
  * @Author: dexin.huang or harley

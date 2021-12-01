@@ -95,7 +95,6 @@ public class SmartExportTest {
             taskExecutor.execute(() -> testRequest2(item.getRecordUrl(), item.getFilePath(), item));
         }
 
-
     }
 
 

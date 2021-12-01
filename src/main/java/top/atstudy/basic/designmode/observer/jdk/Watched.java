@@ -1,4 +1,4 @@
-package top.atstudy.basic.designmode.observer;
+package top.atstudy.basic.designmode.observer.jdk;
 
 import java.util.Observable;
 

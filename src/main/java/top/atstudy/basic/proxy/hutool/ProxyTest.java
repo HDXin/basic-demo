@@ -1,8 +1,8 @@
 package top.atstudy.basic.proxy.hutool;
 
 import cn.hutool.aop.ProxyUtil;
-import top.atstudy.basic.proxy.Auth;
-import top.atstudy.basic.proxy.AuthImpl;
+import top.atstudy.basic.proxy.jdk.Auth;
+import top.atstudy.basic.proxy.jdk.AuthImpl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

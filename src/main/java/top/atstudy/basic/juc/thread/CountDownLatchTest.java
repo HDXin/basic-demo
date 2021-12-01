@@ -1,5 +1,7 @@
 package top.atstudy.basic.juc.thread;
 
+import cn.hutool.core.util.RandomUtil;
+
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -24,12 +26,12 @@ public class CountDownLatchTest {
 
 
     private static void demo() throws InterruptedException {
-        int poolSize = 20;
+        int poolSize = Runtime.getRuntime().availableProcessors();
         ExecutorService service = Executors.newFixedThreadPool(poolSize);
         CountDownLatch latch = new CountDownLatch(poolSize);
 
         Runnable r = () -> {
-            int sleep = new Random().nextInt(20);
+            int sleep = RandomUtil.randomInt(1, 21);
             try {
                 TimeUnit.MILLISECONDS.sleep(sleep);
             } catch (InterruptedException e) {

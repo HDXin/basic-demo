@@ -16,7 +16,7 @@ public class CyclicBarrierTest {
 
     private static void demo(){
 
-        int size = 7;
+        int size = Runtime.getRuntime().availableProcessors();
         CyclicBarrier barrier = new CyclicBarrier(size, ()-> System.out.println("人已到齐，会议开始"));
 
         for (int i = 0; i < size; i++) {
