@@ -1,5 +1,7 @@
 package top.atstudy.basic.designmode.observer;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Author: dexin.huang or harley
  * @Email: dexin.huang@paat.com
@@ -22,6 +24,17 @@ public class Client {
 
 
 
+
+
+    }
+
+    public void testSleep(Long tenantId, TimeUnit unit, Long time){
+
+        try {
+            TimeUnit.SECONDS.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
     }
