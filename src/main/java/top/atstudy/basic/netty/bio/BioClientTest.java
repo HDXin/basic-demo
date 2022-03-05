@@ -1,6 +1,7 @@
 package top.atstudy.basic.netty.bio;
 
 import cn.hutool.core.util.StrUtil;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -16,6 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 2、操作：输入输出流
  * 3、释放资源
  */
+@Slf4j
 public class BioClientTest {
 
     private static AtomicInteger account = new AtomicInteger(0);
@@ -37,6 +39,7 @@ public class BioClientTest {
         }
 
     }
+
 
     public static void creatConnection(ExecutorService newCachedThreadPool, Integer num) {
         System.out.println("account: " + account.addAndGet(num));
@@ -73,7 +76,6 @@ public class BioClientTest {
                 }
             });
         }
-
     }
 
 }

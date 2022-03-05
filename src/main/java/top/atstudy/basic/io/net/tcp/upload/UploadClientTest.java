@@ -1,6 +1,9 @@
 package top.atstudy.basic.io.net.tcp.upload;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.Socket;
 
 public class UploadClientTest {
@@ -13,7 +16,7 @@ public class UploadClientTest {
         BufferedOutputStream bos = new BufferedOutputStream(socket.getOutputStream());
         byte[] b = new byte[1024];
         int len = 0;
-        while ((len = bis.read(b)) != -1){
+        while ((len = bis.read(b)) != -1) {
             bos.write(b, 0, len);
         }
         bos.close();

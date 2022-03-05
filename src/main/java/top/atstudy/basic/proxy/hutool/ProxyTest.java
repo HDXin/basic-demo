@@ -1,10 +1,11 @@
-package top.atstudy.basic.hutool.proxy;
+package top.atstudy.basic.proxy.hutool;
 
 import cn.hutool.aop.ProxyUtil;
+import top.atstudy.basic.proxy.jdk.Auth;
+import top.atstudy.basic.proxy.jdk.AuthImpl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
  * @Author: dexin.huang or harley
@@ -17,9 +18,21 @@ public class ProxyTest {
     public static void main(String[] args) {
 
         // 测试 jdk proxy
-        testJDKProxy();
+//        testJDKProxy();
+
+        // 测试 proxy
+        testProxy();
 
     }
+
+    private static void testProxy(){
+
+        LogService proxy = ProxyUtil.proxy(new LogService(), new LogAspect());
+
+        System.out.println(proxy.log("你好！"));
+
+    }
+
 
     private static void testJDKProxy(){
 

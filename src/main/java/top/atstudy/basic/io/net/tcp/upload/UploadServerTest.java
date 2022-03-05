@@ -18,7 +18,7 @@ public class UploadServerTest {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("F://temp/upload.jpeg"));
         byte[] b = new byte[1024];
         int len = 0;
-        while ((len = bis.read(b)) != -1){
+        while ((len = bis.read(b)) != -1) {
             bos.write(b, 0, len);
         }
 

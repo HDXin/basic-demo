@@ -1,4 +1,4 @@
-package top.atstudy.basic.hutool.proxy;
+package top.atstudy.basic.proxy.jdk;
 
 /**
  * @Author: dexin.huang or harley
@@ -10,8 +10,9 @@ public class AuthImpl implements Auth {
 
     @Override
     public int add(int a, int b) {
-        System.out.println(a + " + " + b);
-        return a + b;
+        int sum = a + b;
+        System.out.println(a + " + " + b + " = " + sum);
+        return sum;
     }
 
     @Override

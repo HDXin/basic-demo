@@ -46,7 +46,7 @@ public class GroupChatClient {
     public void readInfo() {
         try {
             int readChannels = selector.select();
-            if (readChannels > 0) { //有可以用的通道
+            if (readChannels > 0) { // 有可以用的通道
 
                 Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
                 while (iterator.hasNext()) {
@@ -59,7 +59,7 @@ public class GroupChatClient {
                         ByteBuffer buffer = ByteBuffer.allocate(1024);
                         // 读取
                         sc.read(buffer);
-                        // 读到的缓存区数据转换成字符串
+                        // 把读到的缓存区数据转换成字符串
                         String msg = new String(buffer.array());
                         System.out.println(msg.toString());
                     }
