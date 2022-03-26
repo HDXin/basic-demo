@@ -7,7 +7,7 @@ import java.util.Observer;
  * @Author: dexin.huang or harley
  * @Email: dexin.huang@paat.com
  * @Date: 2021/9/7 18:26
- * @Desc:
+ * @Desc: 具体观察者
  */
 public class Watcher implements Observer {
 

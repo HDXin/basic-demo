@@ -1,4 +1,4 @@
-package top.atstudy.basic.proxy.jdk;
+package top.atstudy.basic.designmode.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

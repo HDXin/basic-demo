@@ -1,4 +1,4 @@
-package top.atstudy.basic.proxy.jdk;
+package top.atstudy.basic.designmode.proxy.jdk;
 
 /**
  * @Author: dexin.huang or harley
@@ -6,7 +6,7 @@ package top.atstudy.basic.proxy.jdk;
  * @Date: 2021/4/6 20:28
  * @Description
  */
-public class AuthImpl implements Auth {
+public class AuthImpl implements Auth, Auth2 {
 
     @Override
     public int add(int a, int b) {
