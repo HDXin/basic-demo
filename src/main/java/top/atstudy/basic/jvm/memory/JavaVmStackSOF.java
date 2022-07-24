@@ -1,5 +1,11 @@
 package top.atstudy.basic.jvm.memory;
 
+/**
+ * 虚拟机栈和本地方法栈溢出
+ *
+ * -Xss128k
+ *
+ */
 public class JavaVmStackSOF {
 
     private int stackLength = 1;
