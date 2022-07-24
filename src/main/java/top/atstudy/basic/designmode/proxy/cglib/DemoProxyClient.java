@@ -1,5 +1,6 @@
-package top.atstudy.basic.proxy.cglib;
+package top.atstudy.basic.designmode.proxy.cglib;
 
+import net.sf.cglib.core.DebuggingClassWriter;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -14,8 +15,9 @@ public class DemoProxyClient {
 
     public static void main(String[] args) {
 
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "e:\\tmp\\proxy");
         Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(DemoProxyClient.class);
+        enhancer.setSuperclass(AuthImpl.class);
         enhancer.setCallback(new MethodInterceptor() {
             @Override
             public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
@@ -28,8 +30,8 @@ public class DemoProxyClient {
             }
         });
 
-        DemoProxyClient client = (DemoProxyClient) enhancer.create();
-        client.test();
+        AuthImpl proxy = (AuthImpl) enhancer.create();
+        System.out.println(proxy.add(1, 2));
 
     }
 

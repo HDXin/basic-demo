@@ -6,15 +6,15 @@ public class Client {
 
         Subject subject = new ConcreteSubject();
 
-        Observer o = new ConcreteObserver("张飞");
+        Observer o = new ConcreteObserver(subject,"张飞");
         subject.attach(o);
 
-        Observer o2 = new ConcreteObserver("关羽");
-        subject.attach(o2);
-
+        Observer o2 = new ConcreteObserver(subject, "关羽");
 
         subject.notifyObserver();
 
+
+        // rxjava2、reactor、webflux
     }
 
 }

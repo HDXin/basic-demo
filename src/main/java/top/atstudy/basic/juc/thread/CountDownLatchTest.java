@@ -28,6 +28,7 @@ public class CountDownLatchTest {
     private static void demo() throws InterruptedException {
         int poolSize = Runtime.getRuntime().availableProcessors();
         ExecutorService service = Executors.newFixedThreadPool(poolSize);
+
         CountDownLatch latch = new CountDownLatch(poolSize);
 
         Runnable r = () -> {

@@ -6,7 +6,7 @@ import java.util.Observable;
  * @Author: dexin.huang or harley
  * @Email: dexin.huang@paat.com
  * @Date: 2021/9/7 18:24
- * @Desc:
+ * @Desc: 具体被观察者
  */
 public class Watched extends Observable {
 
