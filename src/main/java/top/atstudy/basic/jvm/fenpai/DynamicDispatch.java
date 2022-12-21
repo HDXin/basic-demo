@@ -34,9 +34,9 @@ public class DynamicDispatch {
         man = new Woman();
         man.sayHello();
 
-        int i = 0;
-        int a = i++;
-        int b = ++i;
+//        int i = 0;
+//        int a = i++;
+//        int b = ++i;
 
     }
 

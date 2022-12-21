@@ -35,8 +35,8 @@ public class StaticDispatch {
         Human woman = new Woman();
 
         StaticDispatch sr = new StaticDispatch();
-        sr.sayHello(man);
-        sr.sayHello(woman);
+        sr.sayHello((Man) man);
+        sr.sayHello((Woman) woman);
 
     }
 
