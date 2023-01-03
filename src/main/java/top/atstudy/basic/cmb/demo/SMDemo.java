@@ -1,11 +1,5 @@
 package top.atstudy.basic.cmb.demo;
 
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import lombok.extern.slf4j.Slf4j;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.security.Security;
@@ -13,11 +7,14 @@ import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 /**
  * 国密免前置/SaaS对接示例，本示例仅供参考，不保证各种异常场景运行，请勿直接使用，如有错漏请联系对接人员。运行时，请使用所获取的测试资源替换 用户编号、公私钥、对称密钥、服务商编号等信息。
  */
-@Slf4j
 public class SMDemo {
 
     private static String URL = "http://cdctest.cmburl.cn:80/cdcserver/api/v2"; // 银行服务地址(测试)
@@ -104,10 +101,6 @@ public class SMDemo {
         req.add("head", head);
         req.add("body", body);
         obj.add("request", req);
-
-        log.info(" ==>> \n{}", obj.toString());
-
-//        log.info(" ===>> \n {}", DCHelper.serialJsonOrdered(obj));
 
         // 请求发送接收
         doProcess(obj);

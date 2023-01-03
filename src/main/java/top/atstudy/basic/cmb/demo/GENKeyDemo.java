@@ -1,18 +1,22 @@
 package top.atstudy.basic.cmb.demo;
 
-import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
-import org.bouncycastle.crypto.engines.SM2Engine;
-import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
-import org.bouncycastle.crypto.params.*;
-import org.bouncycastle.jce.ECNamedCurveTable;
-import org.bouncycastle.jce.spec.ECParameterSpec;
-
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+
+import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
+import org.bouncycastle.crypto.engines.SM2Engine;
+import org.bouncycastle.crypto.generators.ECKeyPairGenerator;
+import org.bouncycastle.crypto.params.ECDomainParameters;
+import org.bouncycastle.crypto.params.ECKeyGenerationParameters;
+import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
+import org.bouncycastle.crypto.params.ECPublicKeyParameters;
+import org.bouncycastle.crypto.params.ParametersWithRandom;
+import org.bouncycastle.jce.ECNamedCurveTable;
+import org.bouncycastle.jce.spec.ECParameterSpec;
 
 /**
  * 直联上传密钥生成样例，仅供参考，用户私钥请妥善保管，用户公钥以及加密后用户对称密钥在网银上上传， 用户对称密钥为16长度字符串，用户可自己随机生成，saas厂商针对不同用户请使用不同密钥串，如有疑问请联系对接人员。

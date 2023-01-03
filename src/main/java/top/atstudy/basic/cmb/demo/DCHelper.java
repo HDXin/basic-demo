@@ -1,15 +1,29 @@
 package top.atstudy.basic.cmb.demo;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
-import javax.net.ssl.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.security.KeyStore;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeSet;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 /**
  * 示例代码，仅供参考

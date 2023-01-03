@@ -1,6 +1,18 @@
 package top.atstudy.basic.cmb.demo;
 
-import org.bouncycastle.asn1.*;
+import java.io.ByteArrayInputStream;
+import java.math.BigInteger;
+import java.util.Enumeration;
+
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+
+import org.bouncycastle.asn1.ASN1EncodableVector;
+import org.bouncycastle.asn1.ASN1InputStream;
+import org.bouncycastle.asn1.ASN1Integer;
+import org.bouncycastle.asn1.ASN1Sequence;
+import org.bouncycastle.asn1.DERSequence;
 import org.bouncycastle.crypto.params.ECDomainParameters;
 import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
 import org.bouncycastle.crypto.params.ECPublicKeyParameters;
@@ -10,13 +22,6 @@ import org.bouncycastle.jce.ECNamedCurveTable;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.jce.spec.ECParameterSpec;
 import org.bouncycastle.math.ec.ECPoint;
-
-import javax.crypto.Cipher;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
-import java.io.ByteArrayInputStream;
-import java.math.BigInteger;
-import java.util.Enumeration;
 
 /**
  * 示例代码，仅供参考

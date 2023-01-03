@@ -214,6 +214,7 @@ public class CmbRemoteApi implements Serializable {
             map.put("UID", config.getUserid());
             map.put("ALG", ALG_SM);
             map.put("DATA", URLEncoder.encode(encryptParam, "utf-8"));
+//            map.put("DATA", "NfpfGa3Yum06YWK9znzsaYaficOJDDN+6eZ1l2a9lsUEtzBSDdZl+pmEO+hfLN0iSPDJdq8ekC007nNPCVdwFhBxgPR1fL6JRxfltG3MpM0QzQ7t64zm8q2Xcn/KHLePPXq2U/p4jHEEslv1/x16Ev0Oi6DI2NCNE88nwDFysHS6MxFp8WmPFeQCBlYhVopeKH6FGbNjMkHox1oCi2ZQh92fbf39XYw4XKA4Uy/Mv4T7FBHsqGFwCAyMku33QZbozZr+DoOUCZlJ/5vs3D5R9pKewGcvZlNp6OiUoL/ZYeYXGji4KYrHk4yRubmTsFL90Mb5b5pQmbgeYNlrRggPQJwuOah8y7DpMmzg+pxMDMGzjIk2k0H8lKPjBlm0g4f8VYMcCNuYuzxZbhB9OmffkA==");
             map.put("FUNCODE", apiType.getCode());
             System.out.println("{}调用api,param:{}"+apiType.getDesc()+JSONUtil.toJsonStr(map));
             String resp = DCHelper.doPostForm(config.getApiUrl(), map);
@@ -295,7 +296,9 @@ public class CmbRemoteApi implements Serializable {
             signature.addProperty("sigdat", "__signature_sigdat__");
             signature.addProperty("sigtim", DCHelper.getTime());
             param.add("signature", signature);
-            byte[] signature1 = DCCryptor.CMBSM2SignWithSM3(getID_IV(), decoder.decode(config.getPrivkey()), param.toString().getBytes(StandardCharsets.UTF_8));
+            String tempParam = DCHelper.serialJsonOrdered(param);
+            System.out.println("{}签名前数据 param: {}"+apiType.getDesc() + tempParam);
+            byte[] signature1 = DCCryptor.CMBSM2SignWithSM3(getID_IV(), decoder.decode(config.getPrivkey()),  tempParam.getBytes(StandardCharsets.UTF_8));
             String sigdat1 = new String(encoder.encode(signature1));
             signature.addProperty("sigdat", sigdat1);
             System.out.println("{}签名后数据 param: {}"+apiType.getDesc()+param.toString());
