@@ -75,7 +75,7 @@ public class GroupChatServer {
 
     // 读取客户端消息
     private void readData(SelectionKey key){
-        System.out.println(Thread.currentThread().getName());
+//        System.out.println(Thread.currentThread().getName());
         // 获取关联的 channel
         SocketChannel channel = null;
         try {
