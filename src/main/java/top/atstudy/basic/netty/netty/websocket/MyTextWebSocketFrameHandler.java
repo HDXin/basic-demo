@@ -1,13 +1,15 @@
 package top.atstudy.basic.netty.netty.websocket;
 
 import cn.hutool.json.JSONObject;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
+import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.util.concurrent.GlobalEventExecutor;
-import org.apache.camel.util.json.JsonObject;
+import lombok.extern.slf4j.Slf4j;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,10 +17,45 @@ import java.util.Date;
 /**
  * 这里 TextWebSocketFrame 类型，表示一个文本帧（frame）
  */
+@Slf4j
 public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
+
+    private static Channel channel = null;
 
     private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//
+//    @Override
+//    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+//
+//        if (null != msg && msg instanceof FullHttpRequest) {
+//            System.out.println(" get token ... ");
+//            FullHttpRequest request = (FullHttpRequest) msg;
+//
+//            String uri = request.uri();
+//            String origin = request.headers().get("Origin");
+//            String auth = request.headers().get("auth");
+//
+//            System.out.println(" ==>> " + uri + ", " + origin + ", " + auth);
+//            if (origin == null) {
+////                ctx.close();
+//            } else {
+//                if (uri == null && uri.contains("/ws") && uri.contains("?")) {
+//                    String[] uriArray = uri.split("\\?");
+//                    if (null != uriArray && uriArray.length > 1) {
+//                        String[] paramArray = uriArray[1].split("=");
+//                        if (null != paramArray && paramArray.length > 1) {
+//                            String token = paramArray[1];
+//                            log.info(" token: {}", token);
+//                        }
+//                    }
+//                    request.setUri("/ws");
+//                }
+//            }
+//        }
+//
+//        super.channelRead(ctx, msg);
+//    }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
@@ -86,4 +123,6 @@ public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
         ctx.close();
 
     }
+
+
 }

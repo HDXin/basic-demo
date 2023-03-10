@@ -14,7 +14,8 @@ public class GroupChatClient {
 
     private final String host;
     private final int port;
-    public GroupChatClient(String host, int port){
+
+    public GroupChatClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
@@ -45,7 +46,7 @@ public class GroupChatClient {
             Channel channel = channelFuture.channel();
             System.out.println(" ===== " + channel.localAddress() + " ====== ");
             Scanner scanner = new Scanner(System.in);
-            while (scanner.hasNextLine()){
+            while (scanner.hasNextLine()) {
 
                 String msg = scanner.nextLine();
 
