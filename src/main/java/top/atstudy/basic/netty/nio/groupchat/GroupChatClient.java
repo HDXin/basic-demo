@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -44,6 +45,7 @@ public class GroupChatClient {
 
     // 读取从服务器端回复的消息
     public void readInfo() {
+        System.out.println("--<< " + new Date());
         try {
             int readChannels = selector.select();
             if (readChannels > 0) { // 有可以用的通道
@@ -75,16 +77,16 @@ public class GroupChatClient {
 
     public static void main(String[] args) throws IOException {
 
-        GroupChatClient chatClient = new GroupChatClient();
+        final GroupChatClient chatClient = new GroupChatClient();
 
         new Thread(() -> {
             while (true) {
                 chatClient.readInfo();
-                try {
-                    Thread.currentThread().sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.currentThread().sleep(3000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
             }
         }).start();
 

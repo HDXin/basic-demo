@@ -33,8 +33,8 @@ public class NIOServerTest {
         while (true){
 
             // 等待 1 秒，如果没有事件发生，返回
-            if(selector.select(1000) == 0){
-                System.out.println("服务器已经等待了1秒， 无连接 ... ");
+            if(selector.select(10000) == 0){
+                System.out.println("服务器已经等待了10秒， 无连接 ... ");
                 continue;
             }
 

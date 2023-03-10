@@ -8,6 +8,9 @@ import java.util.concurrent.TimeUnit;
  * @author huangdexin @ harley
  * @email huangdexin@kuaicto.com
  * @date 2019/3/12 20:01
+ * java 堆溢出，
+ * -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError
+ *
  */
 public class HeapOOM {
 
@@ -17,7 +20,7 @@ public class HeapOOM {
         List<OomObject> oomObjectList = new ArrayList<>();
 
         int i = 0;
-        while (true){
+        while (true) {
             TimeUnit.MILLISECONDS.sleep(200);
             OomObject obj = new OomObject();
             oomObjectList.add(new OomObject());
@@ -27,11 +30,9 @@ public class HeapOOM {
 
     }
 
-    static class OomObject{
-        private byte[] b = new byte[1024];
+    static class OomObject {
+        private byte[] b = new byte[1024 * 100];
     }
-
-
 
 
 }
