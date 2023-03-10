@@ -54,7 +54,7 @@ public class NIOServerTest {
                     sChannel.configureBlocking(false);
 
                     // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
-                    sChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));
+                    sChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(4096));
                 } else if(key.isReadable()){//发生 OP_READ
                     // 通过key, 反向获取到对应Channel
                     SocketChannel sChannel = (SocketChannel) key.channel();
