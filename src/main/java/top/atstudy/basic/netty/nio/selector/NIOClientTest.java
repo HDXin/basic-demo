@@ -16,17 +16,13 @@ public class NIOClientTest {
         sChannel.configureBlocking(false);
 
         // 提供服务器IP,端口
-        InetSocketAddress addr = new InetSocketAddress("127.0.0.1", 6666);
+        InetSocketAddress addr = new InetSocketAddress("127.0.0.1", 7766);
 
         // 连接服务器
-        if(!sChannel.connect(addr)){
-
-            while (!sChannel.finishConnect()){
-
+        if (!sChannel.connect(addr)) {
+            while (!sChannel.finishConnect()) {
                 System.out.println("正在连接客户端， 可以做其它事情 ... ");
-
             }
-
         }
 
         // 如果连接成功，就发送数据

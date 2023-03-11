@@ -20,8 +20,8 @@ public class NioClient {
         InetSocketAddress addr = new InetSocketAddress("127.0.0.1", 7788);
 
         // 连接服务器
-        if(!sChannel.connect(addr)){
-            while (!sChannel.finishConnect()){
+        if (!sChannel.connect(addr)) {
+            while (!sChannel.finishConnect()) {
                 System.out.println("正在连接客户端， 可以做其它事情 ... ");
             }
         }

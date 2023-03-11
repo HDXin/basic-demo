@@ -18,7 +18,7 @@ public class NIOServerTest {
         ServerSocketChannel ssChannel = ServerSocketChannel.open();
 
         // 绑定到一个端口
-        ssChannel.bind(new InetSocketAddress(6666));
+        ssChannel.bind(new InetSocketAddress(7766));
 
         // 设置为非阻塞
         ssChannel.configureBlocking(false);
@@ -30,11 +30,11 @@ public class NIOServerTest {
         ssChannel.register(selector, SelectionKey.OP_ACCEPT);
 
         // 循环等待客户端连接
-        while (true){
+        while (true) {
 
             // 等待 1 秒，如果没有事件发生，返回
-            if(selector.select(10000) == 0){
-                System.out.println("服务器已经等待了10秒， 无连接 ... ");
+            if (selector.select(10000) == 0) {
+//                System.out.println("服务器已经等待了10秒， 无连接 ... ");
                 continue;
             }
 
@@ -44,18 +44,18 @@ public class NIOServerTest {
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
             Iterator<SelectionKey> keyIterator = selectionKeys.iterator();
 
-            while (keyIterator.hasNext()){
+            while (keyIterator.hasNext()) {
                 // 获取到 selectionkey
                 SelectionKey key = keyIterator.next();
                 //根据key,对应的通道发生的事件做响应的处理
-                if(key.isAcceptable()){//如果是OP_ACCEPT, 有新的客户端连接
+                if (key.isAcceptable()) {//如果是OP_ACCEPT, 有新的客户端连接
                     // 该客户端生成一个 SocketChannel
                     SocketChannel sChannel = ssChannel.accept();
                     sChannel.configureBlocking(false);
 
                     // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
                     sChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));
-                } else if(key.isReadable()){//发生 OP_READ
+                } else if (key.isReadable()) {//发生 OP_READ
                     // 通过key, 反向获取到对应Channel
                     SocketChannel sChannel = (SocketChannel) key.channel();
 
