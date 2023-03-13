@@ -3,53 +3,82 @@ package top.atstudy.basic.netty.nio.selector.demo;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
-import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Scanner;
 
 public class NioClientTest {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
 
-        for (int i = 0; i < 2; i++) {
-            createClient();
+    // 定义相关属性
+    private static final String HOST = "127.0.0.1";
+    private static final int PORT = 7755;
+    private static Selector selector;
+    private static SocketChannel socketChannel;
+    private static String username;
+
+    static {
+        try {
+            selector = Selector.open();
+            // 连接服务器
+            socketChannel = socketChannel.open(new InetSocketAddress(HOST, PORT));
+            // 设置非阻塞
+            socketChannel.configureBlocking(false);
+            // 将 channel 注册到 selector
+            socketChannel.register(selector, SelectionKey.OP_READ);
+            // 得到 username
+            username = socketChannel.getLocalAddress().toString().substring(1);
+            System.out.println(username + " is ok ... ");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
 
 
-        TimeUnit.SECONDS.sleep(1000000);
+    public static void main(String[] args) throws IOException {
 
+        new Thread(() -> readAndWriteHandler()).start();
+
+        // 发送数据给服务器
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextLine()) {
+            String s = scanner.nextLine();
+            socketChannel.write(ByteBuffer.wrap(s.getBytes()));
+        }
 
     }
 
-    public static void createClient() {
+    public static void readAndWriteHandler() {
+        System.out.println("--<< " + new Date());
 
-        try {
-            // 得到一个网络通道
-            SocketChannel sChannel = SocketChannel.open();
+        while (true) {
+            try {
+                int readChannels = selector.select();
+                if (readChannels > 0) { // 有可以用的通道
 
-            // 设置非阻塞
-            sChannel.configureBlocking(false);
+                    Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
+                    while (iterator.hasNext()) {
 
-            // 提供服务器IP,端口
-            InetSocketAddress addr = new InetSocketAddress("127.0.0.1", 7755);
-
-            // 连接服务器
-            if (!sChannel.connect(addr)) {
-                while (!sChannel.finishConnect()) {
-                    System.out.println("正在连接客户端， 可以做其它事情 ... ");
+                        SelectionKey key = iterator.next();
+                        if (key.isReadable()) {
+                            // 得到相关的通道
+                            SocketChannel sc = (SocketChannel) key.channel();
+                            // 得到一个 Buffer
+                            ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+                            // 读取
+                            sc.read(buffer);
+                            // 把读到的缓存区数据转换成字符串
+                            System.out.println("server say: " + new String(buffer.array()));
+                        }
+                        iterator.remove();
+                    }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-            // 如果连接成功，就发送数据
-            String str = "hello nio";
-            // Wraps a byte array into a buffer
-            ByteBuffer buf = ByteBuffer.wrap(str.getBytes());
-            // 发送数据，将byte数据发送到channel
-            sChannel.write(buf);
-
-        } catch (IOException e) {
-
-            e.printStackTrace();
-
         }
     }
 

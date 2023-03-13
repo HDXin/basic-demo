@@ -111,8 +111,11 @@ public class NioServerTest {
             sChannel.read(buf);
             System.out.println(" client say: " + new String(buf.array()));
 
+
+            sChannel.write(buf);
+
             // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
-            sChannel.register(selector, SelectionKey.OP_WRITE, buf);
+//            sChannel.register(selector, SelectionKey.OP_WRITE, buf);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -120,14 +123,14 @@ public class NioServerTest {
     }
 
     private static void writeHandler(SelectionKey key) {
-        System.out.println(Thread.currentThread().getName() + ", writeHandler ... ");
+//        System.out.println(Thread.currentThread().getName() + ", writeHandler ... ");
 
         try {
             SocketChannel channel = (SocketChannel) key.channel();
             ByteBuffer buf = (ByteBuffer) key.attachment();
             channel.write(buf);
 
-            channel.close();
+//            channel.register(selector, SelectionKey.OP_READ);
         } catch (IOException e) {
             e.printStackTrace();
         }
