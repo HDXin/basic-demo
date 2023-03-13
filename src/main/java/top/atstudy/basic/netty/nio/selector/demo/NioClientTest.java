@@ -10,7 +10,7 @@ public class NioClientTest {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        for (int i = 0; i < 20000; i++) {
+        for (int i = 0; i < 2; i++) {
             createClient();
         }
 
@@ -38,6 +38,13 @@ public class NioClientTest {
                     System.out.println("正在连接客户端， 可以做其它事情 ... ");
                 }
             }
+
+            // 如果连接成功，就发送数据
+            String str = "hello nio";
+            // Wraps a byte array into a buffer
+            ByteBuffer buf = ByteBuffer.wrap(str.getBytes());
+            // 发送数据，将byte数据发送到channel
+            sChannel.write(buf);
 
         } catch (IOException e) {
 
