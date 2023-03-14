@@ -46,6 +46,7 @@ public class NioClientTest {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
             String s = scanner.nextLine();
+            System.out.println(" ===>> " + s);
             socketChannel.write(ByteBuffer.wrap(s.getBytes()));
         }
 
@@ -68,10 +69,12 @@ public class NioClientTest {
                             SocketChannel sc = (SocketChannel) key.channel();
                             // 得到一个 Buffer
                             ByteBuffer buffer = ByteBuffer.allocate(1024);
+
                             // 读取
                             sc.read(buffer);
                             // 把读到的缓存区数据转换成字符串
-                            System.out.println("server say: " + new String(buffer.array()));
+                            String str = new String(buffer.array());
+                            System.out.println("server say: " + str);
                         }
                         iterator.remove();
                     }

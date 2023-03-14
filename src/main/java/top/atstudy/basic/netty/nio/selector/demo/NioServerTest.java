@@ -42,6 +42,7 @@ public class NioServerTest {
 
         // 把 ServerSocketChannle 注册到 Selector 上， 事件为：OP_ACCEPT
         ssChannel.register(selector, SelectionKey.OP_ACCEPT);
+        System.out.println("server is ok " + new Date());
 
         // 循环等待客户端连接
         while (true) {
@@ -72,10 +73,11 @@ public class NioServerTest {
                 } else if (key.isReadable()) {//发生 OP_READ
                     // 读取数据
                     readHandler(key);
-                } else if (key.isWritable()) {
-                    // 写数据
-                    writeHandler(key);
                 }
+//                else if (key.isWritable()) {
+//                    // 写数据
+//                    writeHandler(key);
+//                }
 
                 // 手动从集合中移除当前的 selectionkey, 防止重复操作
                 keyIterator.remove();
@@ -107,31 +109,12 @@ public class NioServerTest {
             SocketChannel sChannel = (SocketChannel) key.channel();
 
             // 获取到该 channel 关联的 buffer
-            ByteBuffer buf = (ByteBuffer) key.attachment();
+            ByteBuffer buf = ByteBuffer.allocate(1024);
             sChannel.read(buf);
             String str = new String(buf.array());
             System.out.println(" client say: " + str);
 
-            buf.clear();
-
-            ByteBuffer buffer = ByteBuffer.wrap(str.getBytes());
-            sChannel.write(buffer);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    private static void writeHandler(SelectionKey key) {
-//        System.out.println(Thread.currentThread().getName() + ", writeHandler ... ");
-
-        try {
-            SocketChannel channel = (SocketChannel) key.channel();
-            ByteBuffer buf = (ByteBuffer) key.attachment();
-            channel.write(buf);
-
-//            channel.register(selector, SelectionKey.OP_READ);
+            sChannel.write(ByteBuffer.wrap(str.getBytes()));
         } catch (IOException e) {
             e.printStackTrace();
         }
