@@ -5,7 +5,10 @@ import cn.hutool.core.date.DateUtil;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.*;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
@@ -42,6 +45,7 @@ public class NioServerTest {
 
         // 把 ServerSocketChannle 注册到 Selector 上， 事件为：OP_ACCEPT
         ssChannel.register(selector, SelectionKey.OP_ACCEPT);
+        System.out.println("server is ok " + new Date());
 
         // 循环等待客户端连接
         while (true) {
@@ -72,10 +76,11 @@ public class NioServerTest {
                 } else if (key.isReadable()) {//发生 OP_READ
                     // 读取数据
                     readHandler(key);
-                } else if (key.isWritable()) {
-                    // 写数据
-                    writeHandler(key);
                 }
+//                else if (key.isWritable()) {
+//                    // 写数据
+//                    writeHandler(key);
+//                }
 
                 // 手动从集合中移除当前的 selectionkey, 防止重复操作
                 keyIterator.remove();
@@ -107,33 +112,30 @@ public class NioServerTest {
             SocketChannel sChannel = (SocketChannel) key.channel();
 
             // 获取到该 channel 关联的 buffer
-            ByteBuffer buf = (ByteBuffer) key.attachment();
+            ByteBuffer buf = ByteBuffer.allocate(1024);
             sChannel.read(buf);
-            System.out.println(" client say: " + new String(buf.array()));
+            String str = new String(buf.array());
+            System.out.println(" client say: " + str);
 
-
-            sChannel.write(buf);
-
-            // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
-//            sChannel.register(selector, SelectionKey.OP_WRITE, buf);
+            sChannel.write(ByteBuffer.wrap(str.getBytes()));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
-    private static void writeHandler(SelectionKey key) {
-//        System.out.println(Thread.currentThread().getName() + ", writeHandler ... ");
-
-        try {
-            SocketChannel channel = (SocketChannel) key.channel();
-            ByteBuffer buf = (ByteBuffer) key.attachment();
-            channel.write(buf);
-
-//            channel.register(selector, SelectionKey.OP_READ);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
+//    private static void writeHandler(SelectionKey key) {
+////        System.out.println(Thread.currentThread().getName() + ", writeHandler ... ");
+//
+//        try {
+//            SocketChannel channel = (SocketChannel) key.channel();
+//            ByteBuffer buf = (ByteBuffer) key.attachment();
+//            channel.write(buf);
+//
+////            channel.register(selector, SelectionKey.OP_READ);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 }
