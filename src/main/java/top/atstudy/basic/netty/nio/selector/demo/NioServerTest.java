@@ -109,13 +109,14 @@ public class NioServerTest {
             // 获取到该 channel 关联的 buffer
             ByteBuffer buf = (ByteBuffer) key.attachment();
             sChannel.read(buf);
-            System.out.println(" client say: " + new String(buf.array()));
+            String str = new String(buf.array());
+            System.out.println(" client say: " + str);
 
+            buf.clear();
 
-            sChannel.write(buf);
+            ByteBuffer buffer = ByteBuffer.wrap(str.getBytes());
+            sChannel.write(buffer);
 
-            // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
-//            sChannel.register(selector, SelectionKey.OP_WRITE, buf);
         } catch (IOException e) {
             e.printStackTrace();
         }

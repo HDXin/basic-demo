@@ -67,7 +67,7 @@ public class NioClientTest {
                             // 得到相关的通道
                             SocketChannel sc = (SocketChannel) key.channel();
                             // 得到一个 Buffer
-                            ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+                            ByteBuffer buffer = ByteBuffer.allocate(1024);
                             // 读取
                             sc.read(buffer);
                             // 把读到的缓存区数据转换成字符串
