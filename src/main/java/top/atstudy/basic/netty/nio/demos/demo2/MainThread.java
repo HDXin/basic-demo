@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio.selector.demo2;
+package top.atstudy.basic.netty.nio.demos.demo2;
 
 public class MainThread {
 

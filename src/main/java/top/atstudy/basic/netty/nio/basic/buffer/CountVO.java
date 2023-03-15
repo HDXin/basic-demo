@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio.buffer;
+package top.atstudy.basic.netty.nio.basic.buffer;
 
 import lombok.Data;
 

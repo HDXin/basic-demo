@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio.channel;
+package top.atstudy.basic.netty.nio.basic.channel;
 
 import java.io.*;
 import java.nio.ByteBuffer;

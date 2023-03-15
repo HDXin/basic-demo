@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio.selector.demo2;
+package top.atstudy.basic.netty.nio.demos.demo2;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
