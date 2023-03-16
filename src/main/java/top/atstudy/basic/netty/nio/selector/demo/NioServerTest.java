@@ -5,10 +5,14 @@ import cn.hutool.core.date.DateUtil;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.*;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 模拟：单Reactor单线程
@@ -73,11 +77,9 @@ public class NioServerTest {
                 } else if (key.isReadable()) {//发生 OP_READ
                     // 读取数据
                     readHandler(key);
+                } else if (key.isWritable()) {
+                    writeHandler(key);
                 }
-//                else if (key.isWritable()) {
-//                    // 写数据
-//                    writeHandler(key);
-//                }
 
                 // 手动从集合中移除当前的 selectionkey, 防止重复操作
                 keyIterator.remove();
@@ -105,18 +107,57 @@ public class NioServerTest {
         System.out.println(Thread.currentThread().getName() + ", readHandler ... ");
 
         try {
+            TimeUnit.MILLISECONDS.sleep(200);
+
             // 通过key, 反向获取到对应Channel
             SocketChannel sChannel = (SocketChannel) key.channel();
 
             // 获取到该 channel 关联的 buffer
-            ByteBuffer buf = ByteBuffer.allocate(1024);
+            ByteBuffer buf = (ByteBuffer) key.attachment();
+            buf.clear();
             sChannel.read(buf);
-            String str = new String(buf.array());
-            System.out.println(" client say: " + str);
+            buf.flip();
 
-            sChannel.write(ByteBuffer.wrap(str.getBytes()));
+            byte[] temp = new byte[buf.limit()];
+            buf.get(temp);
+            String str = new String(temp);
+            System.out.println(" client say: " + str);
+            buf.compact();
+
+            // 绑定缓存区
+            String msg = "hi, " + str;
+            key.attach(ByteBuffer.wrap(msg.getBytes()));
+
+            // 注册写事件
+            key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+
+    private static void writeHandler(SelectionKey key) {
+        System.out.println(Thread.currentThread().getName() + ", writeHancler ... ");
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+
+            SocketChannel channel = (SocketChannel) key.channel();
+            ByteBuffer buf = (ByteBuffer) key.attachment();
+            if (buf.hasRemaining()) {
+                System.out.println("hasRemaining ... ");
+                channel.write(buf);
+            } else {
+                System.out.println("!hasRemaining ... gaga ");
+                key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
     }

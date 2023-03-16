@@ -9,6 +9,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class NioClientTest {
 
@@ -28,7 +29,7 @@ public class NioClientTest {
             // 设置非阻塞
             socketChannel.configureBlocking(false);
             // 将 channel 注册到 selector
-            socketChannel.register(selector, SelectionKey.OP_READ);
+            socketChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));
             // 得到 username
             username = socketChannel.getLocalAddress().toString().substring(1);
             System.out.println(username + " is ok ... ");
@@ -65,22 +66,35 @@ public class NioClientTest {
 
                         SelectionKey key = iterator.next();
                         if (key.isReadable()) {
+                            TimeUnit.MILLISECONDS.sleep(200);
+
                             // 得到相关的通道
                             SocketChannel sc = (SocketChannel) key.channel();
                             // 得到一个 Buffer
-                            ByteBuffer buffer = ByteBuffer.allocate(1024);
+                            ByteBuffer buffer = (ByteBuffer) key.attachment();
+                            buffer.clear();
 
                             // 读取
                             sc.read(buffer);
-                            // 把读到的缓存区数据转换成字符串
-                            String str = new String(buffer.array());
-                            System.out.println("server say: " + str);
+                            buffer.flip();
+
+                            if (buffer.hasRemaining()) {
+                                // 把读到的缓存区数据转换成字符串
+                                byte[] msg = new byte[buffer.limit()];
+                                buffer.get(msg);
+                                String str = new String(msg);
+                                System.out.println("server say: " + str);
+
+//                                buffer.compact();
+                            }
                         }
                         iterator.remove();
                     }
                 }
             } catch (IOException e) {
                 e.printStackTrace();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
         }
     }
