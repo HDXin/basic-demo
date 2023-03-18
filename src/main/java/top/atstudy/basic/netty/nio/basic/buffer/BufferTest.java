@@ -21,7 +21,7 @@ public class BufferTest {
     public static void main(String[] args) {
 
         // test put
-//        putTest();
+        putTest();
 
         // test get
         getTest();
