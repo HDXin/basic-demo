@@ -65,7 +65,7 @@ public class WorkThread implements Runnable {
 
             // 绑定缓存区
             String msg = "hi, " + new String(buf.array());
-            System.out.println("client say: " + new String(buf.array()));
+            System.out.println(Thread.currentThread().getName() + " client say: " + new String(buf.array()));
 
             key.attach(ByteBuffer.wrap(msg.getBytes()));
 
@@ -85,10 +85,10 @@ public class WorkThread implements Runnable {
             SocketChannel channel = (SocketChannel) key.channel();
             ByteBuffer buf = (ByteBuffer) key.attachment();
             if (buf.hasRemaining()) {
-                System.out.println("hasRemaining ... ");
+//                System.out.println("hasRemaining ... ");
                 channel.write(buf);
             } else {
-                System.out.println("!hasRemaining ... gaga ");
+//                System.out.println("!hasRemaining ... gaga ");
                 key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
             }
         } catch (IOException e) {

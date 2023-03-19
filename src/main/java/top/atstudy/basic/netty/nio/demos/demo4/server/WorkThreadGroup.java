@@ -11,6 +11,11 @@ public class WorkThreadGroup {
 
     private List<WorkThread> workThreads;
 
+    public WorkThreadGroup(){
+        this(Runtime.getRuntime().availableProcessors());
+        System.out.println(Runtime.getRuntime().availableProcessors());
+    }
+
     public WorkThreadGroup(int size) {
         workThreads = new ArrayList<>(3);
         for (int i = 0; i < size; i++) {
@@ -39,7 +44,7 @@ public class WorkThreadGroup {
 
     private int index = 0;
 
-    private WorkThread nextWorkThread() {
+    private synchronized WorkThread nextWorkThread() {
         int next = index % workThreads.size();
         index++;
         return workThreads.get(next);

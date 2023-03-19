@@ -25,7 +25,7 @@ public class NioServerTest {
     static {
         try {
             selector = Selector.open();
-            group = new WorkThreadGroup(3);
+            group = new WorkThreadGroup();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,12 +46,12 @@ public class NioServerTest {
 
         // 把 ServerSocketChannle 注册到 Selector 上， 事件为：OP_ACCEPT
         ssChannel.register(selector, SelectionKey.OP_ACCEPT);
-        System.out.println("server is ok " + new Date());
+        System.out.println(Thread.currentThread().getName() + " server is ok " + new Date());
 
         // 循环等待客户端连接
         while (true) {
             // 等待 1 秒，如果没有事件发生，返回
-            if (selector.select(1000) == 0) {
+            if (selector.select() == 0) {
                 continue;
             }
 
