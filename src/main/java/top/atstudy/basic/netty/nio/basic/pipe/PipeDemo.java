@@ -1,4 +1,4 @@
-package top.atstudy.basic.netty.nio.pipe;
+package top.atstudy.basic.netty.nio.basic.pipe;
 
 import java.io.IOException;
 import java.nio.channels.Pipe;
