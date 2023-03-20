@@ -57,7 +57,6 @@ public class DirectBufferTest {
         long end = System.currentTimeMillis();
 
         System.out.println(String.format(" ==>> [%s] times: %s ", index, (end - start)));
-
         vo.addC(end - start);
     }
 

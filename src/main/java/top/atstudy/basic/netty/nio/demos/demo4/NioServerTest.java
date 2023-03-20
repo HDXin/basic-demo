@@ -9,6 +9,7 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
@@ -50,8 +51,9 @@ public class NioServerTest {
 
         // 循环等待客户端连接
         while (true) {
+//            System.out.println("==>> " + LocalDateTime.now());
             // 等待 1 秒，如果没有事件发生，返回
-            if (selector.select() == 0) {
+            if (selector.select(10) == 0) {
                 continue;
             }
 
@@ -84,9 +86,9 @@ public class NioServerTest {
         //如果是OP_ACCEPT, 有新的客户端连接
         // 该客户端生成一个 SocketChannel
         try {
-            SocketChannel sChannel = ssChannel.accept();
+            final SocketChannel sChannel = ssChannel.accept();
             sChannel.configureBlocking(false);
-            group.add(sChannel);
+            new Thread(() -> group.add(sChannel)).start();
 
             // 将 SocketChannel 注册到 selector, 关注事件为 OP_READ, 同时给 SocketChannel 关联一个Buffer
 //            sChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));

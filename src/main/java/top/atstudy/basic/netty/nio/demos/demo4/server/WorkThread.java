@@ -24,11 +24,11 @@ public class WorkThread implements Runnable {
         while (true) {
             try {
                 // 等待 1 秒，如果没有事件发生，返回
-                if (selector.select(1000) == 0) {
+                if (selector.select(10) == 0) {
 //                System.out.println("服务器已经等待了1秒， 无连接 ... ");
                     continue;
                 }
-                TimeUnit.MILLISECONDS.sleep(200);
+//                TimeUnit.MILLISECONDS.sleep(200);
 
                 Set<SelectionKey> selectionKeys = selector.selectedKeys();
                 Iterator<SelectionKey> iterator = selectionKeys.iterator();
@@ -44,14 +44,12 @@ public class WorkThread implements Runnable {
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
         }
     }
 
 
-    private static void readHandler(SelectionKey key) {
+    private void readHandler(SelectionKey key) {
         System.out.println(Thread.currentThread().getName() + ", readHandler ... ");
 
         try {
@@ -65,11 +63,14 @@ public class WorkThread implements Runnable {
 
             // 绑定缓存区
             String msg = "hi, " + new String(buf.array());
-            System.out.println(Thread.currentThread().getName() + " client say: " + new String(buf.array()));
+            System.out.println(Thread.currentThread().getName() + " \nclient say: " + new String(buf.array()));
 
-            key.attach(ByteBuffer.wrap(msg.getBytes()));
+//            sChannel.write(ByteBuffer.wrap(msg.getBytes()));
+
+//            sChannel.register(selector, SelectionKey.OP_WRITE, ByteBuffer.wrap(msg.getBytes()));
 
             // 注册写事件
+            key.attach(ByteBuffer.wrap(msg.getBytes()));
             key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);
         } catch (IOException e) {
             e.printStackTrace();
@@ -78,7 +79,7 @@ public class WorkThread implements Runnable {
     }
 
 
-    private static void writeHandler(SelectionKey key) {
+    private void writeHandler(SelectionKey key) {
         System.out.println(Thread.currentThread().getName() + ", writeHancler ... ");
 
         try {
@@ -90,6 +91,7 @@ public class WorkThread implements Runnable {
             } else {
 //                System.out.println("!hasRemaining ... gaga ");
                 key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
+//                channel.register(selector, SelectionKey.OP_READ);
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -24,7 +24,7 @@ public class BufferTest {
 //        putTest();
 
         // test get
-        getTest();
+//        getTest();
 
         // test get
 //        getTest2();
@@ -36,7 +36,7 @@ public class BufferTest {
 //        duplicateTest();
 
         // test compact
-//        compactTest();
+        compactTest();
 
     }
 
