@@ -45,7 +45,7 @@ public class NioServerTest {
         ssChannel.configureBlocking(false);
 
         // 把 ServerSocketChannle 注册到 Selector 上， 事件为：OP_ACCEPT
-        ssChannel.register(selector, SelectionKey.OP_ACCEPT);
+        ssChannel.register(selector, SelectionKey.OP_READ);
         System.out.println(Thread.currentThread().getName() + " server is ok " + new Date());
 
         // 循环等待客户端连接
@@ -70,6 +70,7 @@ public class NioServerTest {
                     ServerSocketChannel channel = (ServerSocketChannel) key.channel();
                     acceptHandler(channel);
                 }
+
                 // 手动从集合中移除当前的 selectionkey, 防止重复操作
                 keyIterator.remove();
             }

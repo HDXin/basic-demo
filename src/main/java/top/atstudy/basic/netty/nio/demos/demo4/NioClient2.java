@@ -12,13 +12,13 @@ public class NioClient2 {
 
         for (int i = 10000; i < 10015; i++) {
             final Integer port = i;
-            new Thread(() -> {
-                try {
+//            new Thread(() -> {
+//                try {
                     createClient(port);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }).start();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }).start();
         }
 
         TimeUnit.SECONDS.sleep(10000);
@@ -27,7 +27,7 @@ public class NioClient2 {
     private static void createClient(Integer port) throws IOException {
 
         // 得到一个网络通道
-        SocketChannel sChannel = SocketChannel.open();
+        final SocketChannel sChannel = SocketChannel.open();
 
         // 设置非阻塞
         sChannel.configureBlocking(false);
@@ -43,16 +43,17 @@ public class NioClient2 {
         }
         System.out.println("client: " + Thread.currentThread().getName() + " 已连接服务端，正在发送消息 ... ");
 
-        for (int i = 0; i < 10; i++) {
-            String msg = Thread.currentThread().getName() + ": " + i + " \n";
-            sChannel.write(ByteBuffer.wrap(msg.getBytes()));
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    String msg = Thread.currentThread().getName() + ": " + i + " \n";
+                    sChannel.write(ByteBuffer.wrap(msg.getBytes()));
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException | IOException e) {
+                    e.printStackTrace();
+                }
             }
-        }
+        }).start();
 
     }
 
