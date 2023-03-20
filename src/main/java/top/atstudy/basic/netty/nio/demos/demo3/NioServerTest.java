@@ -113,19 +113,25 @@ public class NioServerTest {
             SocketChannel sChannel = (SocketChannel) key.channel();
 
             // 获取到该 channel 关联的 buffer
-            ByteBuffer buf = (ByteBuffer) key.attachment();
-            buf.clear();
-            sChannel.read(buf);
-            buf.flip();
+//            ByteBuffer buf = (ByteBuffer) key.attachment();
+//            buf.clear();
+//            sChannel.read(buf);
+//            buf.flip();
+//
+//            byte[] temp = new byte[buf.limit()];
+//            buf.get(temp);
+//            String str = new String(temp);
+//            System.out.println(" client say: " + str);
+//            buf.compact();
 
-            byte[] temp = new byte[buf.limit()];
-            buf.get(temp);
-            String str = new String(temp);
-            System.out.println(" client say: " + str);
-            buf.compact();
+
+            ByteBuffer temp = ByteBuffer.allocate(1024);
+            int a = sChannel.read(temp);
+            System.out.println(" a: " + a);
+            String msg = "hi, " + new String(temp.array());
 
             // 绑定缓存区
-            String msg = "hi, " + str;
+            System.out.println(" client say: " + msg);
             key.attach(ByteBuffer.wrap(msg.getBytes()));
 
             // 注册写事件

@@ -29,7 +29,7 @@ public class NioClientTest {
             // 设置非阻塞
             socketChannel.configureBlocking(false);
             // 将 channel 注册到 selector
-            socketChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(1024));
+            socketChannel.register(selector, SelectionKey.OP_READ, ByteBuffer.allocate(12));
             // 得到 username
             username = socketChannel.getLocalAddress().toString().substring(1);
             System.out.println(username + " is ok ... ");
@@ -40,6 +40,9 @@ public class NioClientTest {
 
 
     public static void main(String[] args) throws IOException {
+
+        byte[] b = new byte[]{104, 105, 44, 32, 49};
+        System.out.println(" ==>> prefix " + new String(b));
 
         new Thread(() -> readAndWriteHandler()).start();
 
@@ -70,31 +73,46 @@ public class NioClientTest {
 
                             // 得到相关的通道
                             SocketChannel sc = (SocketChannel) key.channel();
-                            // 得到一个 Buffer
-                            ByteBuffer buffer = (ByteBuffer) key.attachment();
-                            buffer.clear();
 
-                            // 读取
-                            sc.read(buffer);
-                            buffer.flip();
+                            ByteBuffer buffer = ByteBuffer.allocate(4192);
+                            int read = sc.read(buffer);
+                            if (read == 0) {
 
-                            if (buffer.hasRemaining()) {
-                                // 把读到的缓存区数据转换成字符串
-                                byte[] msg = new byte[buffer.limit()];
-                                buffer.get(msg);
-                                String str = new String(msg);
-                                System.out.println("server say: " + str);
-
-//                                buffer.compact();
                             }
+                            if (read == -1) {
+
+                            }
+                            System.out.println(" read: " + read);
+                            String str = "server say: " + new String(buffer.array());
+                            System.out.println(str);
+
+//                            // 得到一个 Buffer
+//                            ByteBuffer buffer = (ByteBuffer) key.attachment();
+//                            buffer.clear();
+//
+//                            // 读取
+//                            sc.read(buffer);
+//                            buffer.flip();
+//
+//                            if (buffer.hasRemaining()) {
+//                                // 把读到的缓存区数据转换成字符串
+//                                byte[] msg = new byte[buffer.limit()];
+//                                buffer.get(msg);
+//                                String str = new String(msg);
+//                                System.out.println("server say: " + str);
+//
+//                                buffer.compact();
+//                            }
                         }
                         iterator.remove();
                     }
+
+                    TimeUnit.SECONDS.sleep(1);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
     }
