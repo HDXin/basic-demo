@@ -13,7 +13,7 @@ public class NioClientTest2 {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        for (int i = 10000; i < 10001; i++) {
+        for (int i = 10000; i < 10030; i++) {
             final Integer port = i;
 //            new Thread(() -> {
 //                try {
