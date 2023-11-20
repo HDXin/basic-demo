@@ -1,0 +1,143 @@
+<!-- saved from url=(0029)https://wxaurl.cn/93JJpwk9Zgp -->
+<html style="--chakra-ui-color-mode:light;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="雁工云 灵活用工交易平台">
+    <!-- <meta name="apple-mobile-web-app-title" content="小程序示例"> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link id="J_desktopIcon" sizes="114x114" rel="apple-touch-icon-precomposed"
+          href="http://wx.qlogo.cn/mmhead/Q3auHgzwzM50jx5MlwPibPyP2VlLeCVPesSFyTRwzh36axKeQAnK3icQ/132">
+    <!-- <link id="J_desktopIcon" sizes="114x114" rel="apple-touch-icon-precomposed" href="http://wx.qlogo.cn/mmhead/Q3auHgzwzM7Fll3F71bOWuUvJCZWo1yia2gtXmiaDMcAC0hIsAgJ2UlQ/132"> -->
+    <script>
+        window.onerror = e => {
+            console.error(e)
+            // alert('发生错误' + e)
+        }
+    </script>
+    <style>
+    </style>
+    <!-- weui 样式 -->
+    <link rel="stylesheet" href="./wx/weui.min.css">
+    <!-- 调试用的移动端 console -->
+    <script>
+        function initEruda() {
+            if (location.search.indexOf('wxdebug=1') > -1) {
+                eruda.init()
+            }
+        }
+    </script>
+    <script defer="" src="./wx/eruda.js.下载" onload="initEruda()"></script>
+    <!-- 公众号 JSSDK -->
+    <script src="./wx/jweixin-1.6.0.js.下载"></script>
+    <!-- 云开发 Web SDK -->
+    <script src="./wx/cloud.js.下载"></script>
+
+    <script>
+
+        $.ajax({
+            type: "post",
+            dataType: "html",
+            url: '/Resources/GetList.ashx',
+            data: dataurl,
+            success: function (data) {
+                console.log(data);
+            }
+        });
+
+    </script>
+    <script>
+        // json
+        // head_img_url, nickname, url_scheme, user_name, path, query
+        var test = 'http://wx.qlogo.cn/mmhead/Q3auHgzwzM50jx5MlwPibPyP2VlLeCVPesSFyTRwzh36axKeQAnK3icQ/132'
+        if (test === ('')) {
+            // not from qqmail, use mock
+            var mockUrlScheme = 'weixin://dl/business/?t=pFawq35qbfd'
+            // try {
+            //   var m = location.href.match(/wxaurl\.cn\/(\w+)/)
+            //   if (m && m[1]) {
+            //     mockUrlScheme = `weixin://dl/business/?t=${m[1]}`
+            //   }
+            // } catch (e) {}
+            window.data = {
+                head_img_url: 'http://wx.qlogo.cn/mmhead/Q3auHgzwzM7Fll3F71bOWuUvJCZWo1yia2gtXmiaDMcAC0hIsAgJ2UlQ/132',
+                nickname: '小程序示例',
+                url_scheme: mockUrlScheme,
+                user_name: 'gh_d43f693ca31f',
+                path: 'page/component/index',
+                query: 'x=1',
+            }
+        } else {
+            window.data = {
+                head_img_url: 'http://wx.qlogo.cn/mmhead/Q3auHgzwzM50jx5MlwPibPyP2VlLeCVPesSFyTRwzh36axKeQAnK3icQ/132',
+                nickname: '雁工云 灵活用工交易平台',
+                url_scheme: 'weixin://dl/business/?t=djxxRRAG0Qa',
+                user_name: 'gh_2d7efce39a96',
+                path: 'pages/index/index',
+                query: '',
+            }
+        }
+    </script>
+    <script src="./wx/universal_links_8.js.下载"></script>
+    <style type="text/css">.eruda-search-highlight-block {
+        display: inline
+    }
+
+    .eruda-search-highlight-block .eruda-keyword {
+        background: #fffbe5;
+        color: #5c5c00
+    }</style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css" data-s=""></style>
+</head>
+
+<body class="chakra-ui-light">
+<div id="app">
+    <div class="css-tkevr6"><p class="chakra-text css-0">请在手机打开网页链接</p></div>
+    <div style="opacity: 0; visibility: hidden; transition: all 100ms ease-in-out 0s;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast"><i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">已完成</p></div>
+    </div>
+</div>
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;">
+    <div id="trans-tooltip">
+        <div id="tip-left-top"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-left-top.png&quot;);"></div>
+        <div id="tip-top"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-top.png&quot;) repeat-x;"></div>
+        <div id="tip-right-top"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-right-top.png&quot;);"></div>
+        <div id="tip-right"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-right.png&quot;) repeat-y;"></div>
+        <div id="tip-right-bottom"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-right-bottom.png&quot;);"></div>
+        <div id="tip-bottom"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div>
+        <div id="tip-left-bottom"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-left-bottom.png&quot;);"></div>
+        <div id="tip-left"
+             style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-left.png&quot;);"></div>
+        <div id="trans-content"></div>
+    </div>
+    <div id="tip-arrow-bottom"
+         style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-arrow-bottom.png&quot;);"></div>
+    <div id="tip-arrow-top"
+         style="background: url(&quot;chrome-extension://ccfjcepmiaackkccabgeeegeklgifffd/imgs/map/tip-arrow-top.png&quot;);"></div>
+</div>
+</body>
+<div class="__chii-hide__" style="display: none; position: absolute; pointer-events: none;">
+    <div style="position: absolute; box-sizing: border-box; z-index: 100000;"></div>
+    <div style="position: absolute; box-sizing: border-box; z-index: 100000;"></div>
+    <div style="position: absolute; box-sizing: border-box; z-index: 100000;"></div>
+    <div style="position: absolute; box-sizing: border-box; z-index: 100000;"></div>
+    <div style="position: absolute; box-sizing: border-box; z-index: 100000; height: 25px; line-height: 25px; background: rgb(255, 255, 255); color: rgb(34, 34, 34); font-size: 12px; padding: 0px 5px; white-space: nowrap; overflow-x: hidden; box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 1px 4px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;"></div>
+</div>
+</html>
