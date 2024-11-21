@@ -46,7 +46,7 @@ public class MyInvocationHandler implements InvocationHandler {
         OrderService service = new OrderServiceImpl();
         InvocationHandler handler = new MyInvocationHandler(service);
 
-        OrderService proxy = (OrderService)Proxy.newProxyInstance(service.getClass().getClassLoader(), service.getClass().getInterfaces(), handler);
+        OrderService proxy = (OrderService) Proxy.newProxyInstance(service.getClass().getClassLoader(), service.getClass().getInterfaces(), handler);
         Long orderId = proxy.create("优惠单");
         System.out.println(" ===>> result:" + orderId);
     }
