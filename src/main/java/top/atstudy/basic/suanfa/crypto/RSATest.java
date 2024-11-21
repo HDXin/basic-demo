@@ -1,4 +1,4 @@
-package top.atstudy.basic.crypto;
+package top.atstudy.basic.suanfa.crypto;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.util.CharsetUtil;
@@ -11,11 +11,18 @@ import cn.hutool.crypto.asymmetric.SM2;
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;
 import cn.hutool.crypto.symmetric.SymmetricCrypto;
+import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpUtil;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.KeyPair;
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 1、两个质数：p = 3, q = 11
@@ -37,13 +44,47 @@ public class RSATest {
 //        test03();
 
 
-        test05();
+//        test05();
+
+//        test06();
+
+
+        String s = HttpUtil.get("https://ygy.paat.vip/ygy/pc/home/cert/list?pageSize=10", 5000);
+        System.out.println(s);
+
+
+
+
+    }
+
+    private static void test06() {
+
+        X509Certificate var3;
+        FileInputStream inputStream = null;
+        try {
+            String certPath = "E:\\temp\\cert\\_.paat.vip.crt";
+            inputStream = new FileInputStream(certPath);
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            var3 = (X509Certificate) cf.generateCertificate(inputStream);
+            System.out.println("===>> ");
+        } catch (Exception var11) {
+            throw new RuntimeException(var11);
+        } finally {
+            try {
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException var12) {
+                throw new RuntimeException(var12);
+            }
+
+        }
 
 
     }
 
 
-    private static void test05(){
+    private static void test05() {
 
         String publicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqchpkLMdoxio+EUizBav4Y4crjfm2/K+vcZKzfy/HdRKyK+ag9nWWeTs4cTkHyzEN3h4kJzehSjYS21jIgwefMW6J1dR3Q5v9MhTw4ppjqlqS7DAI/RP632Eb8rGtgwSY0DcGiLnOSXQNDQw9sH3NieMdYQF1CpM42V+RBnYAEPpOJb8rsmEUP3nHy0yzWX6u3L9pmMXp44DkUT3qBEBn+Ti57UuyAOZe6C9Yk8TFZnn6NDIULostxMZFO81l12Sljofg19xuCqJbz570mV6OoKA5InklAknOdeS7qk/Nvt7DYxWUhl44SfR4zadFY+C6ZUMfTYLALBvuoFqwPda5wIDAQAB";
         RSA rsa = new RSA(null, publicKey);
@@ -86,8 +127,6 @@ public class RSATest {
 
         String encryptHex = sm4.encryptBase64("");
         String decryptStr = sm4.decryptStr(encryptHex, CharsetUtil.CHARSET_UTF_8);
-
-
 
 
     }
