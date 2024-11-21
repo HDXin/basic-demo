@@ -65,10 +65,6 @@ public class WorkThread implements Runnable {
             String msg = "hi, " + new String(buf.array());
             System.out.println(Thread.currentThread().getName() + " \nclient say: " + new String(buf.array()));
 
-//            sChannel.write(ByteBuffer.wrap(msg.getBytes()));
-
-//            sChannel.register(selector, SelectionKey.OP_WRITE, ByteBuffer.wrap(msg.getBytes()));
-
             // 注册写事件
             key.attach(ByteBuffer.wrap(msg.getBytes()));
             key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);

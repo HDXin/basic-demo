@@ -45,36 +45,36 @@ public class NioServerTest {
         ssChannel.configureBlocking(false);
 
         // 把 ServerSocketChannle 注册到 Selector 上， 事件为：OP_ACCEPT
-        ssChannel.register(selector, SelectionKey.OP_READ);
+        ssChannel.register(selector, SelectionKey.OP_ACCEPT);
         System.out.println(Thread.currentThread().getName() + " server is ok " + new Date());
 
         // 循环等待客户端连接
-//        while (true) {
-//            // 等待 1 秒，如果没有事件发生，返回
-//            if (selector.select(10) == 0) {
-//                continue;
-//            }
-//
-//            // 如果返回的 >0, 就获取到相关的 selectionKey 集合
-//            // 1、如果返回的 >0, 表示已经获取到关注的事件
-//            // 2、selector.selectedkeys 返回关注事件的结合
-//            Set<SelectionKey> selectionKeys = selector.selectedKeys();
-//            Iterator<SelectionKey> keyIterator = selectionKeys.iterator();
-//
-//            while (keyIterator.hasNext()) {
-//                // 获取到 selectionkey
-//                SelectionKey key = keyIterator.next();
-//                //根据key,对应的通道发生的事件做响应的处理
-//                if (key.isAcceptable()) {
-//                    // 注册接受事件
-//                    ServerSocketChannel channel = (ServerSocketChannel) key.channel();
-//                    acceptHandler(channel);
-//                }
-//
-//                // 手动从集合中移除当前的 selectionkey, 防止重复操作
-//                keyIterator.remove();
-//            }
-//        }
+        while (true) {
+            // 等待 1 秒，如果没有事件发生，返回
+            if (selector.select(10) == 0) {
+                continue;
+            }
+
+            // 如果返回的 >0, 就获取到相关的 selectionKey 集合
+            // 1、如果返回的 >0, 表示已经获取到关注的事件
+            // 2、selector.selectedkeys 返回关注事件的结合
+            Set<SelectionKey> selectionKeys = selector.selectedKeys();
+            Iterator<SelectionKey> keyIterator = selectionKeys.iterator();
+
+            while (keyIterator.hasNext()) {
+                // 获取到 selectionkey
+                SelectionKey key = keyIterator.next();
+                //根据key,对应的通道发生的事件做响应的处理
+                if (key.isAcceptable()) {
+                    // 注册接受事件
+                    ServerSocketChannel channel = (ServerSocketChannel) key.channel();
+                    acceptHandler(channel);
+                }
+
+                // 手动从集合中移除当前的 selectionkey, 防止重复操作
+                keyIterator.remove();
+            }
+        }
     }
 
 
