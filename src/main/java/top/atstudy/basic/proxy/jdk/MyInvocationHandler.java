@@ -42,7 +42,7 @@ public class MyInvocationHandler implements InvocationHandler {
     }
 
     public static void main(String[] args) {
-
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");//打开保存proxy动态生成文件的开关
         OrderService service = new OrderServiceImpl();
         InvocationHandler handler = new MyInvocationHandler(service);
 
