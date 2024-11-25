@@ -28,7 +28,7 @@ public class DemoProxyClient {
 
     }
 
-    public static void demo5(){
+    public static void demo5() {
 
         Auth auth = new AuthImpl();
 
@@ -40,7 +40,7 @@ public class DemoProxyClient {
             }
         });
 
-        System.out.println(proxy.add(1, 2));;
+        System.out.println(proxy.add(1, 2));
 
     }
 
@@ -53,14 +53,14 @@ public class DemoProxyClient {
             FileOutputStream fos = new FileOutputStream(new File(path));
 
             fos.write(classFile, 0, classFile.length);
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
-    public static void demo3(){
+    public static void demo3() {
         Auth2 auth = new AuthImpl();
-        Auth2 proxy = (Auth2) Proxy.newProxyInstance(auth.getClass().getClassLoader(), new Class[]{Auth.class, Auth2.class}, new InvocationHandler() {
+        Auth2 proxy = (Auth2) Proxy.newProxyInstance(auth.getClass().getClassLoader(), auth.getClass().getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
@@ -77,11 +77,14 @@ public class DemoProxyClient {
         System.out.println(result);
     }
 
-    public static void demo2(){
-        MyInvocationHandler invocation = new MyInvocationHandler();
-        Auth auth = new AuthImpl();
-        final Auth temp = auth;
+    public static void demo2() {
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");//打开保存proxy动态生成文件的开关
 
+        // 原目标类
+        Auth auth = new AuthImpl();
+
+        // 初次代理
+        final Auth temp = auth;
         auth = (Auth) Proxy.newProxyInstance(auth.getClass().getClassLoader(), new Class[]{Auth.class}, new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -93,6 +96,7 @@ public class DemoProxyClient {
             }
         });
 
+        // 再次代理
         final Auth temp2 = auth;
         auth = (Auth) Proxy.newProxyInstance(auth.getClass().getClassLoader(), new Class[]{Auth.class}, new InvocationHandler() {
             @Override
@@ -110,7 +114,11 @@ public class DemoProxyClient {
     }
 
 
-    public static void demo(){
+    /**
+     *
+     */
+    public static void demo() {
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");//打开保存proxy动态生成文件的开关
 
         MyInvocationHandler invocation = new MyInvocationHandler();
         Auth auth = new AuthImpl();
